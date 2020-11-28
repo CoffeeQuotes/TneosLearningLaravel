@@ -17,8 +17,20 @@ class CampaignController extends Controller
         $campaign->grade = $request->grade;
         $campaign->phone = $request->phone;
         $campaign->email = $request->email;
+        $campaign->school_name = $request->schoolname;
         $campaign->state = $request->state;
+        $campaign->agree_terms = $request->agree_terms;
+        $campaign->type = $request->type;
         $campaign->save();
-        return redirect('https://tneos.in/freelivevideo');
+        switch ($campaign->type) {
+            case "default" :
+                return redirect('https://tneos.in/freelivevideo');
+            break;
+            case "Free Ebook Capsule 2020" :
+                return redirect('https://tneos.in/thankyoufreeebook');
+            break;
+            default:
+                return redirect('https://tneos.in/register');
+        }
     }
 }

@@ -6,7 +6,7 @@
     <meta name="description" content="{{setting('site.description')}}">
     <meta name="author" content="">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Free Live Class - Tneos Eduloution</title>
+    <title>Free Ebook Capsule - Tneos Eduloution</title>
     <link rel="icon" href="{{asset("app-assets/img/core-img/favicon.ico")}}">
     <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -97,8 +97,8 @@
 
 <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
     <div class="col-md-5 p-lg-2 mx-auto my-2">
-        <h2 class="display-5 font-weight-normal">Book Free Live Class</h2>
-        <p class="lead font-weight-normal">Book a free live class from our top Faculties</p>
+        <h2 class="display-5 font-weight-normal">Free Ebook Capsules</h2>
+        <p class="lead font-weight-normal">Free Ebook Capsules from our top Faculties</p>
     </div>
 </div>
 <div class="container">
@@ -197,8 +197,8 @@
                     <input type="checkbox" class="form-check-input" id="exampleCheck1" value="1" name="agree_terms" checked>
                     <label class="form-check-label" for="exampleCheck1" >I would like to receive updates regarding my FREE class</label>
                      </div>
-                     <input type="hidden" name="type" value="default" />
-                <button type="submit" class="btn btn-block online-button  btn-success">Get A Free Live Class</button>
+                     <input type="hidden" name="type" value="Free Ebook Capsule 2020" />
+                <button type="submit" class="btn btn-block online-button  btn-success">Get Free Ebook</button>
             </form>
         </div>
     </div>
@@ -206,25 +206,9 @@
         <div class="my-3 p-3 container">
             <div class="row">
                 <div class="col">
-                    <img class="img-fluid img-thumbnail rounded-circle shadow-sm" src="{{asset('app-assets/img/bg-img/teacher0.png')}}" alt="" style="width:50%; height: auto;"/>
-                    <span class="display-5 d-block">Mathematics</span>
-                    <p class="font-weight-bold font-italic text-secondary">By Abhishek Kumar |B.Sc., B.Ed., CTET Qual. | 7 yrs. Exp.</p>
-                </div>
-                <div class="col">
-                    <img class="img-fluid img-thumbnail rounded-circle shadow-sm" src="{{asset('app-assets/img/bg-img/teacher_.png')}}" alt="" style="width:50%; height: auto;"/>
-                    <span class="display-5 d-block">English</span>
-                    <p class="font-weight-bold font-italic text-secondary">By Anindita Giri | M.A. Eng.(HONS), B.Ed., CTET QUAL.</p>
-                </div>
-                <div class="w-100"></div>
-                <div class="col">
-                    <img class="img-fluid img-thumbnail rounded-circle shadow-sm" src="{{asset('app-assets/img/bg-img/teacher2.png')}}" alt="" style="width:50%; height: auto;"/>
-                    <span class="display-5 d-block">Social Science</span>
-                    <p class="font-weight-bold font-italic text-secondary">By Susmita Dutta | B.SC., M.SC. | 2 yrs. Exp.</p>
-                </div>
-                <div class="col">
-                    <img class="img-fluid img-thumbnail rounded-circle shadow-sm" src="{{asset('app-assets/img/bg-img/teacher3.png')}}" alt="" style="width:50%; height: auto;"/>
-                    <span class="display-5 d-block">Science</span>
-                    <p class="font-weight-bold font-italic text-secondary">By Piyush Prasad | B.E. of Engineering (Mechanical)</p>
+                    <img class="img-fluid" src="{{asset('app-assets/img/campaign/funnel bookads.jpg')}}" alt="" style="width:100%; height: auto;"/>
+                    <span class="display-5 d-block">Get Free Ebook</span>
+                    <p class="font-weight-bold font-italic text-secondary">Get Free Ebook</p>
                 </div>
             </div>
         </div>

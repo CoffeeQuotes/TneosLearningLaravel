@@ -71,13 +71,13 @@ Route::any('/search',function(){
     else return view ('course_res')->withMessage('No Details found. Try to search again !');
 });
 
-// Career Page 
+// Career Page
 Route::get('/career', function() {
     $career = \App\Career::all();
     return view('extra.career', compact('career'));
 });
 
-// Live Videos by Board 
+// Live Videos by Board
 Route::get('/board/{board}', function($board) {
     $lives = \App\Life::where('board',$board)->get();
     return view('lives.board', compact('lives'));
@@ -97,4 +97,12 @@ Route::post('/campfire/store','CampaignController@store')->name('store_campaign'
 
 Route::get('/course_error', function () {
    return view('errors.coursebug');
+});
+
+Route::get('/freeebook', function() {
+    return view('campaign.freebookcapsule');
+});
+
+Route::get('/thankyoufreeebook', function() {
+    return view('campaign.freeebookthankyou');
 });
