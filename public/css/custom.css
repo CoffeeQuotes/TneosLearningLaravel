@@ -1,0 +1,21 @@
+
+.voyager .side-menu.sidebar-inverse {
+    background: #202020;
+    background: linear-gradient(45deg,#202020,#333533);
+}
+.content-container, .app-container {
+    background-color: #eeeeee;
+}
+.page-title {
+    color: #2e2e2e;
+}
+
+
+/* .voyager .app-footer
+{
+    background-color: #212f45;
+} */
+/*
+.panel-bordered, .panel, .panel-body {
+    background-color: #38413f;
+} */

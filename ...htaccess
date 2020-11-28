@@ -1,0 +1,30 @@
+Options -Indexes
+
+# Force HTTPS BEGIN
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+Header always set Content-Security-Policy: upgrade-insecure-requests
+# Force HTTPS END
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www\.tneos\.in$
+RewriteRule ^/?$ "https\:\/\/tneos\.in\/" [R=301,L]
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^tneos.in$
+RewriteCond %{REQUEST_URI} !^public/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ public/$1
+RewriteCond %{HTTP_HOST} ^tneos.in$
+RewriteRule ^(/)?$ public/index.php [L]
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php73” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php73 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
