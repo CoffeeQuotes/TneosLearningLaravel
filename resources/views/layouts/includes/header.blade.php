@@ -19,6 +19,7 @@
 
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="{{asset("app-assets/style.css")}}">
+
     @laravelPWA
 </head>
 
