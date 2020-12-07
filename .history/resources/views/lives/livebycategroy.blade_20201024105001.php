@@ -5,7 +5,7 @@
     <div class="container  mt-5 pt-0">
           @if($cat_live)
            <h2>{{ Str::title(str_replace('-', ' ', $cat_live[0]['category_id'])) }}</h2>
-          @endif
+          @endif 
         <div class="row mb-4">
                 <div class="col">
                     <span class="display-4 font-weight-bold featured-live-heading">Live Videos &nbsp; <img src="https://img.icons8.com/color/48/000000/youtube-live.png"/></span>
@@ -13,7 +13,7 @@
         </div>
         <div class="row">
         @foreach($cat_live as $life)
-
+            
             {{-- @if($life->featured === 1) --}}
             <a href="/lives/{{ $life->slug }}">
             <div class="col-md-3 mr-2">

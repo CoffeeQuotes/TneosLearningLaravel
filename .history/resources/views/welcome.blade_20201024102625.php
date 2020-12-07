@@ -19,7 +19,7 @@
                                     <img src="{{asset("app-assets/img/core-img/2.png")}}" class="card-img-top"
                                          alt="...">
                                     <div class="card-body bg-white m-0 ">
-                                        <h5 class="card-title text-dark text-center pt-2"> Class 6th to 8th</h5>
+                                        <h5 class="card-title text-dark text-center"> Class 6th to 8th</h5>
                                         <p class="card-text  font-weight-bold text-center">The best Class 6th to 8th all
                                             Subject Teachers</p>
                                     </div>
@@ -40,11 +40,9 @@
                                     <img src="{{asset("app-assets/img/core-img/1.png")}}" class="card-img-top"
                                          alt="...">
                                     <div class="card-body bg-white m-0 text-center">
-                                        <h5 class="card-title text-dark  pt-2">9th & 10th Class</h5>
+                                        <h5 class="card-title text-dark ">9th & 10th Class</h5>
                                         <p class="card-text font-weight-bold  text-center ">Get ready for the board
-                                            examinations<br/>
-                                            &nbsp;
-                                        </p>
+                                            examinations</p>
                                     </div>
 
                                     <a href="/packages" class="btn btn-info rounded-0 y">Learn More</a>
@@ -63,7 +61,7 @@
                                     <img src="{{asset("app-assets/img/core-img/studentcard.png")}}" class="card-img-top"
                                          alt="...">
                                     <div class="card-body  bg-white m-0 r text-dark">
-                                        <h5 class="card-title text-dark text-center pt-2">Class 11th & 12th</h5>
+                                        <h5 class="card-title text-dark text-center">Class 11th & 12th</h5>
                                         <p class="card-text font-weight-bold text-center">Prepare with best subject
                                             expert in order to excel</p>
                                     </div>
@@ -403,7 +401,7 @@
             </div>
         </div>
     </div>
-
+    
     <!-- ##### CTA Area End ##### -->
 {{-- <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">

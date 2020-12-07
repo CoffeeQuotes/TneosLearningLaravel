@@ -42,9 +42,7 @@
                                     <div class="card-body bg-white m-0 text-center">
                                         <h5 class="card-title text-dark  pt-2">9th & 10th Class</h5>
                                         <p class="card-text font-weight-bold  text-center ">Get ready for the board
-                                            examinations<br/>
-                                            &nbsp;
-                                        </p>
+                                            examinations</p>
                                     </div>
 
                                     <a href="/packages" class="btn btn-info rounded-0 y">Learn More</a>

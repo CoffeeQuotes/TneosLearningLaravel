@@ -15,7 +15,7 @@
                     <div class="container-fluid pt-4">
                         <div class="row  offset-1 pt-4">
                             <div class="col-md-4 pt-5">
-                                <div class="card  bg-transparent rounded hero-card" style="width: 16rem; ">
+                                <div class="card  bg-transparent rounded hero-card" style="width: 16rem; box-shadow: 0 0 1em 1em #0a5faf; ">
                                     <img src="{{asset("app-assets/img/core-img/2.png")}}" class="card-img-top"
                                          alt="...">
                                     <div class="card-body bg-white m-0 ">
@@ -36,7 +36,7 @@
                     <div class="container-fluid pt-4">
                         <div class="row  offset-1 pt-4">
                             <div class="col-md-4 pt-5">
-                                <div class="card  bg-transparent rounded hero-card" style="width: 16rem;">
+                                <div class="card  bg-transparent rounded hero-card" style="width: 16rem; box-shadow: 0 0 1em 1em #0a5faf;">
                                     <img src="{{asset("app-assets/img/core-img/1.png")}}" class="card-img-top"
                                          alt="...">
                                     <div class="card-body bg-white m-0 text-center">
@@ -59,7 +59,7 @@
                     <div class="container-fluid pt-4">
                         <div class="row  offset-1 pt-4">
                             <div class="col-md-4 pt-5">
-                                <div class="card  bg-transparent rounded hero-card" style="width: 16rem;">
+                                <div class="card  bg-transparent rounded hero-card" style="width: 16rem; box-shadow: 0 0 1em 1em #0a5faf;">
                                     <img src="{{asset("app-assets/img/core-img/studentcard.png")}}" class="card-img-top"
                                          alt="...">
                                     <div class="card-body  bg-white m-0 r text-dark">

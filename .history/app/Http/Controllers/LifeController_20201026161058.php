@@ -17,20 +17,21 @@ class LifeController extends Controller
 {
 
     public function  index() {
-
+        
         $lives = Life::paginate(8);
-
+     
         return view('lives.lives', compact('lives'));
     }
 
     public function indexByCategory($cat_slug) {
         $live_status = Life::where('category_id', $cat_slug)->first();
-        $cat_live = Life::where('category_id', $cat_slug)->get();
+        $cat_live = Life::where('category_id', $cat_slug)->get(); 
+        
         if($live_status === null) {
             return redirect('/course_error');
         }
-
-        return view('lives.livebycategroy', compact('cat_live', 'latest_cat_lives'));
+        
+        return view('lives.livebycategroy', compact('cat_live'));   
     }
 
     public function show($slug) {
