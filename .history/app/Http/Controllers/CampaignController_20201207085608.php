@@ -31,7 +31,6 @@ class CampaignController extends Controller
             break;
             case "Free Trial Classes 2020" :
                 return redirect('http://tneos.in/thankyou-free-trial-classes');
-            break;
             default:
                 return redirect('https://tneos.in/register');
         }

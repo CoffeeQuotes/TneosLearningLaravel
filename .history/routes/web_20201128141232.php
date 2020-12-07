@@ -106,11 +106,3 @@ Route::get('/freeebook', function() {
 Route::get('/thankyoufreeebook', function() {
     return view('campaign.freeebookthankyou');
 });
-
-Route::get('/free-trial-classes', function() {
-    return view('campaign.freetrialclasses');
-});
-
-Route::get('/thankyou-free-trial-classes', function() {
-    return view('campaign.freeebookthankyou');
-});

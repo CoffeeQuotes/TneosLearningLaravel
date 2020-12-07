@@ -97,12 +97,12 @@
 
 <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
     <div class="col-md-5 p-lg-2 mx-auto my-2">
-        <h2 class="display-5 font-weight-normal">Free Ebook Capsules</h2>
-        <p class="lead font-weight-normal">Free Ebook Capsules Download Now</p>
+        <h2 class="display-5 font-weight-normal">Free Trial Classess</h2>
+        <p class="lead font-weight-normal">Free Trial Classes from our top Faculties</p>
     </div>
 </div>
-<div class="container-fluid">
-    <div class="d-md-flex flex-row-reverse w-100 my-md-3 pl-md-3 shadow-lg">
+<div class="container">
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3 shadow-lg">
     <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5  text-white overflow-hidden" style="background-color: #343434;">
         <div class="my-3 py-3">
             <div class="text-center text-uppercase">
@@ -123,18 +123,18 @@
                     <div class="form-group col-md-6">
                         <label>grade</label>
                         <select class="form-control select2 select2-hidden-accessible" name="grade" data-select2-id="1" tabindex="-1" aria-hidden="true">
-                            {{--<option value="1">Class 1st</option>
+                            {{-- <option value="1">Class 1st</option>
                             <option value="2">Class 2nd</option>
                             <option value="3">Class 3rd</option>
                             <option value="4">Class 4th</option>
-                            <option value="5">Class 5th</option>
-                            <option value="6">Class 6th</option>
+                            <option value="5">Class 5th</option> --}}
+                            {{-- <option value="6" selected="selected" data-select2-id="3">Class 6th</option>
                             <option value="7">Class 7th</option>
                             <option value="8">Class 8th</option>
                             <option value="9">Class 9th</option> --}}
-                            <option value="10" selected="selected" data-select2-id="3">Class 10th</option>
-                            {{--<option value="11">Class 11th</option>
-                            <option value="12">Class 12th</option>--}}
+                            <option value="10" selected="selected">Class 10th</option>
+                            {{-- <option value="11">Class 11th</option>
+                            <option value="12">Class 12th</option> --}}
                         </select>
                     </div>
                 </div>
@@ -198,15 +198,15 @@
                     <label class="form-check-label" for="exampleCheck1" >I would like to receive updates regarding my FREE class</label>
                      </div>
                      <input type="hidden" name="type" value="Free Ebook Capsule 2020" />
-                <button type="submit" class="btn btn-block online-button  btn-success">Get Free Ebook</button>
+                <button type="submit" class="btn btn-block online-button  btn-success">Get Free Classes</button>
             </form>
         </div>
     </div>
-    <div class="bg-light align-self-stretch mr-md-3 pt-0 px-3 pt-md-0 px-md-0 text-center overflow-hidden">
-        <div class="mb-3 p-0 container">
+    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3 container">
             <div class="row">
-                <img src="{{asset('app-assets/img/campaign/funnel bookads.jpg')}}" alt="" style="width:100%; height: auto;"/>
                 <div class="col">
+                    <img class="img-fluid" src="{{asset('app-assets/img/campaign/funnel bookads.jpg')}}" alt="" style="width:100%; height: auto;"/>
                     <span class="display-5 d-block">Get Free Ebook</span>
                     <p class="font-weight-bold font-italic text-secondary">Get Free Ebook</p>
                 </div>
@@ -220,7 +220,7 @@
 <footer class="container-fluid py-5">
     <div class="row">
         <div class="col-12 col-md">
-            <a class="py-2" href="https://tneos.in/"><img src="{{ url('/') }}/storage/{{setting('site.logo')}}" class="img-fluid" style=" width="100%" height: auto;" alt=""></a>
+            <a class="py-2" href="https://tneos.in/"><img src="{{ url('/') }}/storage/{{setting('site.logo')}}" class="img-fluid" style="max-width:40%; height: auto;" alt=""></a>
 
         </div>
         <div class="col-6 col-md">
@@ -275,7 +275,6 @@
 </script>
 
 <script>
-  <!-- Facebook Pixel Code -->
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
   n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -284,15 +283,12 @@
   t.src=v;s=b.getElementsByTagName(e)[0];
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '148934176920241');
+  fbq('init', '1190349511366987');
   fbq('track', 'PageView');
-//   fbq('track', 'Lead');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=148934176920241&ev=PageView&noscript=1"
+  src="https://www.facebook.com/tr?id=1190349511366987&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Facebook Pixel Code -->
-</script>
 </body>
 </html>
 

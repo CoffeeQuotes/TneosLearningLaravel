@@ -107,10 +107,6 @@ Route::get('/thankyoufreeebook', function() {
     return view('campaign.freeebookthankyou');
 });
 
-Route::get('/free-trial-classes', function() {
+Route::get('/freetrialclasses', function() {
     return view('campaign.freetrialclasses');
-});
-
-Route::get('/thankyou-free-trial-classes', function() {
-    return view('campaign.freeebookthankyou');
 });

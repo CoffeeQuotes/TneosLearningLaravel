@@ -6,7 +6,7 @@
     <meta name="description" content="{{setting('site.description')}}">
     <meta name="author" content="">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Free Ebook Capsule - Tneos Eduloution</title>
+    <title>Free Trial Classes  - Tneos Eduloution</title>
     <link rel="icon" href="{{asset("app-assets/img/core-img/favicon.ico")}}">
     <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -97,8 +97,8 @@
 
 <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
     <div class="col-md-5 p-lg-2 mx-auto my-2">
-        <h2 class="display-5 font-weight-normal">Free Ebook Capsules</h2>
-        <p class="lead font-weight-normal">Free Ebook Capsules Download Now</p>
+        <h2 class="display-5 font-weight-normal">Free Trial Classes </h2>
+        <p class="lead font-weight-normal">Free Trial Classes</p>
     </div>
 </div>
 <div class="container-fluid">
@@ -197,8 +197,8 @@
                     <input type="checkbox" class="form-check-input" id="exampleCheck1" value="1" name="agree_terms" checked>
                     <label class="form-check-label" for="exampleCheck1" >I would like to receive updates regarding my FREE class</label>
                      </div>
-                     <input type="hidden" name="type" value="Free Ebook Capsule 2020" />
-                <button type="submit" class="btn btn-block online-button  btn-success">Get Free Ebook</button>
+                     <input type="hidden" name="type" value="Free Trial Classes 2020" />
+                <button type="submit" class="btn btn-block online-button  btn-success">Get Free Trial Classes</button>
             </form>
         </div>
     </div>
@@ -207,8 +207,8 @@
             <div class="row">
                 <img src="{{asset('app-assets/img/campaign/funnel bookads.jpg')}}" alt="" style="width:100%; height: auto;"/>
                 <div class="col">
-                    <span class="display-5 d-block">Get Free Ebook</span>
-                    <p class="font-weight-bold font-italic text-secondary">Get Free Ebook</p>
+                    <span class="display-5 d-block">Get Free Trial Classes</span>
+                    <p class="font-weight-bold font-italic text-secondary">Get Free Trial Classes</p>
                 </div>
             </div>
         </div>
@@ -273,7 +273,7 @@
 }).change()
 });
 </script>
-
+{{--
 <script>
   <!-- Facebook Pixel Code -->
   !function(f,b,e,v,n,t,s)
@@ -291,8 +291,7 @@
 <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=148934176920241&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Facebook Pixel Code -->
-</script>
+<!-- End Facebook Pixel Code --> --}}
 </body>
 </html>
 
