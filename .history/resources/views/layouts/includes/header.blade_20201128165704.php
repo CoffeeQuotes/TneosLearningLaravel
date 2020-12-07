@@ -18,8 +18,6 @@
     <link rel="icon" href="{{asset("app-assets/img/core-img/favicon.ico")}}">
 
     <!-- Core Stylesheet -->
-    <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{{asset("app-assets/style.css")}}">
 
     @laravelPWA
