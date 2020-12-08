@@ -16,7 +16,10 @@
     <div class="row justify-content-center">
         <div class="col-xl-3 col-sm-6 col-12">
             <a href="{{ route('packages') }}">
-            <div class="card bg-primary px-2">
+            <div class="card bg-primary px-2" style="
+            background: linear-gradient(145deg, #006fe6, #0084ff);
+            box-shadow:  20px 20px 60px #0069d9,
+                         -20px -20px 60px #008dff;">
                 <div class="card-content">
                     <div class="card-body">
                         <div class="media d-flex">

@@ -46,7 +46,7 @@
                             </div>
                             <div class="login-content">
                                 <div id="app">
-                                    <nav class="navbar navbar-expand-md navbar-light" style="
+                                    <nav class="navbar navbar-expand-md navbar-light shadow-sm" style="
                                      border-radius: 50px;
                                      background: #152188;
                                      box-shadow:  20px 20px 60px #121c74, -20px -20px 60px #2abbdf !important;

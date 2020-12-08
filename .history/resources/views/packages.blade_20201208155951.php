@@ -50,8 +50,8 @@
                                 </span>
                                   <h5><span class="display-6 font-weight-bolder text-info">
                                     <img src="https://img.icons8.com/color/64/000000/rupee.png" width="32" height="32"/>
-                                    {{ $category->amount }}
-                                </span><strike class="font-weight-lighter text-secondary" style="font-weight: 200;"> ₹{{$category->amount + rand(2,100)}} </strike></h5>
+                                    {{ $category->amount }} /- only
+                                </span></h5>
                                 <div class="mx-auto">
                                     <span class="badge badge-success p-1 font-weight-lighter">
                                         {{ $category->board }}
@@ -107,7 +107,7 @@
                     <img src="{{Voyager::image($category->image)}}" class="card-img-top" alt="{{$category->name }}">
 
                         <span class="card-text p-2 font-weight-bold text-uppercase" style="color:#3c3c3c;"> {{$category->name }}</span>
-                         <h5><span class="display-6 font-weight-bolder text-info"><img src="https://img.icons8.com/color/64/000000/rupee.png" width="32" height="32"/> {{ $category->amount }} </span><strike class="font-weight-lighter text-secondary" style="font-weight: 400;">₹{{$category->amount + rand(2,100)}}</strike></h5>
+                         <h5><span class="display-6 font-weight-bolder text-info"><img src="https://img.icons8.com/color/64/000000/rupee.png" width="32" height="32"/> {{ $category->amount }}  /- only</span></h5>
                          <div class="mx-auto">
                          <span class="badge badge-success p-1 font-weight-lighter">{{ $category->board }}</span>
                             <span class="badge ml-2 mr-2 badge-danger p-1 font-weight-lighter" > {{ $category->class }}th class</span>

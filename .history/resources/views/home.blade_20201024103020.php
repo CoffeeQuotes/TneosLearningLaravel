@@ -41,7 +41,7 @@
                             <div class="align-self-center">
                                 <img src="https://img.icons8.com/emoji/48/000000/books-emoji.png"/>
                             </div>
-                            <div class="media-body text-right" >
+                            <div class="media-body text-right">
                                 <h3>{{ $user_subscribed->count() }}</h3>
                                 <span>Courses subscribed</span>
                             </div>
@@ -58,7 +58,7 @@
                             <div class="align-self-center">
                                 <img src="https://img.icons8.com/fluent/48/000000/click-and-collect.png"/>
                             </div>
-                            <div class="media-body text-right" >
+                            <div class="media-body text-right">
                                 <h3>{{ $user_purchased->count() }}</h3>
                                 <span>Courses purchased</span>
                             </div>
@@ -75,7 +75,7 @@
                             <div class="align-self-center">
                                 <img src="https://img.icons8.com/color/48/000000/online-support.png"/>
                             </div>
-                            <div class="media-body text-right" >
+                            <div class="media-body text-right">
                                 <h3>{{ $live_status->count() }}</h3>
                                 <span>Teacher's Live</span>
                             </div>

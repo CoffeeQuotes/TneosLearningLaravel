@@ -46,12 +46,10 @@
                             </div>
                             <div class="login-content">
                                 <div id="app">
-                                    <nav class="navbar navbar-expand-md navbar-light" style="
-                                     border-radius: 50px;
-                                     background: #152188;
-                                     box-shadow:  20px 20px 60px #121c74, -20px -20px 60px #2abbdf !important;
-                                     z-index: 1000;
-                                     ">
+                                    <nav class="navbar navbar-expand-md navbar-light shadow-sm" style="border-radius: 50px;
+                                    background: #152188;
+                                    box-shadow:  20px 20px 60px #121c74,
+                                                 -20px -20px 60px #18269c; border-radius: 2.0rem;  z-index: 1000">
                                         <div class="container">
                                             <a class="navbar-brand brand-desc d-none  d-sm-none d-md-block d-xl-block d-lg-block" href="{{ url('/freelivevideo') }}">
 

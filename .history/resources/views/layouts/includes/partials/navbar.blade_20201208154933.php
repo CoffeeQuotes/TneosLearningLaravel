@@ -4,6 +4,7 @@
             <div class="classy-nav-container breakpoint-off">
                 <div class="container">
                     <!-- Menu -->
+                    <a href="/"><img src="{{ url('/') }}/storage/{{setting('site.logo')}}" class="img-fluid" style="max-width: 40%;" alt=""></a>
                     <nav class="classy-navbar justify-content-between" id="academyNav">
 
                         <!-- Navbar Toggler -->
@@ -13,6 +14,7 @@
 
                         <!-- Menu -->
                         <div class="classy-menu">
+
                             <!-- close btn -->
                             <div class="classycloseIcon">
                                 <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>

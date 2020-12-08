@@ -13,6 +13,7 @@
 
                         <!-- Menu -->
                         <div class="classy-menu">
+                            <a href="/"><img src="{{ url('/') }}/storage/{{setting('site.logo')}}" class="img-fluid" style="max-width: 40%;" alt=""></a>
                             <!-- close btn -->
                             <div class="classycloseIcon">
                                 <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>

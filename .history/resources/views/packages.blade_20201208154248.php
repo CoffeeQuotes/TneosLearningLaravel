@@ -50,8 +50,8 @@
                                 </span>
                                   <h5><span class="display-6 font-weight-bolder text-info">
                                     <img src="https://img.icons8.com/color/64/000000/rupee.png" width="32" height="32"/>
-                                    {{ $category->amount }}
-                                </span><strike class="font-weight-lighter text-secondary" style="font-weight: 200;"> ₹{{$category->amount + rand(2,100)}} </strike></h5>
+                                    {{ $category->amount }} /- only
+                                </span></h5>
                                 <div class="mx-auto">
                                     <span class="badge badge-success p-1 font-weight-lighter">
                                         {{ $category->board }}
@@ -76,15 +76,7 @@
                                 <input type="hidden" name="amount" value="{{$category->amount}}">
                                 <input type="hidden" name="category_id" value="{{$category->id}}">
                                 <input type="hidden" name="slug" value="{{$category->slug}}">
-                                <button type="submit" class="btn btn-block btn-success" style="
-
-                                background: transparent linear-gradient(270deg,#42bb56,#81d690) 0 0 no-repeat padding-box;
-                                box-shadow: 0 10px 12px rgba(1,176,204,.270588);
-                                border-radius: 4px;
-                                letter-spacing: .48px;
-                                color: #fff;
-                                border: none;
-                             ">Buy Now</button>
+                                <button type="submit" class="btn btn-block btn-success">Buy Now</button>
                             </form>
                         </div>
                     </div>
@@ -107,7 +99,7 @@
                     <img src="{{Voyager::image($category->image)}}" class="card-img-top" alt="{{$category->name }}">
 
                         <span class="card-text p-2 font-weight-bold text-uppercase" style="color:#3c3c3c;"> {{$category->name }}</span>
-                         <h5><span class="display-6 font-weight-bolder text-info"><img src="https://img.icons8.com/color/64/000000/rupee.png" width="32" height="32"/> {{ $category->amount }} </span><strike class="font-weight-lighter text-secondary" style="font-weight: 400;">₹{{$category->amount + rand(2,100)}}</strike></h5>
+                         <h5><span class="display-6 font-weight-bolder text-info"><img src="https://img.icons8.com/color/64/000000/rupee.png" width="32" height="32"/> {{ $category->amount }}  /- only</span></h5>
                          <div class="mx-auto">
                          <span class="badge badge-success p-1 font-weight-lighter">{{ $category->board }}</span>
                             <span class="badge ml-2 mr-2 badge-danger p-1 font-weight-lighter" > {{ $category->class }}th class</span>
@@ -124,16 +116,7 @@
                              <input type="hidden" name="category_id" value="{{$category->id}}">
                              <input type="hidden" name="slug" value="{{$category->slug}}">
 {{--                             href="/pack/{{$category->slug}}"  --}}
-                             <button type="submit"  class="btn btn-block btn-success" style="
-
-                                background: transparent linear-gradient(270deg,#42bb56,#81d690) 0 0 no-repeat padding-box;
-                                box-shadow: 0 10px 12px rgba(1,176,204,.270588);
-                                border-radius: 4px;
-                                letter-spacing: .48px;
-                                color: #fff;
-
-                                border: none;
-                             ">Buy Now</button>
+                             <button type="submit"  class="btn btn-block btn-success">Buy Now</button>
                          </form>
                     </div>
 

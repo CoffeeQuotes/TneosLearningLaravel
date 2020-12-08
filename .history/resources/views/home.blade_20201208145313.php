@@ -23,7 +23,10 @@
                             <div class="align-self-center">
                                 <img src="https://img.icons8.com/fluent/48/000000/video.png"/>
                             </div>
-                            <div class="media-body text-right">
+                            <div class="media-body text-right" style="border-radius: 50px;
+                            background: linear-gradient(145deg, #006fe6, #0084ff);
+                            box-shadow:  20px 20px 60px #0069d9,
+                                         -20px -20px 60px #008dff;">
                                 <h3>{{ $categories->count() }}</h3>
                                 <span>Browse Our Courses</span>
                             </div>

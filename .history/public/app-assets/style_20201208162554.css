@@ -2158,3 +2158,16 @@ element.style {
 	color: #000000!important;
 }
 
+.tnlite-badge {
+    border-radius: 4px;
+    display: inline-block;
+    padding: .4rem .8rem;
+    white-space: nowrap;
+}
+.tnlite-heading-xs {
+    font-family: sf pro display,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -.02rem;
+    font-size: .2rem;
+}

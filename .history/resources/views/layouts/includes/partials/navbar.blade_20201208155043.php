@@ -20,6 +20,7 @@
 
                             <!-- Nav Start -->
                             <div class="classynav">
+                                <a href="/"><img src="{{ url('/') }}/storage/{{setting('site.logo')}}" class="img-fluid" style="max-width: 40%;" alt=""></a>
                                  <a class="pl-2" href="/packages">Buy Course</a>
                                   <div class="dropdown">
                                  <a class="dropdown-toggle mx-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
