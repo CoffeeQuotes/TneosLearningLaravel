@@ -25,10 +25,7 @@
         </div>
 
 
-        <div class="d-flex flex-wrap justify-content-center">
-            @if (count($lives) === 0)
-                <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_rc6CDU.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
-            @endif
+        <div class="d-flex flex-wrap">
             @foreach($lives as $life)
                 <div class="p-2">
                         <div class="card life-card mb-4 shadow-lg" style="width: 12.5rem;">
@@ -57,12 +54,11 @@
                                         </svg>
                                     </div>
                                     <div>
-                                    <div class="card-title mb-0 videotitle text-info p-1" data-toggle="tooltip" data-placement="top" title="{{$life->title}}">{{\Illuminate\Support\Str::limit($life->title, 28, $end='...')}}</div>
-                                    <div class="ml-1 d-flex flex-wrap content-justify-between">
-                                        <p class="p-0 m-0 mr-auto" style="font-size: 11px; color: #73726c;">{{$life->board}}</p>
-                                        <p class="p-0 mx-2 m-0" style="font-size: 9px; color: #73726c;">{{$life->subject}}</p>
+                                    <div class="card-title mb-0 videotitle text-info p-1">{{\Illuminate\Support\Str::limit($life->title, 48, $end='...')}}</div>
+                                    <div>
+                                        <p class="p-0 m-0">{{$life->board}}</p>
+                                        <p class="p-0 m-0">{{$life->subject}}</p>
                                     </div>
-                                    <p class="p-0 mx-1 m-0"  style="font-size: 9px; color: #73726c;">{{$life->created_at->diffForHumans()}}</p>
                                 </div>
                                 </div>
                                     <!--{!! Str::of($life->description)->limit(140,'(...)') !!}-->

@@ -21,8 +21,7 @@ body {
     background: url("img/bg-img/cream_dust.png") repeat 0 0;
 	font-family: "Roboto", sans-serif;
 	font-size: 14px;
-    font-weight: 300;
-    background-color: #fefefe;
+	font-weight: 300;
 }
 h1,h2,h3,h4,h5,h6 {
 	color: #fefefe;
@@ -1634,7 +1633,7 @@ p, div {
 .life-card {
 	/* background-color: #81C3D7;
 	*/
-	height: 240px;
+	height: 280px;
 	overflow: hidden;
 	/*border-radius: 1.6rem;
 	*/
@@ -2159,24 +2158,11 @@ element.style {
 	color: #000000!important;
 }
 
-.custom-shape-divider-bottom-1607487037 {
+.custom-shape-divider-top-1607485534 {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
 }
-
-.custom-shape-divider-bottom-1607487037 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-1607487037 .shape-fill {
-    fill: #FFFFFF;
-}
-

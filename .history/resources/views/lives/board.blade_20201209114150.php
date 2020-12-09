@@ -62,7 +62,7 @@
                                         <p class="p-0 m-0 mr-auto" style="font-size: 11px; color: #73726c;">{{$life->board}}</p>
                                         <p class="p-0 mx-2 m-0" style="font-size: 9px; color: #73726c;">{{$life->subject}}</p>
                                     </div>
-                                    <p class="p-0 mx-1 m-0"  style="font-size: 9px; color: #73726c;">{{$life->created_at->diffForHumans()}}</p>
+                                    <p class="p-0 mx-2 m-0"  style="font-size: 9px; color: #73726c;">{{$life->created_at->diffForHumans()}}</p>
                                 </div>
                                 </div>
                                     <!--{!! Str::of($life->description)->limit(140,'(...)') !!}-->

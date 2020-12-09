@@ -60,9 +60,9 @@
                                     <div class="card-title mb-0 videotitle text-info p-1" data-toggle="tooltip" data-placement="top" title="{{$life->title}}">{{\Illuminate\Support\Str::limit($life->title, 28, $end='...')}}</div>
                                     <div class="ml-1 d-flex flex-wrap content-justify-between">
                                         <p class="p-0 m-0 mr-auto" style="font-size: 11px; color: #73726c;">{{$life->board}}</p>
-                                        <p class="p-0 mx-2 m-0" style="font-size: 9px; color: #73726c;">{{$life->subject}}</p>
+                                        <p class="p-0 m-0" style="font-size: 9px; color: #73726c;">{{$life->subject}}</p>
                                     </div>
-                                    <p class="p-0 mx-1 m-0"  style="font-size: 9px; color: #73726c;">{{$life->created_at->diffForHumans()}}</p>
+                                    <p class="p-0 m-0"  style="font-size: 9px; color: #73726c;">{{$life->created_at->diffForHumans()}}</p>
                                 </div>
                                 </div>
                                     <!--{!! Str::of($life->description)->limit(140,'(...)') !!}-->

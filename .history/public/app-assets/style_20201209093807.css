@@ -1634,7 +1634,7 @@ p, div {
 .life-card {
 	/* background-color: #81C3D7;
 	*/
-	height: 240px;
+	height: 280px;
 	overflow: hidden;
 	/*border-radius: 1.6rem;
 	*/
@@ -2159,16 +2159,17 @@ element.style {
 	color: #000000!important;
 }
 
-.custom-shape-divider-bottom-1607487037 {
+.custom-shape-divider-bottom-1607486841 {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
+    transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1607487037 svg {
+.custom-shape-divider-bottom-1607486841 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
@@ -2176,7 +2177,6 @@ element.style {
     transform: rotateY(180deg);
 }
 
-.custom-shape-divider-bottom-1607487037 .shape-fill {
+.custom-shape-divider-bottom-1607486841 .shape-fill {
     fill: #FFFFFF;
 }
-

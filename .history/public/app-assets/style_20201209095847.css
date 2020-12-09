@@ -1634,7 +1634,7 @@ p, div {
 .life-card {
 	/* background-color: #81C3D7;
 	*/
-	height: 240px;
+	height: 280px;
 	overflow: hidden;
 	/*border-radius: 1.6rem;
 	*/
@@ -2179,4 +2179,13 @@ element.style {
 .custom-shape-divider-bottom-1607487037 .shape-fill {
     fill: #FFFFFF;
 }
-
+.circle {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    background: #000
+  }
