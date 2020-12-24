@@ -82,12 +82,12 @@
                   <!--  <span class="ml-4"><img src="{{asset('app-assets/img/core-img/Asset 2.png')}}" alt="" style="width: auto; height: 48vh;"></span>-->
                   <!--  <span class="ml-4"><img src="{{asset('app-assets/img/core-img/Asset 3.png')}}" alt="" style="width: auto; height: 48vh;"></span>-->
                   <!--  <span class="ml-4"><img src="{{asset('app-assets/img/core-img/Asset 4.png')}}" alt="" style="width: auto; height: 48vh;"></span>-->
-                 
+
                   <!--  <span class="ml-4"><img src="{{asset('app-assets/img/core-img/Asset 5.png')}}" alt="" style="width: auto; height: 48vh;"></span>-->
                   <!--<span class="ml-4"><img src="{{asset('app-assets/img/core-img/iconfinder_paytm_1220356.svg')}}" alt="" style="width: auto; height: 48vh;"></span>-->
                   <!--<span class="ml-4"><img src="{{asset('app-assets/img/core-img/google-pay-primary-logo.svg')}}" alt="" style="width: auto; height: 48vh;"></span>-->
                   <!--<span class="ml-4"><img src="{{asset('app-assets/img/core-img/phonepe-seeklogo.com.svg')}}" alt="" style="width: auto; height: 48vh;"></span>-->
-                  
+
 
 
 
@@ -97,24 +97,24 @@
 	  <div class="p-2 bd-highlight mx-2 " ><img src="{{asset('app-assets/img/core-img/UPI-Logo-vector.svg
 ')}}" alt="" style="width: auto; height: 4.6vh;">
 	  </div>
-	  
+
 	  <!--<div class="p-2 bd-highlight"><img src="{{asset('app-assets/img/core-img/Maestro_2016.svg')}}" alt="" style="width: auto; height: 4.6vh;">-->
 	  <!--</div>-->
-	  
+
 	  <!--<div class="p-2 bd-highlight mx-2"><img src="{{asset('app-assets/img/core-img/paypal.svg')}}" alt="" style="width: auto; height: 4.6vh;">-->
 	  <!--</div>-->
 	  <div class="p-2 bd-highlight mx-2"><img src="{{asset('app-assets/img/core-img/visa.svg')}}" alt="" style="width: auto; height: 4.6vh;"></div>
-	  
+
 	  <div class="p-2 bd-highlight mx-2"><img src="{{asset('app-assets/img/core-img/Rupay.svg')}}" alt="" style="width: auto; height: 4.6vh;"></div>
-	  
+
   	  <div class="p-2 bd-highlight mx-2"><img src="{{asset('app-assets/img/core-img/mc_symbol.svg')}}" alt="" style="width: auto; height: 4.6vh;"></div>
       <!--<div class="p-2 bd-highlight mx-2"><img src="{{asset('app-assets/img/core-img/Asset 6.png')}}" alt="" style="width: auto; height: 4.6vh;"></div>-->
-      
+
       <div class="p-2 bd-highlight mx-2"><img src="{{asset('app-assets/img/core-img/paytm.svg
 ')}}" alt="" style="width: auto; height: 4.6vh;"></div>
 
   <div class="p-2 bd-highlight mx-2"><img src="{{asset('app-assets/img/core-img/google-pay-primary-logo.svg')}}" alt="" style="width: auto; height: 4.6vh;"></div>
-  
+
   <div class="p-2 bd-highlight mx-2"><img src="{{asset('app-assets/img/core-img/phonepe.svg')}}" alt="" style="width: auto; height: 4.6vh;"></div>
 
             </div>
@@ -182,10 +182,10 @@
             </div>
         </div>
 <!-- ##### Footer Area Start ##### -->
-
 <!-- ##### All Javascript Script ##### -->
 <!-- jQuery-2.2.4 js -->
 <script src="{{asset("app-assets/js/jquery/jquery-2.2.4.min.js")}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 <!-- Popper js -->
 <script src="{{asset("app-assets/js/bootstrap/popper.min.js")}}"></script>
 <!-- Bootstrap js -->
@@ -194,6 +194,9 @@
 <script src="{{asset("app-assets/js/plugins/plugins.js")}}"></script>
 <!-- Active js -->
 <script src="{{asset("app-assets/js/active.js")}}"></script>
+
+<script src="{{asset("app-assets/js/particles.js")}}"></script>
+<script src="{{asset("app-assets/js/customSnowFall.js")}}"></script>
 </body>
 
 </html>

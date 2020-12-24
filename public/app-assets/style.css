@@ -2179,4 +2179,9 @@ element.style {
 .custom-shape-divider-bottom-1607487037 .shape-fill {
     fill: #FFFFFF;
 }
+.single-testimonial-area .testimonial-thumb img {
+    background: linear-gradient(145deg, #a8c7cc, #c8ecf3);
+    box-shadow: 20px 20px 60px #9fbcc1, -20px -20px 60px #d7feff;
+    padding: 5px;
+}
 

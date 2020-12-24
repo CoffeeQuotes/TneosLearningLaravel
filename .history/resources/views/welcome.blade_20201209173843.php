@@ -1,55 +1,12 @@
 
 @extends('layouts.app')
 @section('page_title','Welcome, Join Tneos Eduloution')
+
 @section('content')
-  <style>
- #SnowFall {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    pointer-events: none;
-    z-index: 1000;
- }
 
-  </style>
-  <!-- ##### Hero Area Start ##### -->
-  <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" style="background: #FDAF52;  outline: 0!important; border: 0; position: absolute; top: 660px; z-index: 2000;">
-Hey 😋, We have <br/>Something For you!  </button>
 
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content" style="background: #FDAF52;">
-        <button type="button" class="close p-1" style="width:20px!important;" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <div class="container"  style="background-image: url({{asset("app-assets/img/core-img/child-book.png")}}); backround-position: center center;  background-repeat: no-repeat;  background-size: cover;">
-            <div class="row">
-                <div class="col">
-                    <h5 class="modal-title py-4" id="exampleModalCenterTitle text-dark"  style="color: #222222; font-weight: bold;">Tneos Learning App <img src="https://twemoji.maxcdn.com/v/12.1.3/72x72/1f929.png" class="emoji"></h5>
-                    <a href="https://play.google.com/store/apps/details?id=com.tneos.tneos_eduloution"><img src="{{asset("app-assets/img/core-img/google-play-badge.png")}}" class="img-responsive mt-5 pt-5"/></a>
-                </div>
-                <div class="col">
-                <img class="img-responsive" src="{{asset("app-assets/img/core-img/screenshot.png")}}"/>
-                <blockquote class="blockquote">
-                    <p class="mb-0"><q> Best app for academy </q></p>
-                    <footer class="blockquote-footer"><cite title="Source Title" style="color: rgb(6, 103, 86);">Awadhesh Kumar</cite></footer>
-                  </blockquote>
-                </div>
-            </div>
-          </div>
-        </div>
-    </div>
-  </div>
-  <div id="SnowFall">
-  </div>
-    <!-- ##### Hero Area End ##### -->
-
-    <!-- ##### Top Carousel -->
-    <section   class="hero-area" style="background-image: url({{asset("app-assets/img/core-img/banner-bg-01.png")}});  background-position: center center; background-repeat: no-repeat;  background-attachment: fixed; background-size: cover;">
+    <!-- ##### Hero Area Start ##### -->
+    <section class="hero-area"    style="background-image: url({{asset("app-assets/img/bg-img/bg-try3.jpg")}});  background-position: center center; background-repeat: no-repeat;  background-attachment: fixed; background-size: cover;">
         <div class="hero-slides owl-carousel">
             <!-- Single Hero Slide -->
             <div class="single-hero-slide bg-img "
@@ -59,7 +16,7 @@ Hey 😋, We have <br/>Something For you!  </button>
                         <div class="row  offset-1 pt-4">
                             <div class="col-md-4 pt-5">
                                 <div class="card  bg-transparent rounded hero-card" style="width: 16rem; ">
-                                    <img src="{{asset("app-assets/img/core-img/girl-santa.png")}}" class="card-img-top"
+                                    <img src="{{asset("app-assets/img/core-img/2.png")}}" class="card-img-top"
                                          alt="...">
                                     <div class="card-body bg-white m-0 ">
                                         <h5 class="card-title text-dark text-center pt-2"> Class 6th to 8th</h5>
@@ -80,7 +37,7 @@ Hey 😋, We have <br/>Something For you!  </button>
                         <div class="row  offset-1 pt-4">
                             <div class="col-md-4 pt-5">
                                 <div class="card  bg-transparent rounded hero-card" style="width: 16rem;">
-                                    <img src="{{asset("app-assets/img/core-img/boy-laptop.png")}}" class="card-img-top"
+                                    <img src="{{asset("app-assets/img/core-img/1.png")}}" class="card-img-top"
                                          alt="...">
                                     <div class="card-body bg-white m-0 text-center">
                                         <h5 class="card-title text-dark  pt-2">9th & 10th Class</h5>
@@ -103,7 +60,7 @@ Hey 😋, We have <br/>Something For you!  </button>
                         <div class="row  offset-1 pt-4">
                             <div class="col-md-4 pt-5">
                                 <div class="card  bg-transparent rounded hero-card" style="width: 16rem;">
-                                    <img src="{{asset("app-assets/img/core-img/childrens-xmas.png")}}" class="card-img-top"
+                                    <img src="{{asset("app-assets/img/core-img/studentcard.png")}}" class="card-img-top"
                                          alt="...">
                                     <div class="card-body  bg-white m-0 r text-dark">
                                         <h5 class="card-title text-dark text-center pt-2">Class 11th & 12th</h5>
@@ -120,20 +77,21 @@ Hey 😋, We have <br/>Something For you!  </button>
             </div>
         </div>
     </section>
+    <!-- ##### Hero Area End ##### -->
 
     <!-- ##### Top Feature Area Start ##### -->
-    <div class="top-features-area wow fadeInUp" data-wow-delay="300ms"  style="background-image: url({{asset("app-assets/img/core-img/small-banner-02.png")}});  background-position: center center; background-repeat: no-repeat;   background-size: cover;">
+    <div class="top-features-area wow fadeInUp" data-wow-delay="300ms">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="features-content" style="background: url({{asset("app-assets/img/core-img/small-banner.png")}})">
+                    <div class="features-content">
                         <div class="row no-gutters">
                             <!-- Single Top Features -->
                             <div class="col-12 col-md-4">
                                 <div class="single-top-features d-flex align-items-center justify-content-center">
                                     <!--<i class="icon-agenda-1"></i>-->
                                     <img src="https://img.icons8.com/plasticine/100/000000/address-book--v1.png" style="max-width:40px; height: auto;"/>
-                                    <h5 class="text-white" style="color: #fefefe!important;">Online Courses</h5>
+                                    <h5 class="text-info">Online Courses</h5>
                                 </div>
                             </div>
                             <!-- Single Top Features -->
@@ -141,7 +99,7 @@ Hey 😋, We have <br/>Something For you!  </button>
                                 <div class="single-top-features d-flex align-items-center justify-content-center">
                                     <img src="https://img.icons8.com/clouds/100/000000/classroom.png" style="max-width:40px; height: auto;"/>
                                     <!--<i class="icon-assistance"></i>-->
-                                    <h5 class="text-white" style="color: #fefefe!important;">Amazing Teachers</h5>
+                                    <h5 class="text-info">Amazing Teachers</h5>
                                 </div>
                             </div>
                             <!-- Single Top Features -->
@@ -149,7 +107,7 @@ Hey 😋, We have <br/>Something For you!  </button>
                                 <div class="single-top-features d-flex align-items-center justify-content-center">
                                     <img src="https://img.icons8.com/fluent/96/000000/customer-support.png" style="max-width:40px; height: auto;"/>
                                     <!--<i class="icon-telephone-3"></i>-->
-                                    <h5 class="text-white" style="color: #fefefe!important;">Great Support</h5>
+                                    <h5 class="text-info">Great Support</h5>
                                 </div>
                             </div>
                         </div>
@@ -159,9 +117,10 @@ Hey 😋, We have <br/>Something For you!  </button>
         </div>
     </div>
     <!-- ##### Top Feature Area End ##### -->
+
     <!-- ##### Course Area Start ##### -->
-    <div class="academy-courses-area section-padding-100-0" style="background-image: url({{asset("app-assets/img/core-img/middle.png")}});  background-position: center center; background-repeat: no-repeat;  background-attachment: fixed; background-size: cover;">
-        <div class="container mt-5" >
+    <div class="academy-courses-area section-padding-100-0">
+        <div class="container">
             <div class="row">
                 <!-- Single Course Area -->
                 <div class="col-12 col-sm-6 col-lg-4">
@@ -261,7 +220,7 @@ Hey 😋, We have <br/>Something For you!  </button>
                         <div class="testimonial-thumb">
                             <img src="{{asset("app-assets/img/bg-img/t5.jpeg")}}" alt="">
                         </div>
-                        <div class="testimonial-content py-4">
+                        <div class="testimonial-content">
                             <h5>Great teachers</h5>
                             <p>Everyone here works together to achieve one common goal…what is best for our children. As a family, we are proud to be part of the Tneos Eduloutions.</p>
                             <h6><span>Asha Sharma,</span> Parent</h6>
@@ -277,26 +236,10 @@ Hey 😋, We have <br/>Something For you!  </button>
                         <div class="testimonial-thumb">
                             <img src="{{asset("app-assets/img/bg-img/t4.png")}}" alt="">
                         </div>
-                        <div class="testimonial-content py-4">
+                        <div class="testimonial-content">
                             <h5>Easy and user friendly courses</h5>
                             <p>Tneos video has helped me to understand Science better than ever.</p>
                             <h6><span>Aanand,</span> Student</h6>
-                        </div>
-                    </div>
-                </div>
-                 <!-- Single Testimonials Area -->
-                <div class="col-12 col-md-6">
-                    <div class="p-2 single-testimonial-area mb-100 d-flex wow fadeInUp" data-wow-delay="700ms" style="border-radius: 20px;
-                    background: linear-gradient(145deg, #b6d8df, #d8ffff);
-                    box-shadow:  20px 20px 60px #acccd3,
-                                 -20px -20px 60px #e8ffff;">
-                        <div class="testimonial-thumb">
-                            <img src="{{asset("app-assets/img/bg-img/t2.png")}}" alt="">
-                        </div>
-                        <div class="testimonial-content py-4">
-                            <h5>One good academy</h5>
-                            <p>“The teachers get to know your children as individuals and push them to levels they can and should achieve.</p>
-                            <h6><span>Neeru Gupta,</span> Parent</h6>
                         </div>
                     </div>
                 </div>
@@ -309,7 +252,7 @@ Hey 😋, We have <br/>Something For you!  </button>
                         <div class="testimonial-thumb">
                             <img src="{{asset("app-assets/img/bg-img/t3.png")}}" alt="">
                         </div>
-                        <div class="testimonial-content py-4">
+                        <div class="testimonial-content">
                             <h5>I just love the courses here</h5>
                             <p>We are impressed by the encouragement and support of all the faculty that helps each student keep up with, and enjoy, the academic rigor. The children are truly set up for success in future education.</p>
                             <h6><span>jyoti Nigam,</span> Parent</h6>
@@ -317,7 +260,21 @@ Hey 😋, We have <br/>Something For you!  </button>
                     </div>
                 </div>
                 <!-- Single Testimonials Area -->
-
+                <div class="col-12 col-md-6">
+                    <div class="p-2 single-testimonial-area mb-100 d-flex wow fadeInUp" data-wow-delay="700ms" style="border-radius: 20px;
+                    background: linear-gradient(145deg, #b6d8df, #d8ffff);
+                    box-shadow:  20px 20px 60px #acccd3,
+                                 -20px -20px 60px #e8ffff;">
+                        <div class="testimonial-thumb">
+                            <img src="{{asset("app-assets/img/bg-img/t2.png")}}" alt="">
+                        </div>
+                        <div class="testimonial-content">
+                            <h5>One good academy</h5>
+                            <p>“The teachers get to know your children as individuals and push them to levels they can and should achieve.</p>
+                            <h6><span>Neeru Gupta,</span> Parent</h6>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="row">
                 <div class="col-12 pb-5 mb-5">
@@ -464,6 +421,7 @@ Hey 😋, We have <br/>Something For you!  </button>
             </div>
         </div>
     </div>
+
     <!-- ##### CTA Area End ##### -->
 {{-- <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">

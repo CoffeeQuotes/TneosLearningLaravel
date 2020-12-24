@@ -22,6 +22,7 @@
     <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{{asset("app-assets/style.css")}}">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     @laravelPWA
 </head>
 
@@ -32,10 +33,10 @@
     </div> -->
 
     <!-- ##### Header Area Start ##### -->
-    <header class="header-area">
+    <header class="header-area" style=" background-image: url({{asset("app-assets/img/core-img/small-banner.png")}});   background-size: cover;">
 
         <!-- Top Header Area -->
-        <div class="top-header">
+        <div  class="top-header">
             <div class="container h-100">
                 <div class="row h-100">
                     <div class="col-12 h-100">
