@@ -133,7 +133,7 @@ Hey 😋, We have <br/>Something For you!  </button>
                                 <div class="single-top-features d-flex align-items-center justify-content-center">
                                     <!--<i class="icon-agenda-1"></i>-->
                                     <img src="https://img.icons8.com/plasticine/100/000000/address-book--v1.png" style="max-width:40px; height: auto;"/>
-                                    <h5 class="text-white" style="color: #fefefe!important;">Online Courses</h5>
+                                    <a href="/packages"><h5 class="text-white" style="color: #fefefe!important;">Online Courses</h5></a>
                                 </div>
                             </div>
                             <!-- Single Top Features -->

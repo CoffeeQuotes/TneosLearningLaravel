@@ -61,7 +61,7 @@
                                 </div>
                                  <ul>
                                     <li>
-                                <a type="button"  data-toggle="modal" data-target="#exampleModalCenter">
+                                <a type="button"  data-toggle="modal" data-target="#exampleCenter">
                                     Contact Us
                                 </a>
                                 </ul></li>

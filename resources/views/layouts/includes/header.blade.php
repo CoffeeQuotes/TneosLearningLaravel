@@ -23,6 +23,10 @@
     <link rel="stylesheet" href="{{asset("app-assets/style.css")}}">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    {{-- <script async src='https://www.buildquickbots.com/gsui/js/embedScript/gs_wa_widget.js' data-appid='34a5f3a5-13d3-475a-855a-f4cb0106b15c' data-appname='TneosCare' data-source='WEB' data-env='PROD' data-lang='en_US'></script> --}}
+
     @laravelPWA
 </head>
 
@@ -31,7 +35,15 @@
     <!-- <div id="preloader">
         <i class="circle-preloader"></i>
     </div> -->
+    <script>
+        var msg = '{{Session::get('alert')}}';
+        var exist = '{{Session::has('alert')}}';
+        if(exist){
+        //   alert(msg);
+          swal("Good job!", msg, "success");
 
+        }
+      </script>
     <!-- ##### Header Area Start ##### -->
     <header class="header-area" style=" background-image: url({{asset("app-assets/img/core-img/small-banner.png")}});   background-size: cover;">
 

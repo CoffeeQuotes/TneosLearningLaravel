@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Request;
+use App\Contact;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -114,3 +115,19 @@ Route::get('/free-trial-classes', function() {
 Route::get('/thankyou-free-trial-classes', function() {
     return view('campaign.freeebookthankyou');
 });
+
+Route::get('/teachers', function() {
+    return view('ourteachers');
+});
+
+Route::post('/contact', function()  {
+    $contact = new Contact;
+    $contact->firstname = request('firstname');
+    $contact->lastname = request('lastname');
+    $contact->email = request('email');
+    $contact->phone = request('phone');
+    $contact->message = request('message');
+
+    $contact->save();
+    return redirect()->back() ->with('alert', 'Thanks for contacting us! Our customer support will contact you very soon. 🙂');
+})->name('contactus');
