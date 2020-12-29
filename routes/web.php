@@ -2,7 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Request;
+use Illuminate\Support\Carbon;
 use App\Contact;
+use App\Post;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,9 +24,35 @@ Route::get('/', function () {
 
 
 Route::get('/posts', function () {
-    $posts = App\Post::all();
-    return view('post', compact('posts'));
+    $featuredPosts = Post::where([
+        ['featured', '=', '1'],
+        ['status', '=', 'PUBLISHED'],
+    ])->whereDate('created_at', '<=', Carbon::now())
+        ->limit(4)
+        ->orderBy('created_at', 'desc')
+        ->get();
+
+    $recentPosts = Post::where([
+        ['status', '=', 'PUBLISHED'],
+    ])->whereDate('created_at', '<=', Carbon::now())
+        ->limit(4)
+        ->orderBy('created_at', 'desc')
+        ->get();
+    $posts = Post::all();
+      return view('posts.posts', compact('featuredPosts', 'recentPosts', 'posts'));
+    // $posts = App\Post::all();
+    // return view('posts.posts', compact('posts'));
 });
+Route::get('/posts/{category}', function($category) {
+    $categoryByPost = Post::where('category_id', $category)
+                      ->orderBy('created_at', 'desc')
+                      ->get();
+    return  view('posts.categorypost', compact('categoryByPost'));
+});
+Route::get('/post/{slug}', function($slug) {
+    $post = Post::where('slug', '=', $slug)->firstOrFail();
+    return view('posts.post', compact('post'));
+})->name('posts.post');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
