@@ -91,15 +91,20 @@ Route::get('/profile/create','ProfileController@create')->middleware('auth')->na
 Route::get('/profile/edit/{id}','ProfileController@edit')->middleware('auth')->name('profile.edit');
 Route::post('/profile/update/{id}','ProfileController@update')->middleware('auth')->name('profile.update');
 
-// Search Courses
+// Search Section
+//____________________________________________________________________________________________________________//
+
+// 1. Search Courses
 Route::any('/search',function(){
     $q = Request::input('q');
     $course = \App\Category::where('name','LIKE','%'.$q.'%')->orWhere('slug','LIKE','%'.$q.'%')->get();
     if(count($course) > 0)
-        return view('course_res')->withDetails($course)->withQuery ( $q );
-    else return view ('course_res')->withMessage('No Details found. Try to search again !');
+        return view('search.course_res')->withDetails($course)->withQuery ( $q );
+    else return view ('search.course_res')->withMessage('No Details found. Try to search again !');
 });
 
+
+//______________________________________________________________________________________________________________//
 // Career Page
 Route::get('/career', function() {
     $career = \App\Career::all();
