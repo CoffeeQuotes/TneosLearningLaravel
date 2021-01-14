@@ -5,7 +5,6 @@ use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Carbon;
 use App\Contact;
 use App\Post;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -39,14 +38,14 @@ Route::get('/posts', function () {
         ->orderBy('created_at', 'desc')
         ->get();
     $posts = Post::all();
-      return view('posts.posts', compact('featuredPosts', 'recentPosts', 'posts'));
+    return view('posts.posts', compact('featuredPosts', 'recentPosts', 'posts'));
     // $posts = App\Post::all();
     // return view('posts.posts', compact('posts'));
 });
 Route::get('/posts/{category}', function($category) {
     $categoryByPost = Post::where('category_id', $category)
-                      ->orderBy('created_at', 'desc')
-                      ->get();
+        ->orderBy('created_at', 'desc')
+        ->get();
     return  view('posts.categorypost', compact('categoryByPost'));
 });
 Route::get('/post/{slug}', function($slug) {
@@ -63,8 +62,8 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('page/{slug}', function($slug){
-	$page = App\Page::where('slug', '=', $slug)->firstOrFail();
-	return view('page', compact('page'));
+    $page = App\Page::where('slug', '=', $slug)->firstOrFail();
+    return view('page', compact('page'));
 });
 
 
@@ -115,7 +114,7 @@ Route::get('/board/{board}', function($board) {
 
 Route::get('study-materials/{board}', function($board) {
     $materials = \App\Material::where('board', $board)->get();
-     return view('study', compact('materials'));
+    return view('study', compact('materials'));
 });
 
 Route::get('freelivevideo', function() {
@@ -126,7 +125,19 @@ Route::get('/bookfreeonlineclass', 'CampaignController@create');
 Route::post('/campfire/store','CampaignController@store')->name('store_campaign');
 
 Route::get('/course_error', function () {
-   return view('errors.coursebug');
+    return view('errors.coursebug');
+});
+
+Route::get('/privacypolicy', function() {
+    return view('privacypolicy');
+});
+
+Route::get('/terms', function() {
+    return view('terms');
+});
+
+Route::get('/disclaimer', function() {
+    return view('disclaimer');
 });
 
 Route::get('/freeebook', function() {
@@ -142,7 +153,7 @@ Route::get('/free-trial-classes', function() {
 });
 
 Route::get('/thankyou-free-trial-classes', function() {
-    return view('campaign.freeebookthankyou');
+    return view('campaign.freetrialclassesthankyou');
 });
 
 Route::get('/teachers', function() {
@@ -158,5 +169,13 @@ Route::post('/contact', function()  {
     $contact->message = request('message');
 
     $contact->save();
-    return redirect()->back() ->with('alert', 'Thanks for contacting us! Our customer support will contact you very soon. 🙂');
+    return redirect()->back() ->with('alert', 'Thanks for contacting us! Our customer support will contact you very soon. ðŸ™‚');
 })->name('contactus');
+
+Route::get('/website-terms', function () {
+    return view('extra.terms');
+});
+
+Route::get('/contact-us', function () {
+    return view("extra.contact");
+});

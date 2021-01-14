@@ -12,7 +12,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Title -->
-{{--    <title>{{ config('app.name', 'Laravel') }} </title>--}}
+    {{--    <title>{{ config('app.name', 'Laravel') }} </title>--}}
     <title>@yield('page_title', setting('site.title') . " - " . setting('site.description'))</title>
     <!-- Favicon -->
     <link rel="icon" href="{{asset("app-assets/img/core-img/favicon.ico")}}">
@@ -23,101 +23,100 @@
     <link rel="stylesheet" href="{{asset("app-assets/style.css")}}">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    {{-- <script async src='https://www.buildquickbots.com/gsui/js/embedScript/gs_wa_widget.js' data-appid='34a5f3a5-13d3-475a-855a-f4cb0106b15c' data-appname='TneosCare' data-source='WEB' data-env='PROD' data-lang='en_US'></script> --}}
-
     @laravelPWA
 </head>
 
 <body>
-    <!-- ##### Preloader ##### -->
-    <!-- <div id="preloader">
-        <i class="circle-preloader"></i>
-    </div> -->
-    <script>
-        var msg = '{{Session::get('alert')}}';
-        var exist = '{{Session::has('alert')}}';
-        if(exist){
+<!-- ##### Preloader ##### -->
+<!-- <div id="preloader">
+    <i class="circle-preloader"></i>
+</div> -->
+<script>
+    var msg = '{{Session::get('alert')}}';
+    var exist = '{{Session::has('alert')}}';
+    if(exist){
         //   alert(msg);
-          swal("Good job!", msg, "success");
+        swal("Good job!", msg, "success");
 
-        }
-      </script>
-    <!-- ##### Header Area Start ##### -->
-    <header class="header-area" style=" background-image: url({{asset("app-assets/img/core-img/small-banner.png")}});   background-size: cover;">
+    }
+</script>
+<!-- ##### Header Area Start ##### -->
+<header class="header-area"  style=" background-image: url({{asset("app-assets/img/core-img/small-banner.png")}});   background-size: cover;  background-color: #333333; background-blend-mode: overlay; ">
 
-        <!-- Top Header Area -->
-        <div  class="top-header">
-            <div class="container h-100">
-                <div class="row h-100">
-                    <div class="col-12 h-100">
-                        <div class="header-content h-100 d-flex align-items-center justify-content-between">
-                            <div class="academy-logo">
-                                {{-- <a href="index.html"><img src="{{asset("app-assets/img/core-img/brand2.png")}}" alt=""></a> --}}
+    <!-- Top Header Area -->
+    <div class="top-header">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-12 h-100">
+                    <div class="header-content h-100 d-flex align-items-center justify-content-between">
+                        <div class="academy-logo">
+                            {{-- <a href="index.html"><img src="{{asset("app-assets/img/core-img/brand2.png")}}" alt=""></a> --}}
                             <a href="/"><img src="{{ url('/') }}/storage/{{setting('site.logo')}}" class="img-fluid" style="max-width: 40%;" alt=""></a>
-                            </div>
-                            <div class="login-content">
-                                <div id="app">
-                                    <nav class="navbar navbar-expand-md navbar-light" style="
+                        </div>
+                        <div class="login-content">
+                            <div id="app">
+                                <nav class="navbar navbar-expand-md navbar-light" style="
                                      border-radius: 50px;
                                      background: #152188;
-                                     box-shadow:  20px 20px 60px #121c74, -20px -20px 60px #2abbdf !important;
-                                     z-index: 1000;
-                                     ">
-                                        <div class="container">
-                                            <a class="navbar-brand brand-desc d-none  d-sm-none d-md-block d-xl-block d-lg-block" href="{{ url('/freelivevideo') }}">
+                                     {{--box-shadow:  20px 20px 60px #121c74, -20px -20px 60px #2abbdf !important;
+                                     z-index: 1000; --}}
+                                    ">
+                                    <div class="container">
+                                        <a class="navbar-brand brand-desc d-none  d-sm-none d-md-block d-xl-block d-lg-block" href="{{ url('/freelivevideo') }}">
 
-                                                {{ setting('site.description') }}
-                                            </a>
-                                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                                                <span class="navbar-toggler-icon"></span>
-                                            </button>
+                                            {{ setting('site.description') }}
+                                        </a>
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
 
-                                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                                <!-- Left Side Of Navbar -->
-                                                <ul class="navbar-nav mr-auto">
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                            <!-- Left Side Of Navbar -->
+                                            <ul class="navbar-nav mr-auto">
 
-                                                </ul>
+                                            </ul>
 
-                                                <!-- Right Side Of Navbar -->
-                                                <ul class="navbar-nav ml-auto">
-                                                    <!-- Authentication Links -->
-                                                    @guest
+                                            <!-- Right Side Of Navbar -->
+                                            <ul class="navbar-nav ml-auto">
+                                                <!-- Authentication Links -->
+                                                @guest
+                                                    <li class="nav-item">
+                                                        <a class="nav-link text-warning" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                                    </li>
+                                                    @if (Route::has('register'))
                                                         <li class="nav-item">
-                                                            <a class="nav-link text-warning" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                                            <a class="nav-link text-warning" href="{{ route('register') }}">{{ __('Register') }}</a>
                                                         </li>
-                                                        @if (Route::has('register'))
-                                                            <li class="nav-item">
-                                                                <a class="nav-link text-warning" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                                            </li>
-                                                        @endif
-                                                    @else
-                                                        <li class="nav-item dropdown">
-                                                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                                                {{ Auth::user()->name }}
+                                                    @endif
+                                                @else
+                                                    <li class="nav-item dropdown">
+                                                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                                            {{ Auth::user()->name }}
+                                                        </a>
+
+                                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                                            <a class="dropdown-item" href="{{ route('home') }}">Dashboard</a>
+
+                                                            <a class="dropdown-item" href="{{ route('logout') }}"
+                                                               onclick="event.preventDefault();
+                                                                                 document.getElementById('logout-form').submit();">
+                                                                {{ __('Logout') }}
                                                             </a>
 
-                                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                                                 <a class="dropdown-item" href="{{ route('home') }}">Dashboard</a>
 
-                                                                <a class="dropdown-item" href="{{ route('logout') }}"
-                                                                   onclick="event.preventDefault();
-                                                                                 document.getElementById('logout-form').submit();">
-                                                                    {{ __('Logout') }}
-                                                                </a>
-
-
-                                                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                                                    @csrf
-                                                                </form>
-                                                            </div>
-                                                        </li>
-                                                    @endguest
-                                                </ul>
-                                            </div>
+                                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                                                @csrf
+                                                            </form>
+                                                        </div>
+                                                    </li>
+                                                @endguest
+                                            </ul>
                                         </div>
-                                    </nav>
+                                    </div>
+                                </nav>
 
                             </div>
                         </div>
@@ -128,15 +127,15 @@
 
         @include('layouts.includes.partials.navbar')
     </div>
-<!-- Calling Info -->
-<div class="calling-info">
-    <div class="call-center">
-        <a href="tel:+91{{setting('site.customer_care')}}"><i class="icon-telephone-2"></i> <span>(+91) {{setting('site.customer_care')}}</span></a>
+    <!-- Calling Info -->
+    <div class="calling-info">
+        <div class="call-center">
+            <a href="tel:+91{{setting('site.customer_care')}}"><i class="icon-telephone-2"></i> <span>(+91) {{setting('site.customer_care')}}</span></a>
+        </div>
     </div>
-</div>
-</nav>
-</div>
-</div>
-</div>
+    </nav>
+    </div>
+    </div>
+    </div>
 </header>
 <!-- ##### Header Area End ##### -->

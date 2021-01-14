@@ -1,65 +1,72 @@
 
 @extends('layouts.app')
 @section('page_title','Welcome, Join Tneos Eduloution')
+
 @section('content')
-  <style>
- #SnowFall {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    pointer-events: none;
-    z-index: 1000;
- }
+    <style>
+        #SnowFall {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+            z-index: 1000;
+        }
+    </style>
 
-  </style>
-  <!-- ##### Hero Area Start ##### -->
-  <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" style="background: #FDAF52;  outline: 0!important; border: 0; position: absolute; top: 660px; z-index: 2000;">
-Hey 😋, We have <br/>Something For you!  </button>
+    <!-- ##### Hero Area Start ##### -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" style="background: #FDAF52;  outline: 0!important; border: 0; position: absolute; top: 660px; z-index: 2000;">
+        Hey ðŸ˜‹, We have <br/>Something For you!  </button>
 
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content" style="background: #FDAF52;">
-        <button type="button" class="close p-1" style="width:20px!important;" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <div class="container"  style="background-image: url({{asset("app-assets/img/core-img/child-book.png")}}); backround-position: center center;  background-repeat: no-repeat;  background-size: cover;">
-            <div class="row">
-                <div class="col">
-                    <h5 class="modal-title py-4" id="exampleModalCenterTitle text-dark"  style="color: #222222; font-weight: bold;">Tneos Learning App <img src="https://twemoji.maxcdn.com/v/12.1.3/72x72/1f929.png" class="emoji"></h5>
-                    <a href="https://play.google.com/store/apps/details?id=com.tneos.tneos_eduloution"><img src="{{asset("app-assets/img/core-img/google-play-badge.png")}}" class="img-responsive mt-5 pt-5"/></a>
-                </div>
-                <div class="col">
-                <img class="img-responsive" src="{{asset("app-assets/img/core-img/screenshot.png")}}"/>
-                <blockquote class="blockquote">
-                    <p class="mb-0"><q> Best app for academy </q></p>
-                    <footer class="blockquote-footer"><cite title="Source Title" style="color: rgb(6, 103, 86);">Awadhesh Kumar</cite></footer>
-                  </blockquote>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="background: #FDAF52;">
+                <button type="button" class="close p-1" style="width:20px!important;" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="container"  style="background-image: url({{asset("app-assets/img/core-img/child-book.png")}}); backround-position: center center;  background-repeat: no-repeat;  background-size: cover;">
+                    <div class="row">
+                        <div class="col">
+                            <h6 class="modal-title py-4 pl-1" id="exampleModalCenterTitle text-dark"  style="color: #222222; font-weight: bold;">Tneos Learning App<img src="https://twemoji.maxcdn.com/v/12.1.3/72x72/1f929.png" class="emoji" width="30" height="30"></h6>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+
+                            <span class="ml-5 mt-5"><a href="https://play.google.com/store/apps/details?id=com.tneos.tneos_eduloution">
+                        <img  src="{{asset("app-assets/img/core-img/google-play-badge.png")}}" class="img-responsive mt-5 pt-5"/></a></span>
+                        </div>
+                        <div class="col">
+                            <img class="img-responsive ml-2" src="{{asset("app-assets/img/core-img/screenshot.png")}}"/>
+                            <blockquote class="blockquote">
+                                <p class="mb-0"><q> Best app for academy </q></p>
+                                <footer class="blockquote-footer"><cite title="Source Title" style="color: rgb(6, 103, 86);">Jain Morg</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
                 </div>
             </div>
-          </div>
         </div>
     </div>
-  </div>
-  <div id="SnowFall">
-  </div>
-    <!-- ##### Hero Area End ##### -->
 
-    <!-- ##### Top Carousel -->
-    <section   class="hero-area" style="background-image: url({{asset("app-assets/img/core-img/banner-bg-01.png")}});  background-position: center center; background-repeat: no-repeat;  background-attachment: fixed; background-size: cover;">
+    <div id="SnowFall"></div>
+
+    <section class="hero-area" style="background-image: url({{asset("app-assets/img/core-img/tneos-site-hero.png")}});
+        background-position: center center;
+        background-repeat: no-repeat;  background-size: cover;">
         <div class="hero-slides owl-carousel">
             <!-- Single Hero Slide -->
             <div class="single-hero-slide bg-img "
-              >
+            >
                 <div class="single-hero-slide bg-img">
                     <div class="container-fluid pt-4">
                         <div class="row  offset-1 pt-4">
                             <div class="col-md-4 pt-5">
                                 <div class="card  bg-transparent rounded hero-card" style="width: 16rem; ">
-                                    <img src="{{asset("app-assets/img/core-img/girl-santa.png")}}" class="card-img-top"
+                                    <img src="{{asset("app-assets/img/core-img/tneos-class-6th-girl-online-class.png")}}" class="card-img-top"
                                          alt="...">
                                     <div class="card-body bg-white m-0 ">
                                         <h5 class="card-title text-dark text-center pt-2"> Class 6th to 8th</h5>
@@ -80,14 +87,14 @@ Hey 😋, We have <br/>Something For you!  </button>
                         <div class="row  offset-1 pt-4">
                             <div class="col-md-4 pt-5">
                                 <div class="card  bg-transparent rounded hero-card" style="width: 16rem;">
-                                    <img src="{{asset("app-assets/img/core-img/boy-laptop.png")}}" class="card-img-top"
+                                    <img src="{{asset("app-assets/img/core-img/tneos-boy-taking-online-class.png
+")}}" class="card-img-top"
                                          alt="...">
                                     <div class="card-body bg-white m-0 text-center">
-                                        <h5 class="card-title text-dark  pt-2">9th & 10th Class</h5>
+                                        <h5 class="card-title text-dark pt-2">9th & 10th Class</h5>
                                         <p class="card-text font-weight-bold  text-center ">Get ready for the board
                                             examinations<br/>
-                                            &nbsp;
-                                        </p>
+                                            &nbsp;</p>
                                     </div>
 
                                     <a href="/packages" class="btn btn-info rounded-0 y">Learn More</a>
@@ -103,7 +110,7 @@ Hey 😋, We have <br/>Something For you!  </button>
                         <div class="row  offset-1 pt-4">
                             <div class="col-md-4 pt-5">
                                 <div class="card  bg-transparent rounded hero-card" style="width: 16rem;">
-                                    <img src="{{asset("app-assets/img/core-img/childrens-xmas.png")}}" class="card-img-top"
+                                    <img src="{{asset("app-assets/img/core-img/studentcard.png")}}" class="card-img-top"
                                          alt="...">
                                     <div class="card-body  bg-white m-0 r text-dark">
                                         <h5 class="card-title text-dark text-center pt-2">Class 11th & 12th</h5>
@@ -120,20 +127,21 @@ Hey 😋, We have <br/>Something For you!  </button>
             </div>
         </div>
     </section>
+    <!-- ##### Hero Area End ##### -->
 
     <!-- ##### Top Feature Area Start ##### -->
-    <div class="top-features-area wow fadeInUp" data-wow-delay="300ms"  style="background-image: url({{asset("app-assets/img/core-img/small-banner-02.png")}});  background-position: center center; background-repeat: no-repeat;   background-size: cover;">
+    <div class="top-features-area wow fadeInUp" data-wow-delay="300ms" style="background-image: url({{asset("app-assets/img/core-img/small-banner-02.png")}});  background-position: center center; background-repeat: no-repeat;   background-size: cover; ">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="features-content" style="background: url({{asset("app-assets/img/core-img/small-banner.png")}})">
+                    <div class="features-content"  style="background: url({{asset("app-assets/img/core-img/small-banner.png")}}); background-color: #333333; background-blend-mode: overlay;">
                         <div class="row no-gutters">
                             <!-- Single Top Features -->
                             <div class="col-12 col-md-4">
                                 <div class="single-top-features d-flex align-items-center justify-content-center">
                                     <!--<i class="icon-agenda-1"></i>-->
                                     <img src="https://img.icons8.com/plasticine/100/000000/address-book--v1.png" style="max-width:40px; height: auto;"/>
-                                    <a href="/packages"><h5 class="text-white" style="color: #fefefe!important;">Online Courses</h5></a>
+                                    <a href="/packages"><h5 class="text-white"  style="color: #fefefe!important;">Online Courses</h5></a>
                                 </div>
                             </div>
                             <!-- Single Top Features -->
@@ -141,7 +149,7 @@ Hey 😋, We have <br/>Something For you!  </button>
                                 <div class="single-top-features d-flex align-items-center justify-content-center">
                                     <img src="https://img.icons8.com/clouds/100/000000/classroom.png" style="max-width:40px; height: auto;"/>
                                     <!--<i class="icon-assistance"></i>-->
-                                    <h5 class="text-white" style="color: #fefefe!important;">Amazing Teachers</h5>
+                                    <a href="/teachers"><h5 class="text-white"  style="color: #fefefe!important;">Amazing Teachers</h5></a>
                                 </div>
                             </div>
                             <!-- Single Top Features -->
@@ -149,7 +157,7 @@ Hey 😋, We have <br/>Something For you!  </button>
                                 <div class="single-top-features d-flex align-items-center justify-content-center">
                                     <img src="https://img.icons8.com/fluent/96/000000/customer-support.png" style="max-width:40px; height: auto;"/>
                                     <!--<i class="icon-telephone-3"></i>-->
-                                    <h5 class="text-white" style="color: #fefefe!important;">Great Support</h5>
+                                    <h5 class="text-white"  style="color: #fefefe!important;">Great Support</h5>
                                 </div>
                             </div>
                         </div>
@@ -158,34 +166,39 @@ Hey 😋, We have <br/>Something For you!  </button>
             </div>
         </div>
     </div>
-    <!-- ##### Course Area Start ##### -->
-    <div class="academy-courses-area section-padding-100-0" style="background-image: url({{asset("app-assets/img/core-img/middle.png")}});  background-position: center center; background-repeat: no-repeat;  background-attachment: fixed; background-size: cover;">
-           <!-- ##### New Carousel ##### -->
-           <div id="carouselExample1" class="carousel slide z-depth-1-half" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="{{asset("app-assets/img/core-img/upper-banner.png")}}" alt="First slide">
-                <div class="carousel-caption d-none d-md-block">
+    <!-- ##### Top Feature Area End ##### -->
 
+
+    <!-- ##### Course Area Start ##### -->
+    <div class="academy-courses-area"  style="padding-top: 60px!important; background-image: url({{asset("app-assets/img/core-img/middle-banner.png")}});  background-position: center center; background-repeat: no-repeat;  background-attachment: fixed; background-size: cover;">
+        <div id="carouselExample1" class="carousel slide z-depth-1-half" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="{{asset("app-assets/img/core-img/upper-banner.png")}}" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <img src="{{asset("app-assets/img/core-img/10th-clas.png")}}" alt="class 10th" width="144"/>
+                    </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="{{asset("app-assets/img/core-img/upper-banner.png")}}" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="{{asset("app-assets/img/core-img/upper-banner.png")}}" alt="Third slide">
-              </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="{{asset("app-assets/img/core-img/2-one.png")}}" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="{{asset("app-assets/img/core-img/upper-banner.png")}}" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <img src="{{asset("app-assets/img/core-img/10th-clas.png")}}" alt="class 10th" width="144"/>
+                    </div>
+                </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExample1" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next" href="#carouselExample1" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
             </a>
-          </div>
-        <div class="container mt-5" >
+        </div>
+        <div class="container mt-5">
             <div class="row">
                 <!-- Single Course Area -->
                 <div class="col-12 col-sm-6 col-lg-4">
@@ -194,8 +207,10 @@ Hey 😋, We have <br/>Something For you!  </button>
                             <img src="https://img.icons8.com/color/96/000000/school-building.png"/>
                         </div>
                         <div class="course-content">
-                            <h5>Primary</h5>
-                            <p>Best primary education that help develop a strong foundation.</p>
+                            <a href="https://tneos.in/post/primary-education-india">
+                                <h5 class="p-1" >Primary</h5>
+                                <p class="p-2">Best primary education that help develop a strong foundation.</p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -206,8 +221,8 @@ Hey 😋, We have <br/>Something For you!  </button>
                             <img src="https://img.icons8.com/color/96/000000/training.png"/>
                         </div>
                         <div class="course-content">
-                            <h5>Academic</h5>
-                            <p>Higher education demand very strong tutoring so that you can grow.</p>
+                            <h5 class="p-1" >Academic</h5>
+                            <p class="p-2">Higher education demand very strong tutoring so that you can grow.</p>
                         </div>
                     </div>
                 </div>
@@ -218,8 +233,8 @@ Hey 😋, We have <br/>Something For you!  </button>
                             <img src="https://img.icons8.com/color/96/000000/class.png"/>
                         </div>
                         <div class="course-content">
-                            <h5>Examination</h5>
-                            <p>Time tested approach & methods for preparation of any kind of examination.</p>
+                            <h5 class="p-1" >Examination</h5>
+                            <p class="p-2">Time tested approach & methods for preparation of any kind of examination.</p>
                         </div>
                     </div>
                 </div>
@@ -230,8 +245,8 @@ Hey 😋, We have <br/>Something For you!  </button>
                             <img src="https://img.icons8.com/fluent/96/000000/new-job.png"/>
                         </div>
                         <div class="course-content">
-                            <h5>Occupation</h5>
-                            <p>Choose a better career path for more happier & a brighter future.</p>
+                            <h5 class="p-1" >Occupation</h5>
+                            <p class="p-2">Choose a better career path for more happier & a brighter future.</p>
                         </div>
                     </div>
                 </div>
@@ -242,8 +257,8 @@ Hey 😋, We have <br/>Something For you!  </button>
                             <img src="https://img.icons8.com/color/96/000000/consultation.png"/>
                         </div>
                         <div class="course-content">
-                            <h5>Counselling</h5>
-                            <p>Our expert team, comprised of top career counsellors will assists you in your journey.</p>
+                            <h5 class="p-1" >Counselling</h5>
+                            <p class="p-2">Our expert team, comprised of top career counsellors will assists you in your journey.</p>
                         </div>
                     </div>
                 </div>
@@ -254,8 +269,8 @@ Hey 😋, We have <br/>Something For you!  </button>
                             <img src="https://img.icons8.com/color/96/000000/service.png"/>
                         </div>
                         <div class="course-content">
-                            <h5>Support</h5>
-                            <p>A well trained experts are always ready to Support you achieve your goals.</p>
+                            <h5 class="p-1" >Support</h5>
+                            <p class="p-2">A well trained experts are always ready to Support you achieve your goals.</p>
                         </div>
                     </div>
                 </div>
@@ -287,7 +302,7 @@ Hey 😋, We have <br/>Something For you!  </button>
                         </div>
                         <div class="testimonial-content py-4">
                             <h5>Great teachers</h5>
-                            <p>Everyone here works together to achieve one common goal…what is best for our children. As a family, we are proud to be part of the Tneos Eduloutions.</p>
+                            <p>Everyone here works together to achieve one common goalâ€¦what is best for our children. As a family, we are proud to be part of the Tneos Eduloutions.</p>
                             <h6><span>Asha Sharma,</span> Parent</h6>
                         </div>
                     </div>
@@ -308,7 +323,7 @@ Hey 😋, We have <br/>Something For you!  </button>
                         </div>
                     </div>
                 </div>
-                 <!-- Single Testimonials Area -->
+                <!-- Single Testimonials Area -->
                 <div class="col-12 col-md-6">
                     <div class="p-2 single-testimonial-area mb-100 d-flex wow fadeInUp" data-wow-delay="700ms" style="border-radius: 20px;
                     background: linear-gradient(145deg, #b6d8df, #d8ffff);
@@ -319,7 +334,7 @@ Hey 😋, We have <br/>Something For you!  </button>
                         </div>
                         <div class="testimonial-content py-4">
                             <h5>One good academy</h5>
-                            <p>“The teachers get to know your children as individuals and push them to levels they can and should achieve.</p>
+                            <p>â€œThe teachers get to know your children as individuals and push them to levels they can and should achieve.</p>
                             <h6><span>Neeru Gupta,</span> Parent</h6>
                         </div>
                     </div>
@@ -361,13 +376,13 @@ Hey 😋, We have <br/>Something For you!  </button>
     <!-- ##### Testimonials Area End ##### -->
 
     <!-- ##### Top Popular Courses Area Start ##### -->
-    <div class="top-popular-courses-area section-padding-100-70">
+    <div class="top-popular-courses-area section-padding-100-70" style="background-color: #ffffff;">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="section-heading text-center mx-auto wow fadeInUp" data-wow-delay="300ms">
                         <span>The Best</span>
-                        <h3>Top Popular Courses</h3>
+                        <h3>Top Popular Faculty</h3>
                     </div>
                 </div>
             </div>
@@ -417,8 +432,8 @@ Hey 😋, We have <br/>Something For you!  </button>
                 <div class="col-12 col-lg-6">
                     <div class="single-top-popular-course d-flex align-items-center flex-wrap mb-30 wow fadeInUp" data-wow-delay="600ms">
                         <div class="popular-course-content">
-                            <h5>Science (Odia)</h5>
-                            <span>By Soumya Jena | M.C.A, B.Sc. (Phy.) </span>
+                            <h5>Social Science</h5>
+                            <span>By Susmita Dutta | B.SC., M.SC. | 2 yrs. Exp.  </span>
                             <div class="course-ratings">
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -426,7 +441,7 @@ Hey 😋, We have <br/>Something For you!  </button>
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star-o" aria-hidden="true"></i>
                             </div>
-                            <p>Learn real science with practical examples, with our science expert in your native language.</p>
+                            <p>Understand Social science with current affair, real life examples, with our Social Science expert.</p>
                             <a href="/lives" class="btn academy-btn btn-sm">See More</a>
                         </div>
                         <div class="popular-course-thumb bg-img" style="background-image: url({{asset('app-assets/img/bg-img/teacher2.png')}});"></div>
@@ -488,87 +503,88 @@ Hey 😋, We have <br/>Something For you!  </button>
             </div>
         </div>
     </div>
+    <script>(function(w, d) { w.CollectId = "5fe4bf8318dfdb0f2fe0b80f"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
     <!-- ##### CTA Area End ##### -->
-{{-- <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{-- <!DOCTYPE html>
+    <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+        <head><meta charset="windows-1252">
 
-        <title>Laravel</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+            <title>Laravel</title>
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
+            <!-- Fonts -->
+            <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
-            .full-height {
-                height: 100vh;
-            }
+            <!-- Styles -->
+            <style>
+                html, body {
+                    background-color: #fff;
+                    color: #636b6f;
+                    font-family: 'Nunito', sans-serif;
+                    font-weight: 200;
+                    height: 100vh;
+                    margin: 0;
+                }
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+                .full-height {
+                    height: 100vh;
+                }
 
-            .position-ref {
-                position: relative;
-            }
+                .flex-center {
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                }
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
+                .position-ref {
+                    position: relative;
+                }
 
-            .content {
-                text-align: center;
-            }
+                .top-right {
+                    position: absolute;
+                    right: 10px;
+                    top: 18px;
+                }
 
-            .title {
-                font-size: 84px;
-            }
+                .content {
+                    text-align: center;
+                }
 
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
+                .title {
+                    font-size: 84px;
+                }
 
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body> --}}
-        {{-- <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
+                .links > a {
+                    color: #636b6f;
+                    padding: 0 25px;
+                    font-size: 13px;
+                    font-weight: 600;
+                    letter-spacing: .1rem;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif --}}
+                .m-b-md {
+                    margin-bottom: 30px;
+                }
+            </style>
+        </head>
+        <body> --}}
+    {{-- <div class="flex-center position-ref full-height">
+        @if (Route::has('login'))
+            <div class="top-right links">
+                @auth
+                    <a href="{{ url('/home') }}">Home</a>
+                @else
+                    <a href="{{ route('login') }}">Login</a>
+
+                    @if (Route::has('register'))
+                        <a href="{{ route('register') }}">Register</a>
+                    @endif
+                @endauth
+            </div>
+        @endif --}}
 
 
 @endsection
