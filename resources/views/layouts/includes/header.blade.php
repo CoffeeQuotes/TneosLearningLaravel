@@ -7,25 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
     <!-- Title -->
     {{--    <title>{{ config('app.name', 'Laravel') }} </title>--}}
     <title>@yield('page_title', setting('site.title') . " - " . setting('site.description'))</title>
     <!-- Favicon -->
     <link rel="icon" href="{{asset("app-assets/img/core-img/favicon.ico")}}">
-
     <!-- Core Stylesheet -->
     <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{{asset("app-assets/style.css")}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Script Tags -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    @stack('head-scripts')
     @laravelPWA
 </head>
 
@@ -34,17 +32,9 @@
 <!-- <div id="preloader">
     <i class="circle-preloader"></i>
 </div> -->
-<script>
-    var msg = '{{Session::get('alert')}}';
-    var exist = '{{Session::has('alert')}}';
-    if(exist){
-        //   alert(msg);
-        swal("Good job!", msg, "success");
-
-    }
-</script>
 <!-- ##### Header Area Start ##### -->
-<header class="header-area"  style=" background-image: url({{asset("app-assets/img/core-img/small-banner.png")}});   background-size: cover;  background-color: #333333; background-blend-mode: overlay; ">
+<header class="header-area"
+        style=" background-image: url({{asset("app-assets/img/core-img/small-banner.png")}});   background-size: cover;  background-color: #333333; background-blend-mode: overlay; ">
 
     <!-- Top Header Area -->
     <div class="top-header">
@@ -54,7 +44,8 @@
                     <div class="header-content h-100 d-flex align-items-center justify-content-between">
                         <div class="academy-logo">
                             {{-- <a href="index.html"><img src="{{asset("app-assets/img/core-img/brand2.png")}}" alt=""></a> --}}
-                            <a href="/"><img src="{{ url('/') }}/storage/{{setting('site.logo')}}" class="img-fluid" style="max-width: 40%;" alt=""></a>
+                            <a href="/"><img src="{{ url('/') }}/storage/{{setting('site.logo')}}" class="img-fluid"
+                                             style="max-width: 40%;" alt=""></a>
                         </div>
                         <div class="login-content">
                             <div id="app">
@@ -65,11 +56,15 @@
                                      z-index: 1000; --}}
                                     ">
                                     <div class="container">
-                                        <a class="navbar-brand brand-desc d-none  d-sm-none d-md-block d-xl-block d-lg-block" href="{{ url('/freelivevideo') }}">
+                                        <a class="navbar-brand brand-desc d-none  d-sm-none d-md-block d-xl-block d-lg-block"
+                                           href="{{ url('/freelivevideo') }}">
 
                                             {{ setting('site.description') }}
                                         </a>
-                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                                data-target="#navbarSupportedContent"
+                                                aria-controls="navbarSupportedContent" aria-expanded="false"
+                                                aria-label="{{ __('Toggle navigation') }}">
                                             <span class="navbar-toggler-icon"></span>
                                         </button>
 
@@ -84,20 +79,25 @@
                                                 <!-- Authentication Links -->
                                                 @guest
                                                     <li class="nav-item">
-                                                        <a class="nav-link text-warning" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                                        <a class="nav-link text-warning"
+                                                           href="{{ route('login') }}">{{ __('Login') }}</a>
                                                     </li>
                                                     @if (Route::has('register'))
                                                         <li class="nav-item">
-                                                            <a class="nav-link text-warning" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                                            <a class="nav-link text-warning"
+                                                               href="{{ route('register') }}">{{ __('Register') }}</a>
                                                         </li>
                                                     @endif
                                                 @else
                                                     <li class="nav-item dropdown">
-                                                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#"
+                                                           role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                           aria-expanded="false" v-pre>
                                                             {{ Auth::user()->name }}
                                                         </a>
 
-                                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                                        <div class="dropdown-menu dropdown-menu-right"
+                                                             aria-labelledby="navbarDropdown">
                                                             <a class="dropdown-item" href="{{ route('home') }}">Dashboard</a>
 
                                                             <a class="dropdown-item" href="{{ route('logout') }}"
@@ -107,7 +107,8 @@
                                                             </a>
 
 
-                                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                                            <form id="logout-form" action="{{ route('logout') }}"
+                                                                  method="POST" class="d-none">
                                                                 @csrf
                                                             </form>
                                                         </div>
@@ -130,7 +131,8 @@
     <!-- Calling Info -->
     <div class="calling-info">
         <div class="call-center">
-            <a href="tel:+91{{setting('site.customer_care')}}"><i class="icon-telephone-2"></i> <span>(+91) {{setting('site.customer_care')}}</span></a>
+            <a href="tel:+91{{setting('site.customer_care')}}"><i class="icon-telephone-2"></i>
+                <span>(+91) {{setting('site.customer_care')}}</span></a>
         </div>
     </div>
     </nav>

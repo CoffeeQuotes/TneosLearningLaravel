@@ -2197,3 +2197,14 @@ element.style {
 .header-area .academy-main-menu .classy-navbar {
     color: #f5f5f7;
 }
+
+.paymenticons {
+    width: auto;
+    height: 4.6vh;
+}
+@media only screen and (max-width: 600px) {
+    .paymenticons {
+        width: 100.0vh;
+        height: auto;
+    }
+}

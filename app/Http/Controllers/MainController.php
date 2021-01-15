@@ -11,16 +11,16 @@ use Illuminate\Support\Facades\Auth;
 
 class MainController extends Controller
 {
-   
-    public function index() 
+
+    public function index()
     {
         $packages = Category::all();
         $latest_courses = Category::latest()->take(4)->get();
-        return view('packages', compact('packages', 'latest_courses'));
+        return view('payment.packages', compact('packages', 'latest_courses'));
     }
-    
+
     /* 15:10 13-10-2020*/
-     public function show($slug) 
+     public function show($slug)
      {
         $category_id = Category::where('slug', $slug)->first()->id;
         $paid_already = Subscription::where('user_id', Auth::id())->where('category_id',$category_id)->where('payment_done', 1)->exists();
@@ -29,18 +29,19 @@ class MainController extends Controller
         {
             return redirect()->back();
         }
-        if(Auth::check()) {return view('pack', compact('pack'));}
+        if(Auth::check()) {return view('payment.pack', compact('pack'));}
         return redirect('/register');
     }
 
-    public function  payment(Request $request) 
+    public function  payment(Request $request)
     {
         $title = $request->input('title');
         $amount = $request->input('amount');
         $category_id = $request->input('category_id');
         $slug = $request->input('slug');
 
-        $api = new Api(env('RAZOR_KEY'),env('RAZOR_SECRET'));
+        // $api = new Api('rzp_live_CsYsxq7OyyehDC', '0TT0F4oZxy0vYQxJ4fr533QY');
+        $api = new Api(env('RAZOR_KEY'), env('RAZOR_SECRET'));
         $order = $api->order->create(array('receipt'=>'123', 'amount'=> $amount*100,'currency'=>'INR'));
         $orderId = $order['id'];
 
@@ -63,7 +64,7 @@ class MainController extends Controller
 
     }
 
-    public function pay(Request $request) 
+    public function pay(Request $request)
     {
         $data = $request->all();
         $user = Subscription::where('payment_id', $data['razorpay_order_id'])->first();
@@ -73,14 +74,14 @@ class MainController extends Controller
         return redirect('/success');
     }
 
-    public function success() 
+    public function success()
     {
-        return view('success');
+        return view('payment.success');
     }
 
-    public function unsuccessful() 
+    public function unsuccessful()
     {
-        return view('unsuccessful');
+        return view('payment.unsuccessful');
     }
 
 }
