@@ -7,10 +7,10 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="footer-widget mb-100">
                         <div class="widget-title">
-                            <a href="#"><img src="img/core-img/logo2.png" alt=""></a>
+                            <a href="#"><img src="{{ url('/') }}/storage/{{setting('site.logo')}}" alt="" width="70"></a>
                         </div>
                         <p>Tneos Eduloutions Ltd is a registered and licensed Online Edu-Tech Co. promoted by Technology
-                            & Financial Wizards of the Industry based in New Delhi-India.</p>
+                            & Financial Wizards of the Industry headquartered in New Delhi-India.</p>
                         <div class="footer-social-info">
                             <a href="https://www.facebook.com/tneoseduloutions"><i class="fa fa-facebook"
                                                                                    style="color: #1873eb"></i></a>
@@ -26,31 +26,26 @@
                 </div>
                 <!-- Footer Widget Area -->
                 <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="footer-widget mb-100">
+                    <div class="footer-widget">
                         <div class="widget-title">
                             <h6>Useful Links</h6>
                         </div>
                         <nav>
                             <ul class="useful-links">
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/page/mission-and-vision">Mission &amp; Vision</a></li>
-                                <li><a href="/page/who-we-are">About</a></li>
+                                <li><a class="font-weight: lighter;" style="font-weight: lighter;" href="/page/who-we-are">About Us</a></li>
+                                <li><a class="font-weight: lighter;" style="font-weight: lighter;" href="/page/mission-and-vision">Mission &amp; Vision</a></li>
                                 <!--<li><a href="/page/study-materials">Study Material</a></li>-->
-                                <li><a href="/career">Careers</a></li>
+                                <li><a class="font-weight: lighter;" style="font-weight: lighter;" href="/contact-us">Contact Us</a></li>
+                                <!--<li><a class="font-weight: lighter;" style="font-weight: lighter;" href="/promoters">Promoters</a></li>-->
+                                <li><a class="font-weight: lighter;" style="font-weight: lighter;" href="/career">Careers</a></li>
                                 <!--<li><a href="/terms">Terms & Conditions (Tneos Learning App)</a></li>-->
-                                <li><a href="/website-terms">Terms & Conditions</a></li>
-                                <li><a href="/privacypolicy">Privacy Policy</a></li>
-                                <li><a href="/disclaimer">Disclaimer</a></li>
-                                <li><a href="https://shop.tneos.com/refund">Cancellation & Refund Policy
-                                    </a></li>
-
                             </ul>
                         </nav>
                     </div>
                 </div>
                 <!-- Footer Widget Area -->
                 <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="footer-widget mb-100">
+                    <div class="footer-widget">
                         <div class="widget-title">
                             <h6>Gallery</h6>
                         </div>
@@ -78,23 +73,24 @@
                 </div>
                 <!-- Footer Widget Area -->
                 <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="footer-widget mb-100">
+                    <div class="footer-widget">
                         <div class="widget-title">
-                            <h6>Contact</h6>
+                            <h6>Corporate Headquarters</h6>
                         </div>
                         <div class="single-contact d-flex mb-30">
                             <i class="icon-placeholder"></i>
-                            <p>L-323, Mahipalpur Extension, New Delhi-110037, INDIA INC.</p>
+                            <p>L-323, Mahipalpur Extension, New Delhi-110037, INDIA INC.
+                            </p>
                         </div>
                         <div class="single-contact d-flex mb-30">
                             <i class="icon-telephone-1"></i>
-                            <p>Main: (+91) {{setting('site.customer_care')}} <br>Office: (+91) 991-061-6099 <br/>
+                            <p>Main Line: +91 {{setting('site.customer_care')}} <br>Board Line: +91 9910616099 <br/>
                                 <small>( Mon-Sun, 09:00 AM -10:00 PM IST )</small></p>
                         </div>
-                        <div class="single-contact d-flex">
-                            <i class="icon-contract"></i>
-                            <p>enquiry@tneos.com</p>
-                        </div>
+                        <!--<div class="single-contact d-flex">-->
+                        <!--<i class="icon-contract"></i>-->
+
+                        <!--</div>-->
                     </div>
                 </div>
             </div>
@@ -142,26 +138,36 @@
 
                 <div class="container">
                     <div class="row">
-                        <div class="p-2 my-2 col-3"><img src="{{asset('app-assets/img/core-img/UPI-Logo-vector.svg')}}"
+                        <div class="p-1 my-2 col-3"><img src="{{asset('app-assets/img/core-img/UPI-Logo-vector.svg')}}"
                                                          alt="" class="paymenticons"></div>
-                        <div class="p-2 my-2 col-3"><img src="{{asset('app-assets/img/core-img/visa.svg')}}" alt=""
+                        <div class="p-1 my-2 col-3"><img src="{{asset('app-assets/img/core-img/visa.svg')}}" alt=""
                                                          class="paymenticons"></div>
-                        <div class="p-2 my-2 col-3"><img src="{{asset('app-assets/img/core-img/Rupay.svg')}}" alt=""
+                        <div class="p-1 my-2 col-3"><img src="{{asset('app-assets/img/core-img/Rupay.svg')}}" alt=""
                                                          class="paymenticons"></div>
-                        <div class="p-2 my-2 col-3"><img src="{{asset('app-assets/img/core-img/mc_symbol.svg')}}" alt=""
+                        <div class="p-1 my-2 col-3"><img src="{{asset('app-assets/img/core-img/mc_symbol.svg')}}" alt=""
                                                          class="paymenticons"></div>
                     </div>
                     <div class="row">
-                        <div class="p-2 my-2 col-4"><img src="{{asset('app-assets/img/core-img/paytm.svg')}}" alt=""
+                        <div class="p-1 my-2 col-3"><img src="{{asset('app-assets/img/core-img/paytm.svg')}}" alt=""
                                                          class="paymenticons"></div>
-                        <div class="p-2 my-2 col-4"><img
+                        <div class="p-1 my-2 col-3"><img
                                 src="{{asset('app-assets/img/core-img/google-pay-primary-logo.svg')}}" alt=""
                                 class="paymenticons"></div>
-                        <div class="p-2 my-2 col-4"><img src="{{asset('app-assets/img/core-img/phonepe.svg')}}" alt=""
-                                                         class="paymenticons"></div>
+                        <div class="p-1 my-2 col-3 mr-auto"><img src="{{asset('app-assets/img/core-img/phonepe.svg')}}" alt=""
+                                                                 class="paymenticons"></div>
+
                     </div>
                 </div>
             </div>
+
+            <hr style="background-color:#fefefe">
+            <div class="pull-left text-white">
+                <a href="/website-terms" style="color: #fefefe; font-weight: lighter;">Terms & Conditions</a> &nbsp;|
+                <a href="/privacypolicy" style="color: #fefefe; font-weight: lighter;">Privacy Policy</a> &nbsp;|
+                <a href="/disclaimer" style="color: #fefefe; font-weight: lighter;">Disclaimer</a> &nbsp;|
+                <a href="https://shop.tneos.com/refund" style="color: #fefefe; font-weight: lighter;">Cancellation & Refund Policy
+                </a>
+            </div>                                                 <hr>
         </div>
     </div>
 </footer>

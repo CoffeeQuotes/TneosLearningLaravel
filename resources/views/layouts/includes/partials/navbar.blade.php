@@ -4,14 +4,16 @@
         <div class="container">
             <!-- Menu -->
             <nav class="classy-navbar justify-content-between" id="academyNav">
-
+                <a class="navbar-brand" href="#">
+                    <img src="{{ url('/') }}/storage/{{setting('site.logo')}}" alt="Tneos Logo" style="width:80px;">
+                </a>
                 <!-- Navbar Toggler -->
                 <div class="classy-navbar-toggler">
                     <span class="navbarToggler"><span></span><span></span><span></span></span>
                 </div>
 
                 <!-- Menu -->
-                <div class="classy-menu" style="background-color: #333333;">
+                <div class="classy-menu">
 
                     <!-- close btn -->
                     <div class="classycloseIcon">
@@ -21,46 +23,56 @@
                     <!-- Nav Start -->
                     <div class="classynav">
                         <a class="pl-2" href="/packages">Buy Course</a>
-                        <div class="dropdown" style="background-color: #333333;">
+                        <div class="dropdown">
                             <a class="dropdown-toggle mx-2" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                                aria-haspopup="true" aria-expanded="false">
                                 Live Classes
                             </a>
-                            <div class="dropdown-menu text-wrap" aria-labelledby="dropdownMenuButton"
-                                 style="background-color: #333333;">
-                                <a class="dropdown-item" href="/board/CBSE"><img width="24px"
-                                                                                 src="{{asset('app-assets/img/core-img/CBSE.jpg')}}"
-                                                                                 alt="">&nbsp;CBSE Board</a>
-                                <a class="dropdown-item" href="/board/ICSE"><img width="24px"
-                                                                                 src="{{asset('app-assets/img/core-img/icse10.PNG')}}"
-                                                                                 alt="">&nbsp;ICSE Board</a>
-                                <a class="dropdown-item" href="/board/IB"><img width="24px"
-                                                                               src="{{asset('app-assets/img/core-img/ib.PNG')}}"
-                                                                               alt="">&nbsp;IB Board</a>
-                                <a class="dropdown-item" href="/board/Bihar"><img width="24px"
-                                                                                  src="{{asset('app-assets/img/core-img/biharboardlogo.jpg')}}"
-                                                                                  alt="">&nbsp;Bihar Board</a>
-                                <a class="dropdown-item" href="/board/MP"><img width="24px"
-                                                                               src="{{asset('app-assets/img/core-img/mpboard.jpg')}}"
-                                                                               alt="">&nbsp;MP Board</a>
-                                <a class="dropdown-item" href="/board/Rajsthan"><img width="24px"
-                                                                                     src="{{asset('app-assets/img/core-img/rajboard.jpg')}}"
-                                                                                     alt="">&nbsp;Rajsthan Board</a>
-                                <a class="dropdown-item" href="/board/Jharkhand"><img width="24px"
-                                                                                      src="{{asset('app-assets/img/core-img/jharkhand board.jpg')}}"
-                                                                                      alt="">&nbsp;Jharkhand Board</a>
-                                <a class="dropdown-item" href="/board/Odisha"><img width="24px"
-                                                                                   src="{{asset('app-assets/img/core-img/Bse.odisha.logo.jpg')}}"
-                                                                                   alt="">&nbsp;Odisha Board</a>
-                                <a class="dropdown-item" href="/board/UP"><img width="24px"
-                                                                               src="{{asset('app-assets/img/core-img/up board.jpg')}}"
-                                                                               alt="">&nbsp;UP Board</a>
-                                <a class="dropdown-item" href="/board/Haryana/"><img width="24px"
-                                                                                     src="{{asset('app-assets/img/core-img/Haryana-Board.jpg')}}"
-                                                                                     alt="">&nbsp;Haryana Board</a>
-                                <a class="dropdown-item" href="/board/JK/"><img width="24px"
-                                                                                src="{{asset('app-assets/img/core-img/jk.png')}}"
-                                                                                alt="">&nbsp;Jammu & Kashmir</a>
+                            <div class="dropdown-menu text-wrap" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" style="color: #000000;" href="/board/CBSE"><img width="24px"
+                                                                                                         src="{{asset('app-assets/img/core-img/CBSE.jpg')}}"
+                                                                                                         alt="">&nbsp;CBSE
+                                    Board</a>
+                                <a class="dropdown-item" style="color: #000000;" href="/board/ICSE"><img width="24px"
+                                                                                                         src="{{asset('app-assets/img/core-img/icse10.PNG')}}"
+                                                                                                         alt="">&nbsp;ICSE
+                                    Board</a>
+                                <a class="dropdown-item" style="color: #000000;" href="/board/IB"><img width="24px"
+                                                                                                       src="{{asset('app-assets/img/core-img/ib.PNG')}}"
+                                                                                                       alt="">&nbsp;IB
+                                    Board</a>
+                                <a class="dropdown-item" style="color: #000000;" href="/board/Bihar"><img width="24px"
+                                                                                                          src="{{asset('app-assets/img/core-img/biharboardlogo.jpg')}}"
+                                                                                                          alt="">&nbsp;Bihar
+                                    Board</a>
+                                <a class="dropdown-item" style="color: #000000;" href="/board/MP"><img width="24px"
+                                                                                                       src="{{asset('app-assets/img/core-img/mpboard.jpg')}}"
+                                                                                                       alt="">&nbsp;MP
+                                    Board</a>
+                                <a class="dropdown-item" style="color: #000000;" href="/board/Rajsthan"><img
+                                        width="24px"
+                                        src="{{asset('app-assets/img/core-img/rajboard.jpg')}}"
+                                        alt="">&nbsp;Rajsthan Board</a>
+                                <a class="dropdown-item" style="color: #000000;" href="/board/Jharkhand"><img
+                                        width="24px"
+                                        src="{{asset('app-assets/img/core-img/jharkhand board.jpg')}}"
+                                        alt="">&nbsp;Jharkhand Board</a>
+                                <a class="dropdown-item" style="color: #000000;" href="/board/Odisha"><img width="24px"
+                                                                                                           src="{{asset('app-assets/img/core-img/Bse.odisha.logo.jpg')}}"
+                                                                                                           alt="">&nbsp;Odisha
+                                    Board</a>
+                                <a class="dropdown-item" style="color: #000000;" href="/board/UP"><img width="24px"
+                                                                                                       src="{{asset('app-assets/img/core-img/up board.jpg')}}"
+                                                                                                       alt="">&nbsp;UP
+                                    Board</a>
+                                <a class="dropdown-item" style="color: #000000;" href="/board/Haryana/"><img
+                                        width="24px"
+                                        src="{{asset('app-assets/img/core-img/Haryana-Board.jpg')}}"
+                                        alt="">&nbsp;Haryana Board</a>
+                                <a class="dropdown-item" style="color: #000000;" href="/board/JK/"><img width="24px"
+                                                                                                        src="{{asset('app-assets/img/core-img/jk.png')}}"
+                                                                                                        alt="">&nbsp;Jammu
+                                    & Kashmir</a>
 
                             </div>
                         </div>
@@ -71,45 +83,55 @@
                                aria-haspopup="true" aria-expanded="false">
                                 Study Materials
                             </a>
-                            <div class="dropdown-menu text-wrap" aria-labelledby="dropdownMenuButton"
-                                 style="background-color: #333333;">
-                                <a class="dropdown-item" href="/study-materials/CBSE"><img width="24px"
-                                                                                           src="{{asset('app-assets/img/core-img/CBSE.jpg')}}"
-                                                                                           alt="">&nbsp;CBSE Board</a>
-                                <a class="dropdown-item" href="/study-materials/ICSE"><img width="24px"
-                                                                                           src="{{asset('app-assets/img/core-img/icse10.PNG')}}"
-                                                                                           alt="">&nbsp;ICSE Board</a>
-                                <a class="dropdown-item" href="/study-materials/IB"><img width="24px"
-                                                                                         src="{{asset('app-assets/img/core-img/ib.PNG')}}"
-                                                                                         alt="">&nbsp;IB Board</a>
-                                <a class="dropdown-item" href="/study-materials/Bihar"><img width="24px"
-                                                                                            src="{{asset('app-assets/img/core-img/biharboardlogo.jpg')}}"
-                                                                                            alt="">&nbsp;Bihar Board</a>
-                                <a class="dropdown-item" href="/study-materials/MP"><img width="24px"
-                                                                                         src="{{asset('app-assets/img/core-img/mpboard.jpg')}}"
-                                                                                         alt="">&nbsp;MP Board</a>
-                                <a class="dropdown-item" href="/study-materials/Rajsthan"><img width="24px"
-                                                                                               src="{{asset('app-assets/img/core-img/rajboard.jpg')}}"
-                                                                                               alt="">&nbsp;Rajsthan
+                            <div class="dropdown-menu text-wrap" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" style="color: #000000;" href="/study-materials/CBSE"><img
+                                        width="24px"
+                                        src="{{asset('app-assets/img/core-img/CBSE.jpg')}}"
+                                        alt="">&nbsp;CBSE Board</a>
+                                <a class="dropdown-item" style="color: #000000;" href="/study-materials/ICSE"><img
+                                        width="24px"
+                                        src="{{asset('app-assets/img/core-img/icse10.PNG')}}"
+                                        alt="">&nbsp;ICSE Board</a>
+                                <a class="dropdown-item" style="color: #000000;" href="/study-materials/IB"><img
+                                        width="24px"
+                                        src="{{asset('app-assets/img/core-img/ib.PNG')}}"
+                                        alt="">&nbsp;IB Board</a>
+                                <a class="dropdown-item" style="color: #000000;" href="/study-materials/Bihar"><img
+                                        width="24px"
+                                        src="{{asset('app-assets/img/core-img/biharboardlogo.jpg')}}"
+                                        alt="">&nbsp;Bihar Board</a>
+                                <a class="dropdown-item" style="color: #000000;" href="/study-materials/MP"><img
+                                        width="24px"
+                                        src="{{asset('app-assets/img/core-img/mpboard.jpg')}}"
+                                        alt="">&nbsp;MP Board</a>
+                                <a class="dropdown-item" style="color: #000000;" href="/study-materials/Rajsthan"><img
+                                        width="24px"
+                                        src="{{asset('app-assets/img/core-img/rajboard.jpg')}}"
+                                        alt="">&nbsp;Rajsthan
                                     Board</a>
-                                <a class="dropdown-item" href="/study-materials/Jharkhand"><img width="24px"
-                                                                                                src="{{asset('app-assets/img/core-img/jharkhand board.jpg')}}"
-                                                                                                alt="">&nbsp;Jharkhand
+                                <a class="dropdown-item" style="color: #000000;" href="/study-materials/Jharkhand"><img
+                                        width="24px"
+                                        src="{{asset('app-assets/img/core-img/jharkhand board.jpg')}}"
+                                        alt="">&nbsp;Jharkhand
                                     Board</a>
-                                <a class="dropdown-item" href="/study-materials/Odisha"><img width="24px"
-                                                                                             src="{{asset('app-assets/img/core-img/Bse.odisha.logo.jpg')}}"
-                                                                                             alt="">&nbsp;Odisha
+                                <a class="dropdown-item" style="color: #000000;" href="/study-materials/Odisha"><img
+                                        width="24px"
+                                        src="{{asset('app-assets/img/core-img/Bse.odisha.logo.jpg')}}"
+                                        alt="">&nbsp;Odisha
                                     Board</a>
-                                <a class="dropdown-item" href="/study-materials/UP"><img width="24px"
-                                                                                         src="{{asset('app-assets/img/core-img/up board.jpg')}}"
-                                                                                         alt="">&nbsp;UP Board</a>
-                                <a class="dropdown-item" href="/study-materials/Haryana/"><img width="24px"
-                                                                                               src="{{asset('app-assets/img/core-img/Haryana-Board.jpg')}}"
-                                                                                               alt="">&nbsp;Haryana
+                                <a class="dropdown-item" style="color: #000000;" href="/study-materials/UP"><img
+                                        width="24px"
+                                        src="{{asset('app-assets/img/core-img/up board.jpg')}}"
+                                        alt="">&nbsp;UP Board</a>
+                                <a class="dropdown-item" style="color: #000000;" href="/study-materials/Haryana/"><img
+                                        width="24px"
+                                        src="{{asset('app-assets/img/core-img/Haryana-Board.jpg')}}"
+                                        alt="">&nbsp;Haryana
                                     Board</a>
-                                <a class="dropdown-item" href="/study-materials/JK/"><img width="24px"
-                                                                                          src="{{asset('app-assets/img/core-img/jk.png')}}"
-                                                                                          alt="">&nbsp;Jammu &
+                                <a class="dropdown-item" style="color: #000000;" href="/study-materials/JK/"><img
+                                        width="24px"
+                                        src="{{asset('app-assets/img/core-img/jk.png')}}"
+                                        alt="">&nbsp;Jammu &
                                     Kashmir</a>
                             </div>
                         </div>
@@ -121,21 +143,47 @@
 
                         <ul>
                             <li>
-                                <a type="button" style="background-color: #333333;" href="/contact-us">
+                                <a type="button" href="/contact-us">
                                     Contact Us
                                 </a>
                             </li>
                         </ul>
-                        {{-- <ul>
-                            <li><a href="/">Home</a></li>
 
-                            <li><a href="#">Pages</a>
-                                <ul class="dropdown">
-                                    <li><a href="index.html">Home</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="/page/who-we-are">About Us</a></li>
-                            <li><a href="course.html">Course</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul> --}}
+                            @guest
+                                <li style="list-style-type: none;" class="nav-item">
+                                    <a class="nav-link text-warning"
+                                       href="{{ route('login') }}">{{ __('Login') }}</a>
+                                </li>
+                                @if (Route::has('register'))
+                                    <li style="list-style-type: none;" class="nav-item">
+                                        <a class="nav-link text-warning"
+                                           href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    </li>
+                                @endif
+                            @else
+                                <li style="list-style-type: none;" class="nav-item dropdown">
+                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#"
+                                       role="button" data-toggle="dropdown" aria-haspopup="true"
+                                       aria-expanded="false" v-pre>
+                                        {{ Auth::user()->name }}
+                                    </a>
+
+                                    <div class="dropdown-menu dropdown-menu-right"
+                                         aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="{{ route('home') }}">Dashboard</a>
+
+                                        <a class="dropdown-item" href="{{ route('logout') }}"
+                                           onclick="event.preventDefault();
+                                                             document.getElementById('logout-form').submit();">
+                                            {{ __('Logout') }}
+                                        </a>
+
+
+                                        <form id="logout-form" action="{{ route('logout') }}"
+                                              method="POST" class="d-none">
+                                            @csrf
+                                        </form>
+                                    </div>
+                                </li>
+                            @endguest
                     </div>

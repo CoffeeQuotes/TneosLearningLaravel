@@ -24,20 +24,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ae755fb6-b5bd-4fa8-b13d-cfc522d6919a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/app-assets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/app-assets/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/extra/career.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/career/career.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/freevideo.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/extra/freevideo.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/includes/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/includes/footer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/includes/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/includes/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/includes/partials/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/includes/partials/navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/ourteachers.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/extra/ourteachers.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pack.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/payment/pack.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/packages.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/payment/packages.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/extra/page.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/study.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/extra/study.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/success.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/payment/success.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/unsuccessful.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/payment/unsuccessful.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -203,12 +193,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/app-assets" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\appstream\public\app-assets" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\laragon\www\appstream\resources\views\payment" />
       <recent name="C:\laragon\www\appstream\resources\views\extra" />
@@ -244,7 +237,10 @@
       <workItem from="1610510820459" duration="11603000" />
       <workItem from="1610603730240" duration="19091000" />
       <workItem from="1610682073003" duration="5663000" />
-      <workItem from="1610691033978" duration="6439000" />
+      <workItem from="1610691033978" duration="12495000" />
+      <workItem from="1610768486585" duration="8871000" />
+      <workItem from="1610948375921" duration="17218000" />
+      <workItem from="1611027893825" duration="5903000" />
     </task>
     <servers />
   </component>
@@ -268,22 +264,23 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1610437590187" />
-    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1610511149030">
+    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1610964872131">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1610511149030" />
-    <state x="214" y="9" key="SettingsEditor" timestamp="1603861261871">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1610964872131" />
+    <state x="241" y="10" key="SettingsEditor" timestamp="1610768551943">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="214" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1603861261871" />
+    <state x="241" y="10" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1610768551943" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1610513620039">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1610513620039" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1610686614416">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1611028038955">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1610686614416" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1611028038955" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
