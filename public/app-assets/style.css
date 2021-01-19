@@ -516,7 +516,7 @@ div {
         color: #000000!important;
     }
     .classy-nav-container a {
-        color: #000000!important;
+        color: #fefefe!important;
     }
 }
 
@@ -2655,6 +2655,9 @@ ul {
 
 .breakpoint-on .classy-navbar .classy-menu {
     width: 200px;
+    background-color: rgba(22,22,23,0.8);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
 }
 
 

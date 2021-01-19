@@ -7,7 +7,17 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="footer-widget mb-100">
                         <div class="widget-title">
-                            <a href="#"><img src="{{ url('/') }}/storage/{{setting('site.logo')}}" alt="" width="70"></a>
+                           <div class="container">
+                             <div class="row">
+                                 <div class="col my-auto">
+                                     <a href="/"><img src="{{ url('/') }}/storage/{{setting('site.logo')}}" alt="" width="70"></a>
+                                 </div>
+                                 <div class="col">
+                                     <a href="https://play.google.com/store/apps/details?id=com.tneos.tneos_eduloution" target="_blank"><img src="{{asset("app-assets/img/core-img/google-play-badge.png")}}" alt="Download Tneos Learning App"/> </a>
+                                 </div>
+                             </div>
+                           </div>
+
                         </div>
                         <p>Tneos Eduloutions Ltd is a registered and licensed Online Edu-Tech Co. promoted by Technology
                             & Financial Wizards of the Industry headquartered in New Delhi-India.</p>

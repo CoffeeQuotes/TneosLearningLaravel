@@ -48,20 +48,19 @@
 
     <section class="hero-area" style="background: #3c0e8d;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to bottom, #3f216a, #3C108A);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #3f216a, #3c0e8d); /* W3C, IE 60+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ min-height: 80vh;">
+background: linear-gradient(to bottom, #3f216a, #3c0e8d); /* W3C, IE 60+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ min-height: 80vh; background-color: #2ebf91; background-blend-mode: color-burn;">
 
-{{--        <div class="container pt-5">--}}
-{{--            <div class="row">--}}
-{{--                <div class="col">--}}
-{{--                    <h1 class="mb-5">We Deliver Best!</h1>--}}
-{{--                    <p class="text-white mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid aspernatur commodi ducimus eaque earum eius enim excepturi exercitationem facere impedit in iste iusto maxime molestias natus nihil nostrum obcaecati officia omnis provident quae quasi quidem reiciendis repellendus reprehenderit, saepe, sapiente sint soluta sunt temporibus totam velit veniam voluptate voluptatem.</p>--}}
-{{--                    <div style="height: 100px;"></div>--}}
-{{--                </div>--}}
-{{--                <div class="col">--}}
-
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center d-none d-sm-none d-md-block">
+                    <h1 class="display-3  mt-100">Education</h1>
+                    <span class="display-4  text-white-50">Let's make a statement.</span>
+                </div>
+                <div class="col-md-8 text-center">
+                    <img class="img-responsive mt-50" src="{{'app-assets/img/core-img/hero-screen.png'}}" alt="Hero Tneos Images"/>
+                </div>
+            </div>
+        </div>
 
 
 

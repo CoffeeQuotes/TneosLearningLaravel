@@ -184,6 +184,11 @@ Route::get('/our-promoters', function () {
 Route::get('/faqs', function () {
     return view("extra.faq");
 });
+// 10. Become a Teacher
+//_______________________________________________________________________________________________________________//
+Route::get('/become-a-teacher', function () {
+    return view("extra.becometeacher");
+});
 
 // Payment Gateway Routes
 //_______________________________________________________________________________________________________________//

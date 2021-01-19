@@ -37,8 +37,10 @@
 <!-- ##### Header Area Start ##### -->
 
 <!--<header class="header-area" style=" background-image: url({{asset("app-assets/img/core-img/small-banner.png")}});   background-size: cover;  background-color: #333333; background-blend-mode: overlay; "> -->
-<header class="header-area" style="background-color: #3f206c;">
+<header class="header-area" style="background-color: #000000; ">
+
     <!-- Top Header Area -->
+{{--    #3f206c;--}}
 {{--    <div class="top-header">--}}
 {{--        <div class="container-fluid h-100">--}}
 {{--            <div class="row h-100">--}}
