@@ -25,12 +25,10 @@
     <list default="true" id="ae755fb6-b5bd-4fa8-b13d-cfc522d6919a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/app-assets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/app-assets/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/extra/becometeacher.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/extra/becometeacher.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/includes/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/includes/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/includes/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/includes/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/extra/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/extra/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/extra/promoters.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/extra/promoters.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/includes/partials/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/includes/partials/navbar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,7 +240,9 @@
       <workItem from="1610768486585" duration="8871000" />
       <workItem from="1610948375921" duration="17218000" />
       <workItem from="1611027893825" duration="16737000" />
-      <workItem from="1611051258422" duration="7519000" />
+      <workItem from="1611051258422" duration="8234000" />
+      <workItem from="1611115205383" duration="22102000" />
+      <workItem from="1611201307359" duration="8908000" />
     </task>
     <servers />
   </component>
@@ -270,19 +270,19 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1611034391300" />
-    <state x="241" y="10" key="SettingsEditor" timestamp="1610768551943">
+    <state x="100" y="10" key="SettingsEditor" timestamp="1611115569122">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="214" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1603861261871" />
-    <state x="241" y="10" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1610768551943" />
+    <state x="100" y="10" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1611115569122" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1610513620039">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1610513620039" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1611054809202">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1611209794748">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1611054809202" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1611209794748" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

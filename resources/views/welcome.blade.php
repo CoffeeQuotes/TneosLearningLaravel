@@ -48,12 +48,13 @@
 
     <section class="hero-area" style="background: #3c0e8d;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to bottom, #3f216a, #3C108A);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #3f216a, #3c0e8d); /* W3C, IE 60+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ min-height: 80vh; background-color: #2ebf91; background-blend-mode: color-burn;">
-
+background: linear-gradient(to bottom, #3f216a, #3c0e8d); /* W3C, IE 60+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ min-height: 62vh;   background-color: #2ebf91; background-blend-mode: color-burn;">
+<div style="height: 80vh; filter: blur(8); position: absolute; top:0; width: 100%;"></div>
+        <div style="background-image: url({{asset("app-assets/img/core-img/hero-universe.png")}}); background-position: center; background-size: cover; background-color: #000000; background-blend-mode: hard-light;">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-center d-none d-sm-none d-md-block">
-                    <h1 class="display-3  mt-100">Education</h1>
+                    <h1 class="display-3  mt-100" style="color: #fefefe!important;">Education</h1>
                     <span class="display-4  text-white-50">Let's make a statement.</span>
                 </div>
                 <div class="col-md-8 text-center">
@@ -61,7 +62,7 @@ background: linear-gradient(to bottom, #3f216a, #3c0e8d); /* W3C, IE 60+/ Edge, 
                 </div>
             </div>
         </div>
-
+</div>
 
 
 
@@ -304,7 +305,7 @@ background: linear-gradient(to bottom, #3f216a, #3c0e8d); /* W3C, IE 60+/ Edge, 
                 <!-- Single Testimonials Area -->
                 <div class="col-12 col-md-6">
                     <div class="p-2 single-testimonial-area mb-100 d-flex wow fadeInUp" data-wow-delay="400ms" style="border-radius: 20px;
-                    background: linear-gradient(145deg, #b6d8df, #d8ffff);
+                    background: linear-gradient(145deg, #fefefe, #ffffff);
                     box-shadow:  20px 20px 60px #acccd3,
                                  -20px -20px 60px #e8ffff;">
                         <div class="testimonial-thumb">
@@ -320,7 +321,7 @@ background: linear-gradient(to bottom, #3f216a, #3c0e8d); /* W3C, IE 60+/ Edge, 
                 <!-- Single Testimonials Area -->
                 <div class="col-12 col-md-6">
                     <div class="p-2 single-testimonial-area mb-100 d-flex wow fadeInUp" data-wow-delay="500ms" style="border-radius: 20px;
-                    background: linear-gradient(145deg, #b6d8df, #d8ffff);
+                    background: linear-gradient(145deg, #fefefe, #ffffff);
                     box-shadow:  20px 20px 60px #acccd3,
                                  -20px -20px 60px #e8ffff;">
                         <div class="testimonial-thumb">
@@ -336,7 +337,7 @@ background: linear-gradient(to bottom, #3f216a, #3c0e8d); /* W3C, IE 60+/ Edge, 
                 <!-- Single Testimonials Area -->
                 <div class="col-12 col-md-6">
                     <div class="p-2 single-testimonial-area mb-100 d-flex wow fadeInUp" data-wow-delay="700ms" style="border-radius: 20px;
-                    background: linear-gradient(145deg, #b6d8df, #d8ffff);
+                    background: linear-gradient(145deg, #fefefe, #ffffff);
                     box-shadow:  20px 20px 60px #acccd3,
                                  -20px -20px 60px #e8ffff;">
                         <div class="testimonial-thumb">
@@ -352,7 +353,7 @@ background: linear-gradient(to bottom, #3f216a, #3c0e8d); /* W3C, IE 60+/ Edge, 
                 <!-- Single Testimonials Area -->
                 <div class="col-12 col-md-6">
                     <div class="p-2 single-testimonial-area mb-100 d-flex wow fadeInUp" data-wow-delay="600ms" style="border-radius: 20px;
-                    background: linear-gradient(145deg, #b6d8df, #d8ffff);
+                    background: linear-gradient(145deg, #fefefe, #ffffff);
                     box-shadow:  20px 20px 60px #acccd3,
                                  -20px -20px 60px #e8ffff;">
                         <div class="testimonial-thumb">
