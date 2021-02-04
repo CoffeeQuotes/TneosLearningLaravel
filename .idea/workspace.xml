@@ -24,11 +24,17 @@
   <component name="ChangeListManager">
     <list default="true" id="ae755fb6-b5bd-4fa8-b13d-cfc522d6919a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/app-assets/css/classy-nav.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/app-assets/css/classy-nav.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/app-assets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/app-assets/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/extra/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/extra/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/extra/becometeacher.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/extra/becometeacher.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/extra/ourteachers.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/extra/ourteachers.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/extra/promoters.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/extra/promoters.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/extra/terms.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/extra/terms.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/includes/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/includes/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/includes/partials/navbar-new.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/includes/partials/navbar-new.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/includes/partials/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/includes/partials/navbar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +200,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public/app-assets" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.splitter.proportion" value="0.22990353" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -242,7 +249,27 @@
       <workItem from="1611027893825" duration="16737000" />
       <workItem from="1611051258422" duration="8234000" />
       <workItem from="1611115205383" duration="22102000" />
-      <workItem from="1611201307359" duration="8908000" />
+      <workItem from="1611201307359" duration="20421000" />
+      <workItem from="1611287835916" duration="131000" />
+      <workItem from="1611287977189" duration="22952000" />
+      <workItem from="1611380622874" duration="11367000" />
+      <workItem from="1611547774370" duration="28000" />
+      <workItem from="1611557021681" duration="11621000" />
+      <workItem from="1611719782702" duration="26030000" />
+      <workItem from="1611810474420" duration="19201000" />
+      <workItem from="1611892784254" duration="25102000" />
+      <workItem from="1611981970791" duration="18270000" />
+      <workItem from="1612152131404" duration="13098000" />
+      <workItem from="1612167812860" duration="1324000" />
+      <workItem from="1612174021449" duration="6429000" />
+      <workItem from="1612242861763" duration="635000" />
+      <workItem from="1612243517429" duration="23196000" />
+      <workItem from="1612323855222" duration="1800000" />
+      <workItem from="1612327058276" duration="18729000" />
+      <workItem from="1612414689882" duration="10359000" />
+      <workItem from="1612426111586" duration="389000" />
+      <workItem from="1612426709518" duration="34000" />
+      <workItem from="1612426765440" duration="1749000" />
     </task>
     <servers />
   </component>
@@ -262,37 +289,30 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1612339574832">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1612339574832" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1610437590187">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1610437590187" />
-    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1611034391300">
+    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1611288645355">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1611034391300" />
-    <state x="100" y="10" key="SettingsEditor" timestamp="1611115569122">
+    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1611288645355" />
+    <state x="123" y="30" width="1258" height="761" key="SettingsEditor" timestamp="1612431497457">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="214" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1603861261871" />
-    <state x="100" y="10" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1611115569122" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1610513620039">
+    <state x="123" y="30" width="1258" height="761" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1612431497457" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1612000239704">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1610513620039" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1611209794748">
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1612000239704" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1612426731593">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1611209794748" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/extra/contact.blade.php</url>
-          <line>5</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1612426731593" />
   </component>
 </project>

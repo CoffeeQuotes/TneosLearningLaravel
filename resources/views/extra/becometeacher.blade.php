@@ -3,20 +3,26 @@
 @push('styles')
     <link rel="stylesheet" href="{{"app-assets/css/webgradients.css"}}" type="text/css"/>
 @endpush
+@push('head-scripts')
+    <script src="https://unpkg.com/fluidify-video"></script>
+@endpush
 @section('content')
     <section class="glass_water">
         <div class="jumbotron october_silence">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <h2 class="text-white" style="color: #fefefe!important;">Become A Teacher</h2>
+                        <h2 class="text-white" style="color: #fefefe!important;">Teach On Tneos</h2>
                         <p class="lead text-white-50">Join Tneos Eduloutions Ltd.</p>
-                        <a href="/" class="btn btn-primary">Become A Teacher</a>
+                        <a target="_blank" href="https://forms.gle/uMuyFU1pwqPinqx57" class="btn btn-primary">Teach On Tneos</a>
                     </div>
                     <div class="col-md-6 text-center">
-                        <div class="solid_stone">
-                            <img class="" style="max-height: 200px;" src="{{"app-assets/img/core-img/become-a-teacher.png"}}" alt="tneos faqs">
+                        <div class="video-container" style="max-width: 800px;">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/O1s7MMlpTOQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
+{{--                        <div class="solid_stone">--}}
+{{--                            <img class="" style="max-height: 200px;" src="{{"app-assets/img/core-img/become-a-teacher.png"}}" alt="tneos faqs">--}}
+{{--                        </div>--}}
                     </div>
                 </div>
             </div>
@@ -48,7 +54,7 @@
                 <div class="row text-center">
                     <div class="col text-center">
                         <p style="font-size: 20px;  line-height: 0.6;" class="m-0">From Minimum <b style="font-size: 40px; color: #edfb01;">⬅</b> <b style="font-size: 40px; color: #edfb01;">➡</b> Upto</p>
-                        <h2 style="font-weight: lighter; color: #383d41" class="m-0"><b style="color: #edfb01">₹</b> 15,000+ <strong style="color: #edfb01; font-weight: lighter;">&nbsp; &nbsp;> &nbsp; &nbsp;</strong> <b style="color: #edfb01;">₹</b> 1 Lac.</h2>
+                        <h2 style="font-weight: lighter; /* color: #edfb01 */" class="mt-3 m-0"><b>₹</b> 15,000+ <strong style="/* color: #edfb01; */ font-weight: lighter;">&nbsp; &nbsp;- &nbsp; &nbsp;</strong> <b>₹</b> 1 Lac.</h2>
                     </div>
                 </div>
                 <div class="row text-center pb-4">
@@ -65,7 +71,7 @@
                 <div class="row">
                     <div class="col mb-100">
                         <p class="lead">Apply by filling in a simple form.</p>
-                        <a href="/" class="btn btn-lg btn-success px-5">Apply Now</a>
+                        <a target="_blank" href="https://forms.gle/uMuyFU1pwqPinqx57" class="btn btn-lg btn-success px-5">Apply Now</a>
                     </div>
                 </div>
             </div>

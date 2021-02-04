@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 class CampaignController extends Controller
 {
     //
+
     public function create() {
         return view('campaign');
     }

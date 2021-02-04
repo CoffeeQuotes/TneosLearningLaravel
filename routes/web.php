@@ -186,10 +186,13 @@ Route::get('/faqs', function () {
 });
 // 10. Become a Teacher
 //_______________________________________________________________________________________________________________//
-Route::get('/become-a-teacher', function () {
+Route::get('/teach-on-tneos', function () {
     return view("extra.becometeacher");
 });
 
+Route::get('/our-network', function () {
+    return view("extra.network");
+});
 // Payment Gateway Routes
 //_______________________________________________________________________________________________________________//
 // 1. Packages

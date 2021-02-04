@@ -7,17 +7,16 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="footer-widget mb-100">
                         <div class="widget-title">
-                           <div class="container">
-                             <div class="row">
-                                 <div class="col my-auto">
-                                     <a href="/"><img src="{{ url('/') }}/storage/{{setting('site.logo')}}" alt="" width="70"></a>
-                                 </div>
-                                 <div class="col">
-                                     <a href="https://play.google.com/store/apps/details?id=com.tneos.tneos_eduloution" target="_blank"><img src="{{asset("app-assets/img/core-img/google-play-badge.png")}}" alt="Download Tneos Learning App"/> </a>
-                                 </div>
-                             </div>
-                           </div>
-
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col my-auto">
+                                        <a href="/"><img src="{{ url('/') }}/storage/{{setting('site.logo')}}" alt="" width="70"></a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="https://play.google.com/store/apps/details?id=com.tneos.tneos_eduloution" target="_blank"><img src="{{asset("app-assets/img/core-img/google-play-badge.png")}}" alt="Download Tneos Learning App"/> </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <p>Tneos Eduloutions Ltd is a registered and licensed Online Edu-Tech Co. promoted by Technology
                             & Financial Wizards of the Industry headquartered in New Delhi-India.</p>
@@ -32,25 +31,6 @@
 
 "></i></a>
                         </div>
-                    </div>
-                </div>
-                <!-- Footer Widget Area -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="footer-widget">
-                        <div class="widget-title">
-                            <h6>Useful Links</h6>
-                        </div>
-                        <nav>
-                            <ul class="useful-links">
-                                <li><a class="font-weight: lighter;" style="font-weight: lighter;" href="/page/who-we-are">About Us</a></li>
-                                <li><a class="font-weight: lighter;" style="font-weight: lighter;" href="/page/mission-and-vision">Mission &amp; Vision</a></li>
-                                <!--<li><a href="/page/study-materials">Study Material</a></li>-->
-                                <li><a class="font-weight: lighter;" style="font-weight: lighter;" href="/contact-us">Contact Us</a></li>
-                                <!--<li><a class="font-weight: lighter;" style="font-weight: lighter;" href="/promoters">Promoters</a></li>-->
-                                <li><a class="font-weight: lighter;" style="font-weight: lighter;" href="/career">Careers</a></li>
-                                <!--<li><a href="/terms">Terms & Conditions (Tneos Learning App)</a></li>-->
-                            </ul>
-                        </nav>
                     </div>
                 </div>
                 <!-- Footer Widget Area -->
@@ -85,6 +65,43 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="footer-widget">
                         <div class="widget-title">
+                            <h6>Email Addresses</h6>
+                        </div>
+                        <nav>
+                            <ul class="useful-links">
+{{--                                <div class="single-contact mb-2">--}}
+{{--                                    <i class="icon-email text-warning pull-left"></i>--}}
+{{--                                    <p>Career at Tneos</p>--}}
+{{--                                    <a class="p-0 m-0 ml-1" style="font-weight: lighter; color: #fefefe; font-weight: lighter;" href="mailto:career@tneos.com?subject=Career Query">career@tneos.com</a>--}}
+{{--                                </div>--}}
+                                <div class="single-contact mb-2">
+                                    <i class="icon-email text-warning pull-left"></i>
+                                    <p>Business Contact</p>
+                                    <a class="p-0 m-0 ml-1" style="font-weight: lighter; color: #fefefe; font-weight: lighter;" href="mailto:contact@tneos.com?subject=Contact Us">contact@tneos.com</a>
+                                </div>
+                                <!--<li><a href="/page/study-materials">Study Material</a></li>-->
+                                <div class="single-contact mb-2">
+                                    <i class="icon-email text-warning pull-left"></i>
+                                    <p>Student Support</p>
+                                    <a class="p-0 m-0 ml-1" style="font-weight: lighter; color: #fefefe; font-weight: lighter;" href="mailto:support@tneos.com?subject=Customer Support">support@tneos.com</a>
+                                </div>
+                                <!--<li><a class="font-weight: lighter;" style="font-weight: lighter;" href="/promoters">Promoters</a></li>-->
+                                <div class="single-contact mb-2">
+
+                                    <i class="icon-email text-warning pull-left"></i>
+                                    <p>Enquiry</p>
+                                    <a class="p-0 m-0 ml-1" style="font-weight: lighter; color: #fefefe; font-weight: lighter;" href="mailto:enquiry@tneos.com?subject=Enquiry">enquiry@tneos.com</a>
+                                </div>
+                                <!--<li><a href="/terms">Terms & Conditions (Tneos Learning App)</a></li>-->
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="footer-widget">
+                        <div class="widget-title">
                             <h6>Corporate Headquarters</h6>
                         </div>
                         <div class="single-contact d-flex mb-30">
@@ -104,6 +121,41 @@
                     </div>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="footer-widget">
+                        <div class="widget-title">
+                            <h6>Company</h6>
+                        </div>
+                        <nav>
+                            <ul class="useful-links">
+                                <li><a class="font-weight: lighter;" style="font-weight: lighter;" href="/page/who-we-are">About Us</a></li>
+                                <li><a class="font-weight: lighter;" style="font-weight: lighter;" href="/page/mission-and-vision">Mission &amp; Vision</a></li>
+                                <!--<li><a href="/page/study-materials">Study Material</a></li>-->
+                                <li><a class="font-weight: lighter;" style="font-weight: lighter;" href="/contact-us">Contact Us</a></li>
+                                <!--<li><a class="font-weight: lighter;" style="font-weight: lighter;" href="/promoters">Promoters</a></li>-->
+                                <li><a class="font-weight: lighter;" style="font-weight: lighter;" href="/our-promoters">Our Promoters</a></li>
+                                <!--<li><a href="/terms">Terms & Conditions (Tneos Learning App)</a></li>-->
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="footer-widget">
+                        <div class="widget-title">
+                            <h6 class="mb-10">Useful Links</h6>
+                        </div>
+                        <ul class="useful-links">
+                            <li><a class="font-weight: lighter;" style="font-weight: lighter;" href="/teach-on-tneos">Teach On Tneos</a></li>
+                            <li><a class="font-weight: lighter;" style="font-weight: lighter;" href="/career">Careers</a></li>
+                            <li><a class="font-weight: lighter;" style="font-weight: lighter;" href="/page/who-we-are">Frequently Asked Question</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </div>
     <div class="bottom-footer-area">
@@ -276,30 +328,7 @@
     {{-- Switch on Particles --}}
     {{--- <script src="{{asset("app-assets/js/particles.js")}}"></script>
     <script src="{{asset("app-assets/js/customSnowFall.js")}}"></script> --}}
-    <script>
-        // Scroll function courtesy of Scott Dowding; http://stackoverflow.com/questions/487073/check-if-element-is-visible-after-scrolling
-        $(document).ready(function () {
-            // Check if element is scrolled into view
-            function isScrolledIntoView(elem) {
-                var docViewTop = $(window).scrollTop();
-                var docViewBottom = docViewTop + $(window).height();
 
-                var elemTop = $(elem).offset().top;
-                var elemBottom = elemTop + $(elem).height();
-
-                return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-            }
-
-            // If element is scrolled into view, fade it in
-            $(window).scroll(function () {
-                $('.animate__animated').each(function () {
-                    if (isScrolledIntoView(this) === true) {
-                        $(this).addClass('animate__swing');
-                    }
-                });
-            });
-        });
-    </script>
     @stack('footer-scripts')
     </body>
 
