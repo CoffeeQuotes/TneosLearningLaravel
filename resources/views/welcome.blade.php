@@ -263,7 +263,11 @@
             .mt-600-100 {
                 margin-top: 5.6rem;
             }
-
+            .mt-600-none {
+                margin-top: 1rem!important;
+                font-weight: 520!important;
+                font-size: 1.4rem!important;
+            }
             .mb-600-100 {
                 margin-bottom: 5.6rem;
             }
@@ -350,14 +354,19 @@
              style="background-color: #FFFFFF; background-image: url({{ URL::asset('app-assets/img/core-img/4860404-min.jpg') }});">
         <div class="container-fluid pb-5">
             <div class="row pb-5">
-                <div class="col-md-5 offset-1 text-center d-none d-sm-none d-md-block">
-                    <h1 class="mt-100" style="color: #333333!important; font-size: 2rem; font-weight: 800;">Join Tneos
+                <div class="col-md-5 offset-1 text-center">
+                    <h1 class="mt-100 mt-600-none" style="color: #333333!important; font-size: 2rem; font-weight: 800;">Join Tneos
                         Learning Program</h1>
                     <span class="display-6 text-capitalize text-dark-50" style="font-weight: 800;">Better education for all.</span>
-                    <p>Class 1st -12th, CBSE, ICSE, IB, States Board's</p>
-                    <p><a href="/packages" class="btn btn-dark p-2">Live Classes</a>
-                        <a href="/register" class="btn btn-warning p-2 ml-4">Register For Free Demo Classes</a></p>
-                    <div class="pull-left text-justify">
+                    <p><span class="badge  high_flight text-white p-1">Class 1st -12th</span>  <span class="badge  high_flight text-white p-1">CBSE</span> <span class="badge  high_flight text-white p-1">ICSE</span> <span class="badge  high_flight text-white p-1">IB</span> <span class="badge  high_flight text-white p-1">States Boards</span></p>
+                    <div class="row text-center">
+                        <div class="col d-flex justify-content-end">
+                            <a href="/packages" class="btn btn-dark p-2 d-none d-sm-none d-md-block d-lg-block d-xl-block" style="min-width: 200px;">Live Classes</a>
+                        </div>
+                        <div class="col d-flex justify-content-start">
+                            <a href="/register" class="btn btn-warning p-2  d-none d-sm-none d-md-block d-md-block d-lg-block d-xl-block">Register For Free Demo Classes</a></div>
+                        </div>
+                    <div class="mt-5 pull-left text-justify d-none d-sm-none d-md-block">
 
                         {{-- <ul>
                              <li class=""
@@ -392,13 +401,19 @@
 
                     </div>
                 </div>
-                <div class="col-md-6 text-center">
+                <div class="col-md-6 text-center" style="background-image: url({{asset('app-assets/img/core-img/x-2.png')}}); background-repeat: no-repeat; background-position: center; background-size: cover;">
                     <img class="img-responsive mt-50" src="{{asset('app-assets/img/core-img/hiro-ok.gif')}}"
                          alt="Hero Tneos Images"/>
                 </div>
+                <div class="row mx-auto py-3 high_flight rounded  d-md-none d-lg-none">
+                    <div class="col text-center">
+                        <a href="/register" class="btn btn-warning p-2" style="min-width: 300px;">Register For Free Demo Classes</a></p>
+                        <a href="/packages" class="btn btn-dark p-2"  style="min-width: 300px;">Live Classes</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="container-fluid" style="max-height: 0vh;">
+        <div class="container-fluid d-none d-sm-none d-md-block" style="max-height: 0vh;">
             <div class="row teen_party m-md-2 m-lg-2 d-flex d-flex justify-content-center"
                  style="border-radius: 32px; position: relative; top: -160px; box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px; backdrop-filter: blur(20px);">
                 <div class="col-md-3 text-white" style="font-weight: 200; font-size: 0.9rem;">
@@ -561,7 +576,7 @@
     <!-- ##### Top Feature Area End ##### -->
 
     <!---### New Top Featured Area Starts  ###-->
-    <section class="mt-600-100">
+    <section class="">
         <div class="container">
             <div class="display-4" style="font-size: 2rem; font-weight: 800">Specialize Live Learning</div>
             <p class="display-5" style="font-size: 1.2rem;">With Innovative e-learning Solutions</p>
