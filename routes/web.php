@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Carbon;
 use App\Contact;
 use App\Post;
+use App\Page;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -76,7 +77,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 //_________________________________________________________________________________________________________//
 Route::get('page/{slug}', function($slug){
     $page = App\Page::where('slug', '=', $slug)->firstOrFail();
-    return view('extra.page', compact('page'));
+    $pages = Page::inRandomOrder()->take(10)->get();
+    return view('extra.page', compact('page', 'pages'));
 });
 
 
@@ -164,7 +166,7 @@ Route::get('/terms', function() {
 // 6. Terms Website
 //________________________________________________________________________________________________________________//
 Route::get('/website-terms', function () {
-    return view('extra.terms');
+    return view('extra.web-terms');
 });
 
 // 7. Contact-Us
@@ -175,7 +177,7 @@ Route::get('/contact-us', function () {
 
 // 8. Promoters
 //_______________________________________________________________________________________________________________//
-Route::get('/our-promoters', function () {
+Route::get('/our-management-team', function () {
     return view("extra.promoters");
 });
 
@@ -190,8 +192,22 @@ Route::get('/teach-on-tneos', function () {
     return view("extra.becometeacher");
 });
 
+// 11. Our-Network
+//_______________________________________________________________________________________________________________//
 Route::get('/our-network', function () {
     return view("extra.network");
+});
+
+Route::get('/our-network-world', function () {
+    return view("extra.network-world");
+});
+// 12. About
+//_______________________________________________________________________________________________________________//
+Route::get('/about',function () {
+    return view("extra.about-us");
+});
+Route::get('/vision', function () {
+    return view('extra.vision');
 });
 // Payment Gateway Routes
 //_______________________________________________________________________________________________________________//
@@ -267,5 +283,10 @@ Route::get('/thankyou-free-trial-classes', function() {
     return view('campaign.freetrialclassesthankyou');
 });
 
+Route::get('class-on-demand', function () {
+    return view('campaign.classondemand');
+});
 
-
+/*Route::get("/hello", function () {
+   abort(500);
+});*/

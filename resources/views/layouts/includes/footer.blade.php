@@ -69,11 +69,11 @@
                         </div>
                         <nav>
                             <ul class="useful-links">
-{{--                                <div class="single-contact mb-2">--}}
-{{--                                    <i class="icon-email text-warning pull-left"></i>--}}
-{{--                                    <p>Career at Tneos</p>--}}
-{{--                                    <a class="p-0 m-0 ml-1" style="font-weight: lighter; color: #fefefe; font-weight: lighter;" href="mailto:career@tneos.com?subject=Career Query">career@tneos.com</a>--}}
-{{--                                </div>--}}
+                                {{--                                <div class="single-contact mb-2">--}}
+                                {{--                                    <i class="icon-email text-warning pull-left"></i>--}}
+                                {{--                                    <p>Career at Tneos</p>--}}
+                                {{--                                    <a class="p-0 m-0 ml-1" style="font-weight: lighter; color: #fefefe; font-weight: lighter;" href="mailto:career@tneos.com?subject=Career Query">career@tneos.com</a>--}}
+                                {{--                                </div>--}}
                                 <div class="single-contact mb-2">
                                     <i class="icon-email text-warning pull-left"></i>
                                     <p>Business Contact</p>
@@ -106,7 +106,7 @@
                         </div>
                         <div class="single-contact d-flex mb-30">
                             <i class="icon-placeholder"></i>
-                            <p>L-323, Mahipalpur Extension, New Delhi-110037, INDIA INC.
+                            <p>L-323, Mahipalpur Extension, <br/>New Delhi-110037, INDIA INC.
                             </p>
                         </div>
                         <div class="single-contact d-flex mb-30">
@@ -130,12 +130,12 @@
                         </div>
                         <nav>
                             <ul class="useful-links">
-                                <li><a class="font-weight: lighter;" style="font-weight: lighter;" href="/page/who-we-are">About Us</a></li>
+                                <li><a class="font-weight: lighter;" style="font-weight: lighter;" href="/about">About Us</a></li>
                                 <li><a class="font-weight: lighter;" style="font-weight: lighter;" href="/page/mission-and-vision">Mission &amp; Vision</a></li>
                                 <!--<li><a href="/page/study-materials">Study Material</a></li>-->
                                 <li><a class="font-weight: lighter;" style="font-weight: lighter;" href="/contact-us">Contact Us</a></li>
                                 <!--<li><a class="font-weight: lighter;" style="font-weight: lighter;" href="/promoters">Promoters</a></li>-->
-                                <li><a class="font-weight: lighter;" style="font-weight: lighter;" href="/our-promoters">Our Promoters</a></li>
+                                <li><a class="font-weight: lighter;" style="font-weight: lighter;" href="/our-management-team">Management Team</a></li>
                                 <!--<li><a href="/terms">Terms & Conditions (Tneos Learning App)</a></li>-->
                             </ul>
                         </nav>
@@ -149,7 +149,8 @@
                         <ul class="useful-links">
                             <li><a class="font-weight: lighter;" style="font-weight: lighter;" href="/teach-on-tneos">Teach On Tneos</a></li>
                             <li><a class="font-weight: lighter;" style="font-weight: lighter;" href="/career">Careers</a></li>
-                            <li><a class="font-weight: lighter;" style="font-weight: lighter;" href="/page/who-we-are">Frequently Asked Question</a></li>
+                            <li><a class="font-weight: lighter;" style="font-weight: lighter;" href="/our-network">Our Network</a></li>
+                            <li><a class="font-weight: lighter;" style="font-weight: lighter;" href="/faqs">FAQs</a></li>
                         </ul>
                     </div>
                 </div>
@@ -217,6 +218,8 @@
                                 class="paymenticons"></div>
                         <div class="p-1 my-2 col-3 mr-auto"><img src="{{asset('app-assets/img/core-img/phonepe.svg')}}" alt=""
                                                                  class="paymenticons"></div>
+                        <div class="p-1 my-2 col-3 mr-auto"><img src="{{asset('app-assets/img/core-img/qr-code.jpg')}}" alt=""
+                                                                 class="paymenticons" style="height: 8vh;"></div>
 
                     </div>
                 </div>
@@ -224,10 +227,10 @@
 
             <hr style="background-color:#fefefe">
             <div class="pull-left text-white">
-                <a href="/website-terms" style="color: #fefefe; font-weight: lighter;">Terms & Conditions</a> &nbsp;|
-                <a href="/privacypolicy" style="color: #fefefe; font-weight: lighter;">Privacy Policy</a> &nbsp;|
-                <a href="/disclaimer" style="color: #fefefe; font-weight: lighter;">Disclaimer</a> &nbsp;|
-                <a href="https://shop.tneos.com/refund" style="color: #fefefe; font-weight: lighter;">Cancellation & Refund Policy
+                <a href="/website-terms" style="color: #fefefe; font-weight: 100;">Terms & Conditions</a> &nbsp;|
+                <a href="/privacypolicy" style="color: #fefefe; font-weight: 100;">Privacy Policy</a> &nbsp;|
+                <a href="/disclaimer" style="color: #fefefe; font-weight: 100;">Disclaimer</a> &nbsp;|
+                <a href="https://shop.tneos.com/refund" style="color: #fefefe; font-weight: 100;">Cancellation & Refund Policy
                 </a>
             </div>                                                 <hr>
         </div>
@@ -328,7 +331,30 @@
     {{-- Switch on Particles --}}
     {{--- <script src="{{asset("app-assets/js/particles.js")}}"></script>
     <script src="{{asset("app-assets/js/customSnowFall.js")}}"></script> --}}
+    <script>
+        // Scroll function courtesy of Scott Dowding; http://stackoverflow.com/questions/487073/check-if-element-is-visible-after-scrolling
+        $(document).ready(function () {
+            // Check if element is scrolled into view
+            function isScrolledIntoView(elem) {
+                var docViewTop = $(window).scrollTop();
+                var docViewBottom = docViewTop + $(window).height();
 
+                var elemTop = $(elem).offset().top;
+                var elemBottom = elemTop + $(elem).height();
+
+                return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+            }
+
+            // If element is scrolled into view, fade it in
+            $(window).scroll(function () {
+                $('.animate__animated').each(function () {
+                    if (isScrolledIntoView(this) === true) {
+                        $(this).addClass('animate__swing');
+                    }
+                });
+            });
+        });
+    </script>
     @stack('footer-scripts')
     </body>
 

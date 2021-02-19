@@ -54,12 +54,12 @@
                 <div class="row text-center">
                     <div class="col text-center">
                         <p style="font-size: 20px;  line-height: 0.6;" class="m-0">From Minimum <b style="font-size: 40px; color: #edfb01;">⬅</b> <b style="font-size: 40px; color: #edfb01;">➡</b> Upto</p>
-                        <h2 style="font-weight: lighter; /* color: #edfb01 */" class="mt-3 m-0"><b>₹</b> 15,000+ <strong style="/* color: #edfb01; */ font-weight: lighter;">&nbsp; &nbsp;- &nbsp; &nbsp;</strong> <b>₹</b> 1 Lac.</h2>
+                        <h2 style="font-weight: lighter; /* color: #edfb01 */" class="mt-3 m-0"><b>₹</b> 15,000+ <strong style="/* color: #edfb01; */ font-weight: lighter;">&nbsp; &nbsp;- &nbsp; &nbsp;</strong> Unlimited.</h2>
                     </div>
                 </div>
                 <div class="row text-center pb-4">
-                    <div class="col-md-12 pb-4">
-                        Daily Work ~ 3 Hrs/Days
+                    <div class="col-md-12 pb-4 text-capitalize">
+                       Timing As per teacher's convenience
                     </div>
                 </div>
                 </div>

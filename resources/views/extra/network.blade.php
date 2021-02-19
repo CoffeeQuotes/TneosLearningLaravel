@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('page_title','Become a Teacher, Tneos Eduloution Ltd')
+@section('page_title','Our India Network, Tneos Eduloution Ltd')
 @push('styles')
     <link rel="stylesheet" href="{{"app-assets/css/webgradients.css"}}" type="text/css"/>
     <style>
@@ -15,7 +15,7 @@
             position: relative;
         }
 
-       .single-member {
+        .single-member {
             margin-top: 30px;
         }
 
@@ -104,7 +104,7 @@
             <div class="row">
                 <div class="col-md-6 d-flex align-items-center">
                     <div class="glass_water px-4 py-2">
-                        <h2 class="text-dark">Our Network</h2>
+                        <h2 class="text-dark">Our Network India</h2>
                     </div>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center">
@@ -120,8 +120,8 @@
     <section>
         <div class="container">
             <div class="text-center">
-                <h2 class="pt-5" style="color: #c2c2c2!important; font-weight: 200;">Our Network Benefits</h2>
-                <span style="color: #c2c2c2!important; font-weight: 200; letter-spacing: 0.6em"></span>
+                <h2 class="pt-5" style="color: #000000!important; font-weight: 200;">Our Network Benefits</h2>
+                <span style="color: #000000!important; font-weight: 200; letter-spacing: 0.6em"></span>
             </div>
             <div class="container mt-100">
                 <div class="row text-center">
@@ -144,25 +144,25 @@
                 <div class="row text-center mt-50">
                     <div class="col-md-6 col-sm-12 mt-10">
                         <div style="box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; padding: 32px; border-radius: 12px;">
-                        <img class="img-fluid" style="max-height: 64px;" src="{{asset('app-assets/img/core-img/support.svg')}}" alt="support network tneos">
-                        <h5>Support</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam blanditiis, ea, exercitationem laborum laudantium magni molestias nostrum optio suscipit ullam, voluptatibus! At atque doloremque, ducimus eos nam quas veritatis.</p>
+                            <img class="img-fluid" style="max-height: 64px;" src="{{asset('app-assets/img/core-img/support.svg')}}" alt="support network tneos">
+                            <h5>Support</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam blanditiis, ea, exercitationem laborum laudantium magni molestias nostrum optio suscipit ullam, voluptatibus! At atque doloremque, ducimus eos nam quas veritatis.</p>
                         </div>
-                        </div>
+                    </div>
                     <div class="col-md-6 col-sm-12 mt-10">
                         <div style="box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; padding: 32px; border-radius: 12px;">
-                        <img class="img-fluid" style="max-height: 64px;" src="{{asset('app-assets/img/core-img/coverage.svg')}}" alt="support network tneos">
-                        <h5>Coverage</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque distinctio eius magnam
-                            maiores, ratione ullam vero! Aliquid asperiores doloribus, ea est explicabo iste numquam
-                            odio placeat provident, tempore veniam voluptas!</p>
+                            <img class="img-fluid" style="max-height: 64px;" src="{{asset('app-assets/img/core-img/coverage.svg')}}" alt="support network tneos">
+                            <h5>Coverage</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque distinctio eius magnam
+                                maiores, ratione ullam vero! Aliquid asperiores doloribus, ea est explicabo iste numquam
+                                odio placeat provident, tempore veniam voluptas!</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="text-center">
-                <h2 class="pt-5" style="color: #c2c2c2!important; font-weight: 200;">Join Brilliant & Creative </h2>
-                <span style="color: #c2c2c2!important; font-weight: 200; letter-spacing: 0.6em">TEAM</span>
+                <h2 class="pt-5" style="color: #000000!important; font-weight: 200;">Join Brilliant & Creative </h2>
+                <span style="color: #000000!important; font-weight: 200; letter-spacing: 0.6em">TEAM</span>
             </div>
             <div class="row mb-4">
                 <div class="col text-center">
@@ -170,339 +170,343 @@
                 </div>
             </div>
             <div class="row text-center">
-                <h2 class="pt-5" style="color: #c2c2c2!important; font-weight: 200;">Our Network in India</h2>
+                <h2 class="pt-5" id="india" style="color: #000000!important; font-weight: 200;">Our Network in India</h2>
             </div>
-            <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-member">
-                        <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.png')}});">
-                            <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
-                                <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
-                                <div class="line"></div>
-                                <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+            <div class="container-fluid my-5">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-member bg-white shadow rounded" style=" height: 200px; width: 260px;">
+                            {{-- <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.webp')}});">
+                                 <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
+                                     <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
+                                     <div class="line"></div>
+                                     <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+                                 </div>
+                             </div>--}}
+                            <div class="desc text-center">
+                                <h5 class="text-capitalize"><a href="#">Sunil Sundaram</a></h5>
+                                <p><i class="icon-mobile-phone"></i>9632587998</p>
+                                <p>Bangalore, Karnataka</p>
+                                <p>India</p>
                             </div>
                         </div>
-                        <div class="desc text-center">
-                            <h5 class="text-uppercase"><a href="#">Sunil Sundaram</a></h5>
-                            <p><i class="icon-mobile-phone"></i>9632587998</p>
-                            <p>Bangalore, Karnataka</p>
-                            <p>India</p>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-member bg-white shadow rounded" style=" height: 200px; width: 260px;">
+                            {{--<div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.webp')}});">
+                                <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
+                                    <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
+                                    <div class="line"></div>
+                                    <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+                                </div>
+                            </div>--}}
+                            <div class="desc text-center">
+                                <h5 class="text-capitalize"><a href="#">Damian Bastin</a></h5>
+                                <p><i class="icon-mobile-phone"></i>8610584943</p>
+                                <p>Chennai, Tamil Nadu</p>
+                                <p>India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-member bg-white shadow rounded" style=" height: 200px; width: 260px;">
+                            {{-- <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.webp')}});">
+                                 <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
+                                     <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
+                                     <div class="line"></div>
+                                     <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+                                 </div>
+                             </div>--}}
+                            <div class="desc text-center">
+                                <h5 class="text-capitalize"><a href="#">S K Gupta</a></h5>
+                                <p><i class="icon-mobile-phone"></i>8097893453</p>
+                                <p>Mumbai, Maharashtra</p>
+                                <p>India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-member bg-white shadow rounded" style=" height: 200px; width: 260px;">
+                            {{--  <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.webp')}});">
+                                  <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
+                                      <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
+                                      <div class="line"></div>
+                                      <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+                                  </div>
+                              </div>--}}
+                            <div class="desc text-center">
+                                <h5 class="text-capitalize"><a href="#">Satpal Singh</a></h5>
+                                <p><i class="icon-mobile-phone"></i>9826155455</p>
+                                <p>Rai Garh, Chattishgarh</p>
+                                <p>India</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-member">
-                        <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.png')}});">
-                            <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
-                                <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
-                                <div class="line"></div>
-                                <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-member bg-white shadow rounded" style=" height: 200px; width: 260px;">
+                            {{--  <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.webp')}});">
+                                  <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
+                                      <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
+                                      <div class="line"></div>
+                                      <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+                                  </div>
+                              </div>--}}
+                            <div class="desc text-center">
+                                <h5 class="text-capitalize"><a href="#">Neeraj Agarwal</a></h5>
+                                <p><i class="icon-mobile-phone"></i>7897323715</p>
+                                <p>Prayagraj, Uttarpradesh</p>
+                                <p>India</p>
                             </div>
                         </div>
-                        <div class="desc text-center">
-                            <h5 class="text-uppercase"><a href="#">Damian Bastin</a></h5>
-                            <p><i class="icon-mobile-phone"></i>8610584943</p>
-                            <p>Chennai, Tamil Nadu</p>
-                            <p>India</p>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-member bg-white shadow rounded" style=" height: 200px; width: 260px;">
+                            {{--  <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.webp')}});">
+                                  <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
+                                      <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
+                                      <div class="line"></div>
+                                      <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+                                  </div>
+                              </div>--}}
+                            <div class="desc text-center">
+                                <h5 class="text-capitalize"><a href="#">Anand Kumar</a></h5>
+                                <p><i class="icon-mobile-phone"></i>8610584943</p>
+                                <p>New Delhi, Delhi</p>
+                                <p>India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-member bg-white shadow rounded" style=" height: 200px; width: 260px;">
+                            {{-- <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.webp')}});">
+                                 <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
+                                     <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
+                                     <div class="line"></div>
+                                     <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+                                 </div>
+                             </div>--}}
+                            <div class="desc text-center">
+                                <h5 class="text-capitalize"><a href="#">Raghvender Singh</a></h5>
+                                <p>New Delhi, Delhi</p>
+                                <p>India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-member bg-white shadow rounded" style=" height: 200px; width: 260px;">
+                            {{-- <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.webp')}});">
+                                 <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
+                                     <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
+                                     <div class="line"></div>
+                                     <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+                                 </div>
+                             </div>--}}
+                            <div class="desc text-center">
+                                <h5 class="text-capitalize"><a href="#">Ravi Badshapur</a></h5>
+                                <p>Badshapur, Uttar Pradesh</p>
+                                <p>India</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-member">
-                        <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.png')}});">
-                            <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
-                                <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
-                                <div class="line"></div>
-                                <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-member bg-white shadow rounded" style=" height: 200px; width: 260px;">
+                            {{--   <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.webp')}});">
+                                   <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
+                                       <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
+                                       <div class="line"></div>
+                                       <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+                                   </div>
+                               </div>--}}
+                            <div class="desc text-center">
+                                <h5 class="text-capitalize"><a href="#">Pramod Uttam</a></h5>
+                                <p>Prayagraj, Uttarpradesh</p>
+                                <p>India</p>
                             </div>
                         </div>
-                        <div class="desc text-center">
-                            <h5 class="text-uppercase"><a href="#">S K Gupta</a></h5>
-                            <p><i class="icon-mobile-phone"></i>8097893453</p>
-                            <p>Mumbai, Maharashtra</p>
-                            <p>India</p>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-member bg-white shadow rounded" style=" height: 200px; width: 260px;">
+                            {{-- <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.webp')}});">
+                                 <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
+                                     <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
+                                     <div class="line"></div>
+                                     <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+                                 </div>
+                             </div>--}}
+                            <div class="desc text-center">
+                                <h5 class="text-capitalize"><a href="#">Alok Joshi</a></h5>
+                                <p>Ahmedabad, Gujrat</p>
+                                <p>India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-member bg-white shadow rounded" style=" height: 200px; width: 260px;">
+                            {{-- <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.webp')}});">
+                                 <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
+                                     <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
+                                     <div class="line"></div>
+                                     <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+                                 </div>
+                             </div>--}}
+                            <div class="desc text-center">
+                                <h5 class="text-capitalize"><a href="#">Bilal</a></h5>
+                                <p>Srinagar, J&K</p>
+                                <p>India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-member  bg-white shadow rounded" style=" height: 200px; width: 260px;">
+                            {{--   <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.webp')}});">
+                                   <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
+                                       <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
+                                       <div class="line"></div>
+                                       <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+                                   </div>
+                               </div>--}}
+                            <div class="desc text-center">
+                                <h5 class="text-capitalize"><a href="#">Harinder Pratap</a></h5>
+                                <p>Bareilly, Uttar Pradesh</p>
+                                <p>India</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-member">
-                        <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.png')}});">
-                            <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
-                                <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
-                                <div class="line"></div>
-                                <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-member  bg-white shadow rounded" style=" height: 200px; width: 260px;">
+                            {{-- <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.webp')}});">
+                                 <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
+                                     <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
+                                     <div class="line"></div>
+                                     <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+                                 </div>
+                             </div>--}}
+                            <div class="desc text-center">
+                                <h5 class="text-capitalize"><a href="#">Kavita</a></h5>
+                                <p>Indore, Madhya Pradesh</p>
+                                <p>India</p>
                             </div>
                         </div>
-                        <div class="desc text-center">
-                            <h5 class="text-uppercase"><a href="#">Satpal Singh</a></h5>
-                            <p><i class="icon-mobile-phone"></i>9826155455</p>
-                            <p>Rai Garh, Chattishgarh</p>
-                            <p>India</p>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-member  bg-white shadow rounded" style=" height: 200px; width: 260px;">
+                            {{--   <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.webp')}});">
+                                   <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
+                                       <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
+                                       <div class="line"></div>
+                                       <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+                                   </div>
+                               </div>--}}
+                            <div class="desc text-center">
+                                <h5 class="text-capitalize"><a href="#">L N Tiwari</a></h5>
+                                <p>Kanpur, Uttar Pradesh</p>
+                                <p>India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-member  bg-white shadow rounded" style=" height: 200px; width: 260px;">
+                            {{--   <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.webp')}});">
+                                   <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
+                                       <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
+                                       <div class="line"></div>
+                                       <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+                                   </div>
+                               </div>--}}
+                            <div class="desc text-center">
+                                <h5 class="text-capitalize"><a href="#">Dr Rajeev Mohan</a></h5>
+                                <p>Prayagraj, Uttar Pradesh</p>
+                                <p>India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-member  bg-white shadow rounded" style=" height: 200px; width: 260px;">
+                            {{--  <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.webp')}});">
+                                  <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
+                                      <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
+                                      <div class="line"></div>
+                                      <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+                                  </div>
+                              </div>--}}
+                            <div class="desc text-center">
+                                <h5 class="text-capitalize"><a href="#">Floyd Jafney</a></h5>
+                                <p>Ghazaibad, Uttar Pradesh</p>
+                                <p>India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-member  bg-white shadow rounded" style=" height: 200px; width: 260px;">
+                            {{--  <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.webp')}});">
+                                  <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
+                                      <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
+                                      <div class="line"></div>
+                                      <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+                                  </div>
+                              </div>--}}
+                            <div class="desc text-center">
+                                <h5 class="text-capitalize"><a href="#">Tyagi Prop</a></h5>
+                                <p>Ghazaibad, Uttarpradesh</p>
+                                <p>India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-member  bg-white shadow rounded" style=" height: 200px; width: 260px;">
+                            {{-- <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.webp')}});">
+                                 <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
+                                     <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
+                                     <div class="line"></div>
+                                     <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+                                 </div>
+                             </div>--}}
+                            <div class="desc text-center">
+                                <h5 class="text-capitalize"><a href="#">Pramod Gupta</a></h5>
+                                <p>Gurugram, Haryana</p>
+                                <p>India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-member  bg-white shadow rounded" style=" height: 200px; width: 260px;">
+                            {{-- <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.webp')}});">
+                                 <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
+                                     <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
+                                     <div class="line"></div>
+                                     <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
+                                 </div>
+                             </div>--}}
+                            <div class="desc text-center">
+                                <h5 class="text-capitalize"><a href="#">Anupam Srivatava</a></h5>
+                                <p>Ghazaibad, Uttar Pradesh</p>
+                                <p>India</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-member">
-                        <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.png')}});">
-                            <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
-                                <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
-                                <div class="line"></div>
-                                <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                            </div>
-                        </div>
-                        <div class="desc text-center">
-                            <h5 class="text-uppercase"><a href="#">Neeraj Agarwal</a></h5>
-                            <p><i class="icon-mobile-phone"></i>7897323715</p>
-                            <p>Prayagraj, Uttarpradesh</p>
-                            <p>India</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-member">
-                        <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.png')}});">
-                            <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
-                                <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
-                                <div class="line"></div>
-                                <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                            </div>
-                        </div>
-                        <div class="desc text-center">
-                            <h5 class="text-uppercase"><a href="#">Anand Kumar</a></h5>
-                            <p><i class="icon-mobile-phone"></i>8610584943</p>
-                            <p>New Delhi, Delhi</p>
-                            <p>India</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-member">
-                        <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.png')}});">
-                            <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
-                                <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
-                                <div class="line"></div>
-                                <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                            </div>
-                        </div>
-                        <div class="desc text-center">
-                            <h5 class="text-uppercase"><a href="#">Raghvender Singh</a></h5>
-                            <p>New Delhi, Delhi</p>
-                            <p>India</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-member">
-                        <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.png')}});">
-                            <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
-                                <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
-                                <div class="line"></div>
-                                <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                            </div>
-                        </div>
-                        <div class="desc text-center">
-                            <h5 class="text-uppercase"><a href="#">Ravi Badshapur</a></h5>
-                            <p>Badshapur, Uttar Pradesh</p>
-                            <p>India</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-member">
-                        <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.png')}});">
-                            <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
-                                <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
-                                <div class="line"></div>
-                                <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                            </div>
-                        </div>
-                        <div class="desc text-center">
-                            <h5 class="text-uppercase"><a href="#">Pramod Uttam</a></h5>
-                            <p>Prayagraj, Uttarpradesh</p>
-                            <p>India</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-member">
-                        <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.png')}});">
-                            <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
-                                <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
-                                <div class="line"></div>
-                                <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                            </div>
-                        </div>
-                        <div class="desc text-center">
-                            <h5 class="text-uppercase"><a href="#">Alok Joshi</a></h5>
-                            <p>Ahmedabad, Gujrat</p>
-                            <p>India</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-member">
-                        <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.png')}});">
-                            <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
-                                <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
-                                <div class="line"></div>
-                                <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                            </div>
-                        </div>
-                        <div class="desc text-center">
-                            <h5 class="text-uppercase"><a href="#">Bilal</a></h5>
-                            <p>Srinagar, J&K</p>
-                            <p>India</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-member">
-                        <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.png')}});">
-                            <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
-                                <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
-                                <div class="line"></div>
-                                <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                            </div>
-                        </div>
-                        <div class="desc text-center">
-                            <h5 class="text-uppercase"><a href="#">Harinder Pratap</a></h5>
-                            <p>Bareilly, Uttar Pradesh</p>
-                            <p>India</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-member">
-                        <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.png')}});">
-                            <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
-                                <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
-                                <div class="line"></div>
-                                <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                            </div>
-                        </div>
-                        <div class="desc text-center">
-                            <h5 class="text-uppercase"><a href="#">Kavita</a></h5>
-                            <p>Indore, Madhya Pradesh</p>
-                            <p>India</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-member">
-                        <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.png')}});">
-                            <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
-                                <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
-                                <div class="line"></div>
-                                <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                            </div>
-                        </div>
-                        <div class="desc text-center">
-                            <h5 class="text-uppercase"><a href="#">L N Tiwari</a></h5>
-                            <p>Kanpur, Uttar Pradesh</p>
-                            <p>India</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-member">
-                        <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.png')}});">
-                            <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
-                                <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
-                                <div class="line"></div>
-                                <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                            </div>
-                        </div>
-                        <div class="desc text-center">
-                            <h5 class="text-uppercase"><a href="#">Dr Rajeev Mohan</a></h5>
-                            <p>Prayagraj, Uttar Pradesh</p>
-                            <p>India</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-member">
-                        <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.png')}});">
-                            <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
-                                <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
-                                <div class="line"></div>
-                                <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                            </div>
-                        </div>
-                        <div class="desc text-center">
-                            <h5 class="text-uppercase"><a href="#">Floyd Jafney</a></h5>
-                            <p>Ghazaibad, Uttar Pradesh</p>
-                            <p>India</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-member">
-                        <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.png')}});">
-                            <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
-                                <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
-                                <div class="line"></div>
-                                <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                            </div>
-                        </div>
-                        <div class="desc text-center">
-                            <h5 class="text-uppercase"><a href="#">Tyagi Prop</a></h5>
-                            <p>Ghazaibad, Uttarpradesh</p>
-                            <p>India</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-member">
-                        <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.png')}});">
-                            <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
-                                <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
-                                <div class="line"></div>
-                                <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                            </div>
-                        </div>
-                        <div class="desc text-center">
-                            <h5 class="text-uppercase"><a href="#">Pramod Gupta</a></h5>
-                            <p>Gurugram, Haryana</p>
-                            <p>India</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-member">
-                        <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.png')}});">
-                            <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
-                                <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
-                                <div class="line"></div>
-                                <div class="social d-flex align-items-center justify-content-center"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> </div>
-                            </div>
-                        </div>
-                        <div class="desc text-center">
-                            <h5 class="text-uppercase"><a href="#">Anupam Srivatava</a></h5>
-                            <p>Ghazaibad, Uttar Pradesh</p>
-                            <p>India</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {{--
             <div class="row text-center">
-                <h2 class="pt-5" style="color: #c2c2c2!important; font-weight: 200;">Our Overseas Network</h2>
+                <h2 class="pt-5" id="world" style="color: #000000!important; font-weight: 200;">Our Overseas Network</h2>
             </div>
             <div class="row">
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-member">
-                        <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.png')}});">
+                        <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.webp')}});">
                             <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
                                 <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
                                 <div class="line"></div>
@@ -518,7 +522,7 @@
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-member">
-                        <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.png')}});">
+                        <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.webp')}});">
                             <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
                                 <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
                                 <div class="line"></div>
@@ -536,7 +540,7 @@
                 <div class="col-lg-3 col-sm-6">
 
                     <div class="single-member">
-                        <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.png')}});">
+                        <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.webp')}});">
                             <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
                                 <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
                                 <div class="line"></div>
@@ -554,7 +558,7 @@
                 <div class="col-lg-3 col-sm-6">
 
                     <div class="single-member">
-                        <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.png')}});">
+                        <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.webp')}});">
                             <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
                                 <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
                                 <div class="line"></div>
@@ -574,7 +578,7 @@
             <div class="row">
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-member">
-                        <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.png')}});">
+                        <div class="thumb relative" style="background: url({{asset('app-assets/img/bg-img/Image-Not-Available.webp')}});">
                             <div class="overlay overlay-member d-flex flex-column justify-content-end align-items-center">
                                 <p class="text-white">This article is floated online with an aim to help you find the best dvd printing solution. Dvd</p>
                                 <div class="line"></div>
@@ -589,6 +593,7 @@
                     </div>
                 </div>
             </div>
+            --}}
         </div>
     </section>
 @endsection

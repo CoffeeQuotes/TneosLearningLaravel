@@ -241,8 +241,8 @@
 
         #brands-carousel .carousel-control-next-icon,
         #brands-carousel .carousel-control-prev-icon {
-            height: 2rem;
-            width: 2rem;
+            height: 1rem;
+            width: 1rem;
             content: "";
             border-style: solid;
             border-width: 2px 2px 0 0;
@@ -258,7 +258,6 @@
         #brands-carousel .carousel-control-prev-icon {
             transform: rotate(-135deg);
         }
-
         @media screen and (max-width: 600px) {
             .mt-600-100 {
                 margin-top: 5.6rem;
@@ -351,7 +350,7 @@
 
              <div style="background-image: url({{asset("app-assets/img/core-img/hero-universe.png")}}); background-position: center; background-size: cover; background-color: #000000; background-blend-mode: hard-light;">--}}
     <section class="hero-area"
-             style="background-color: #FFFFFF; background-image: url({{ URL::asset('app-assets/img/core-img/4860404-min.jpg') }});">
+             style="background-color: #FFFFFF; background-image: url({{ URL::asset('app-assets/img/core-img/bg-hero-vh.webp') }});">
         <div class="container-fluid pb-5">
             <div class="row pb-5">
                 <div class="col-md-5 offset-1 text-center">
@@ -365,7 +364,7 @@
                         </div>
                         <div class="col d-flex justify-content-start">
                             <a href="/register" class="btn btn-warning p-2  d-none d-sm-none d-md-block d-md-block d-lg-block d-xl-block">Register For Free Demo Classes</a></div>
-                        </div>
+                    </div>
                     <div class="mt-5 pull-left text-justify d-none d-sm-none d-md-block">
 
                         {{-- <ul>
@@ -401,7 +400,7 @@
 
                     </div>
                 </div>
-                <div class="col-md-6 text-center" style="background-image: url({{asset('app-assets/img/core-img/x-2.png')}}); background-repeat: no-repeat; background-position: center; background-size: cover;">
+                <div class="col-md-6 text-center" style="/*** background-image: url({{asset('app-assets/img/core-img/x-2.png')}}); background-repeat: no-repeat; background-position: center; background-size: cover; ***/">
                     <img class="img-responsive mt-50" src="{{asset('app-assets/img/core-img/hiro-ok.gif')}}"
                          alt="Hero Tneos Images"/>
                 </div>
@@ -585,7 +584,7 @@
                 <div class="col-md-4  text-center">
                     <div class="card bg-transparent mx-auto mb-600-100" style="width: 18rem; border: none;">
                         <img class="card-img-top animate__animated"
-                             src="{{asset('app-assets/img/core-img/tneos-live-lecture.png')}}"
+                             src="{{asset('app-assets/img/core-img/tneos-live-lecture.webp')}}"
                              style="margin-bottom: -80px; width: 96%;" alt="Card image cap">
                         <div class="card-body p-4 text-center aqua_guidance"
                              style="border-radius: 32px; /*background-color: #0acfdc!important; /*#01a9fe #fee48f*/ z-index: -100; box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
@@ -601,7 +600,7 @@
                 <div class="col-md-4 text-center">
                     <div class="card bg-transparent mx-auto mb-600-100" style="width: 18rem; border: none;">
                         <img class="card-img-top animate__animated"
-                             src="{{asset('app-assets/img/core-img/tneos-interactive-courses.png')}}"
+                             src="{{asset('app-assets/img/core-img/tneos-interactive-courses.webp')}}"
                              style="margin-bottom: -80px;  width: 96%;" alt="Card image cap">
                         <div class="card-body p-4 text-center millennium_pine"
                              style="border-radius: 32px; z-index: -100; /* background-color: #ef6d24!important; /* #eb1945 #6ba5fe*/ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
@@ -617,7 +616,7 @@
                 <div class="col-md-4 text-center">
                     <div class="card bg-transparent mx-auto mb-600-100" style="width: 18rem; border: none;">
                         <img class="card-img-top animate__animated"
-                             src="{{asset('app-assets/img/core-img/tneos-interactive.png')}}"
+                             src="{{asset('app-assets/img/core-img/tneos-interactive.webp')}}"
                              style="margin-bottom: -80px; width: 96%;" alt="Card image cap">
                         <div class="card-body p-4 text-center bg-white amour_amour"
                              style="border-radius: 32px; /*background-color: #78d3e1!important;*/ z-index: -100; box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
@@ -650,8 +649,7 @@
                             classes are structured to encourage student's thirst of knowledge.</p>
                         <dl class="row" style="font-weight: 400;">
                             <dt class="col-md-3" style="font-weight: 400;">Our Advantages</dt>
-                            <dd class="col-md-9" style="">We teach students in their own language for e.g. English,
-                                HINDI, &
+                            <dd class="col-md-9" style="">We teach students in their own language for e.g. English, HINDI, &
                                 Other State Board language.
                             </dd>
 
@@ -662,9 +660,8 @@
                                           data-wow-delay="600ms"> </span>
                                 </div>
                             </dt>
-                            <dd class="mx-auto col-md-9 bg-white shadow-lg rounded p-3 text-justify wow fadeIn"
-                                data-wow-delay="100ms">
-                                Not just Getting marks but also understanding
+                            <dd class="mx-auto col-md-9 bg-white shadow-lg rounded p-3 text-justify wow fadeIn" data-wow-delay="100ms">
+                                <span style="font-weight: 600;">Not just Getting marks but also understanding</span>
                                 <p style="font-weight: 200;">We emphasize not only focus on getting higher marks but
                                     also develop understanding in particular subject so that a student could understand
                                     their environment, body and mind.
@@ -678,9 +675,8 @@
                                           data-wow-delay="600ms"></span>
                                 </div>
                             </dt>
-                            <dd class="mx-auto col-md-9 bg-white shadow-lg rounded p-3 text-justify wow fadeIn"
-                                data-wow-delay="500ms">Learning
-                                through high quality Audio & Video
+                            <dd class="mx-auto col-md-9 bg-white shadow-lg rounded p-3 text-justify wow fadeIn" data-wow-delay="500ms"><span style="font-weight: 600;">Learning
+                                through high quality Audio & Video</span>
                                 <p style="font-weight: 200;">we offer Online Tuition Classes, Recorded classes inform of
                                     PAN DRIVE, SD CARD (Memory Card), Tablet. A student who has not access of internet
                                     also learn by using recorded video in SD card. </p>
@@ -693,9 +689,8 @@
                                           data-wow-delay="600ms"></span>
                                 </div>
                             </dt>
-                            <dd class="mx-auto col-md-9 bg-white shadow-lg rounded p-3 text-justify wow fadeIn"
-                                data-wow-delay="700ms">Students can
-                                ask their doubts any time and watch video several times till their end sessions.
+                            <dd class="mx-auto col-md-9 bg-white shadow-lg rounded p-3 text-justify wow fadeIn" data-wow-delay="700ms"><span style="font-weight: 600;">Students can
+                                ask their doubts any time and watch video several times till their end sessions.</span>
                                 <p style="font-weight: 200;">we offer Online Tuition Classes, Recorded classes inform of
                                     PAN DRIVE, SD CARD (Memory Card), Tablet. A student who has not access of internet
                                     also learn by using recorded video in SD card. </p>
@@ -708,17 +703,15 @@
                                           data-wow-delay="600ms"></span>
                                 </div>
                             </dt>
-                            <dd class="mx-auto col-md-9 bg-white shadow-lg rounded p-3 text-justify wow fadeIn"
-                                data-wow-delay="700ms">Cutting Edge Technology in Education
-                                <p style="font-weight: 200;">We are Educational Tech company ready to challenge
-                                    established education systems by utilization of modern technologies. </p>
+                            <dd class="mx-auto col-md-9 bg-white shadow-lg rounded p-3 text-justify wow fadeIn" data-wow-delay="700ms"><span style="font-weight: 600;">Cutting Edge Technology in Education</span>
+                                <p style="font-weight: 200;">We are Educational Tech company ready to challenge established education systems by utilization of modern technologies. </p>
                             </dd>
                         </dl>
                     </div>
                     <div class="col-md-6">
                         <img class="img-fluid wow slideInRight" data-wow-delay="300ms"
                              alt="Features of Joining Tneos Classes"
-                             src="{{asset('app-assets/img/core-img/featured-icon.png')}}"/>
+                             src="{{asset('app-assets/img/core-img/featured-icon.webp')}}"/>
                     </div>
                 </div>
             </div>
@@ -736,7 +729,7 @@
             <div class="row">
                 <div class="col-md-8">
                     <img class="img-responsive wow bounceInUp" data-wow-delay="300ms"
-                         src="{{asset('app-assets/img/core-img/all-in-one.png')}}" alt="Tneos Live classes">
+                         src="{{asset('app-assets/img/core-img/all-in-one.webp')}}" alt="Tneos Live classes">
                 </div>
                 <div class="col-md-4">
                     <p style="font-weight: lighter; font-size: 1rem;">Practical, systematic and progressive courses,
@@ -818,16 +811,19 @@
             </div>
         </div>
     </section>
-    <section class="mt-100">
+    <section class="mt-100  py-5" style="background-image: linear-gradient( 135deg, #90F7EC 10%, #32CCBC 100%);">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 text-center">
+                <div class="col-md-12 col-12 text-center">
                     <div class="display-4" style="font-size: 2rem; font-weight: 800">A Brand New Approach</div>
                     <p class="display-5" style="font-size: 1.2rem;">To Study & Practice</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-10 offset-md-1 party_bliss p-2 wow slideInLeft" data-wow-delay="600ms"
+                <div class="col-md-2 col-2 m-0 p-0">
+                    <img src="{{asset('app-assets/img/core-img/tneos-girl.webp')}}" alt="a girl standing folding her hand, tneos eduloutions" class="img-responsive wow fadeIn" data-wow-delay="600ms">
+                </div>
+                <div class="col-md-10 col-10 party_bliss p-2 wow slideInLeft" data-wow-delay="600ms"
                      style="box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;">
                     <div class="splide p-example__splide">
                         <div id="example-video"
@@ -839,9 +835,9 @@
                                     <li class="splide__slide p-splide__slide splide__slide--has-video is-active is-visible"
                                         data-splide-youtube="https://youtu.be/wnK4LEaOLSg" id="example-video-slide01"
                                         aria-hidden="false" tabindex="0"
-                                        style="margin-right: 27px; width: 628px; height: 353.25px; background: url({{asset('app-assets/img/core-img/chemistry-at-tneos.jpg')}}) center center / cover no-repeat;">
-                                        <img data-splide-lazy="{{asset('app-assets/img/core-img/promo-01.jpg')}}"
-                                             srcset="" src="{{asset('app-assets/img/core-img/promo-01.jpg')}}"
+                                        style="margin-right: 27px; width: 628px; height: 353.25px; background: url({{asset('app-assets/img/core-img/promo-01.webp')}}) center center / cover no-repeat;">
+                                        <img data-splide-lazy="{{asset('app-assets/img/core-img/promo-01.webp')}}"
+                                             srcset="" src="{{asset('app-assets/img/core-img/promo-01.webp')}}"
                                              style="display: none;">
                                         <div class="splide__video" style="display: none;">
                                             <div></div>
@@ -851,10 +847,10 @@
                                     <li class="splide__slide p-splide__slide splide__slide--has-video"
                                         data-splide-youtube="https://www.youtube.com/watch?v=1I0FWSvFHkw"
                                         id="example-video-slide02" aria-hidden="true" tabindex="-1"
-                                        style="margin-right: 27px; width: 628px; height: 353.25px; background: url({{asset('app-assets/img/core-img/chemistry-at-tneos.jpg')}}) center center / cover no-repeat;">
+                                        style="margin-right: 27px; width: 628px; height: 353.25px; background: url({{asset('app-assets/img/core-img/chemistry-at-tneos.webp')}}) center center / cover no-repeat;">
                                         <img
-                                            data-splide-lazy="{{asset('app-assets/img/core-img/chemistry-at-tneos.jpg')}}"
-                                            srcset="" src="{{asset('app-assets/img/core-img/chemistry-at-tneos.jpg')}}"
+                                            data-splide-lazy="{{asset('app-assets/img/core-img/chemistry-at-tneos.webp')}}"
+                                            srcset="" src="{{asset('app-assets/img/core-img/chemistry-at-tneos.webp')}}"
                                             style="display: none;">
                                         <div class="splide__video" style="display: none;">
                                             <div></div>
@@ -864,9 +860,9 @@
                                     <li class="splide__slide p-splide__slide splide__slide--has-video"
                                         data-splide-youtube="https://www.youtube.com/watch?v=aPUCJWyrVVM"
                                         id="example-video-slide03"
-                                        style="margin-right: 27px; width: 628px; height: 353.25px; background: url({{asset('app-assets/img/core-img/STAR.png')}}) center center / cover no-repeat;">
-                                        <img data-splide-lazy="{{asset('app-assets/img/core-img/STAR.png')}}"
-                                             srcset="" src="{{asset('app-assets/img/core-img/STAR.png')}}"
+                                        style="margin-right: 27px; width: 628px; height: 353.25px; background: url({{asset('app-assets/img/core-img/STAR.webp')}}) center center / cover no-repeat;">
+                                        <img data-splide-lazy="{{asset('app-assets/img/core-img/STAR.webp')}}"
+                                             srcset="" src="{{asset('app-assets/img/core-img/STAR.webp')}}"
                                              style="display: none;">
                                         <div class="splide__video" style="display: none;">
                                             <div></div>
@@ -876,9 +872,9 @@
                                     <li class="splide__slide p-splide__slide splide__slide--has-video"
                                         data-splide-youtube="https://www.youtube.com/watch?v=n_A1ZgWb7C0"
                                         id="example-video-slide04"
-                                        style="margin-right: 27px; width: 628px; height: 353.25px; background: url({{asset('app-assets/img/core-img/MATH.jpg')}}) center center / cover no-repeat;">
-                                        <img data-splide-lazy="{{asset('app-assets/img/core-img/MATH.jpg')}}"
-                                             srcset="" src="{{asset('app-assets/img/core-img/MATH.jpg')}}"
+                                        style="margin-right: 27px; width: 628px; height: 353.25px; background: url({{asset('app-assets/img/core-img/MATH.webp')}}) center center / cover no-repeat;">
+                                        <img data-splide-lazy="{{asset('app-assets/img/core-img/MATH.webp')}}"
+                                             srcset="" src="{{asset('app-assets/img/core-img/MATH.webp')}}"
                                              style="display: none;">
                                         <div class="splide__video" style="display: none;">
                                             <div></div>
@@ -962,7 +958,10 @@
                             <div class="flip-card">
                                 <div class="flip-card__container">
                                     <div class="card-front">
-                                        <div class="card-front__tp north_miracle">
+                                        <div class="card-front__tp" style="background: #F8F047;
+background: -webkit-radial-gradient(top left, #F8F047, #E7BE89);
+background: -moz-radial-gradient(top left, #F8F047, #E7BE89);
+background: radial-gradient(to bottom right, #F8F047, #E7BE89);">
                                             <svg version="1.1" id="Layer_2_1_" xmlns="http://www.w3.org/2000/svg"
                                                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                                  viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;"
@@ -977,10 +976,10 @@
 		 M26.5,24h10.7v2.7H26.5V24z"/>
                                 </g>
                                 </svg>
-                                            <h2 class="card-front__heading">
+                                            <h2 class="card-front__heading text-capitalize">
                                                 NCERT Solutions
                                             </h2>
-                                            <p class="card-front__text-price text-white">
+                                            <p class="card-front__text-price text-white text-capitalize">
                                                 For class 6 - 12
                                             </p>
                                         </div>
@@ -994,7 +993,7 @@
                                     <div class="card-back">
                                         <video class="video__container" autoplay muted loop>
                                             <source class="video__media"
-                                                    src="{{asset('app-assets/img/core-img/V - 1 mp.m4v')}}"
+                                                    src="{{asset('app-assets/img/core-img/V - 1 mp.mp4')}}"
                                                     type="video/mp4">
                                         </video>
                                     </div>
@@ -1003,13 +1002,13 @@
 
                             <div class="inside-page">
                                 <div class="inside-page__container">
-                                    <h3 class="inside-page__heading inside-page__heading--city">
+                                    <h3 class="inside-page__heading inside-page__heading--city text-capitalize">
                                         NCERT Solutions
                                     </h3>
-                                    <p class="inside-page__text">
+                                    <p class="inside-page__text text-capitalize">
                                         Get the solutions of all your textbook questions.
                                     </p>
-                                    <a href="#" class="inside-page__btn inside-page__btn--city">View</a>
+                                    <a href="/study-materials/CBSE" class="inside-page__btn inside-page__btn--city">View</a>
                                 </div>
                             </div>
                         </div>
@@ -1021,7 +1020,10 @@
                             <div class="flip-card">
                                 <div class="flip-card__container">
                                     <div class="card-front">
-                                        <div class="card-front__tp happy_fisher">
+                                        <div class="card-front__tp" style="background: #FDE6CC;
+background: -webkit-radial-gradient(top left, #FDE6CC, #2A1908);
+background: -moz-radial-gradient(top left, #FDE6CC, #2A1908);
+background: radial-gradient(to bottom right, #FDE6CC, #2A1908);">
                                             <svg version="1.1" id="Layer_2_1_" xmlns="http://www.w3.org/2000/svg"
                                                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                                  viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;"
@@ -1036,10 +1038,10 @@
                                     <circle cx="32" cy="48" r="2.7"/>
                                 </g>
                                 </svg>
-                                            <h2 class="card-front__heading">
+                                            <h2 class="card-front__heading text-capitalize">
                                                 Important Question
                                             </h2>
-                                            <p class="card-front__text-price text-white">
+                                            <p class="card-front__text-price text-white text-capitalize">
                                                 with Solutions
                                             </p>
                                         </div>
@@ -1052,7 +1054,7 @@
                                     <div class="card-back">
                                         <video class="video__container" autoplay muted loop>
                                             <source class="video__media"
-                                                    src="{{asset('app-assets/img/core-img/V 2 1Kk4-1.m4v')}}"
+                                                    src="{{asset('app-assets/img/core-img/V 2 1Kk4-1.mp4')}}"
                                                     type="video/mp4">
                                         </video>
                                     </div>
@@ -1061,13 +1063,13 @@
 
                             <div class="inside-page">
                                 <div class="inside-page__container">
-                                    <h3 class="inside-page__heading inside-page__heading--city">
+                                    <h3 class="inside-page__heading inside-page__heading--city text-capitalize">
                                         Important Questions
                                     </h3>
-                                    <p class="inside-page__text">
+                                    <p class="inside-page__text text-capitalize">
                                         Solutions for most important questions that are most likely come in examination.
                                     </p>
-                                    <a href="#" class="inside-page__btn inside-page__btn--city">View</a>
+                                    <a href="/study-materials/CBSE" class="inside-page__btn inside-page__btn--city">View</a>
                                 </div>
                             </div>
                         </div>
@@ -1079,7 +1081,7 @@
                             <div class="flip-card">
                                 <div class="flip-card__container">
                                     <div class="card-front">
-                                        <div class="card-front__tp night_call">
+                                        <div class="card-front__tp juicy_cake">
                                             <svg version="1.1" id="Layer_2_1_" xmlns="http://www.w3.org/2000/svg"
                                                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                                  viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;"
@@ -1108,7 +1110,7 @@
                                     <div class="card-back">
                                         <video class="video__container" autoplay muted loop>
                                             <source class="video__media"
-                                                    src="{{asset('app-assets/img/core-img/V 3 MP.m4v')}}"
+                                                    src="{{asset('app-assets/img/core-img/V 3 MP.mp4')}}"
                                                     type="video/mp4">
                                         </video>
                                     </div>
@@ -1117,13 +1119,13 @@
 
                             <div class="inside-page">
                                 <div class="inside-page__container">
-                                    <h3 class="inside-page__heading inside-page__heading--city">
+                                    <h3 class="inside-page__heading inside-page__heading--city text-capitalize">
                                         Previous year Papers
                                     </h3>
-                                    <p class="inside-page__text">
+                                    <p class="inside-page__text text-capitalize">
                                         Solve previous year question papers and get prepared well for the examinations.
                                     </p>
-                                    <a href="#" class="inside-page__btn inside-page__btn--city">View Deals</a>
+                                    <a href="/study-materials/CBSE" class="inside-page__btn inside-page__btn--city">View Deals</a>
                                 </div>
                             </div>
                         </div>
@@ -1178,23 +1180,23 @@
                     </div>
                     <div class="row">
                         <div class="col-md-4 px-0">
-                            <div class="card m-2 high_flight rounded"
+                            <div class="card m-2 ripe_malinka rounded"
                                  style="width: 18rem; box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px; border: 0; backdrop-filter: blur(10);">
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col p-0 m-0 ml-1">
-                                            <img src="{{asset('app-assets/img/bg-img/ABHISHEK.png')}}"
-                                                 class="card-img mb-0 pb-0" alt=""
+                                            <img src="{{asset('app-assets/img/bg-img/ABHISHEK.webp')}}"
+                                                 class="card-img mb-0 pb-0" alt="Abhishek Kumar Sir, Tneos Eduloutions Ltd."
                                                  style=" filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));">
                                         </div>
                                         <div class="col">
                                             <h5 class="card-title p-1"
                                                 style="font-weight: 220; color: #fefefe!important;">Mr. Abhishek
-                                                Singh</h5>
+                                                Kumar</h5>
                                             <h6 class="card-subtitle"
                                                 style="font-weight: 300; color: rgba(255,255,255,0.6)!important;">
                                                 Mathematics</h6>
-                                            <p class="card-text text-white">Clear all your doubts with our maths
+                                            <p class="card-text text-white text-capitalize">Clear all your doubts with our maths
                                                 experts.</p>
                                         </div>
                                     </div>
@@ -1202,13 +1204,13 @@
                             </div>
                         </div>
                         <div class="col-md-4 px-0">
-                            <div class="card m-2 arielles_smile rounded"
+                            <div class="card m-2 love_kiss rounded"
                                  style="width: 18rem; box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px; border: 0; backdrop-filter: blur(10);">
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col p-0 m-0">
-                                            <img src="{{asset('app-assets/img/bg-img/ANINDHITHA.png')}}"
-                                                 class="card-img mb-0 pb-0" alt=""
+                                            <img src="{{asset('app-assets/img/bg-img/ANINDHITHA.webp')}}"
+                                                 class="card-img mb-0 pb-0" alt="Anindhitha mam, Tneos Eduloutions Ltd."
                                                  style=" filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2)); backdrop-filter: blur(10);">
                                         </div>
                                         <div class="col">
@@ -1218,7 +1220,7 @@
                                             <h6 class="card-subtitle"
                                                 style="font-weight: 300;color: rgba(255,255,255,0.6)!important;">
                                                 English</h6>
-                                            <p class="card-text text-white">Understand english better than never
+                                            <p class="card-text text-white text-capitalize">Understand english better than never
                                                 before.</p>
                                         </div>
                                     </div>
@@ -1226,25 +1228,23 @@
                             </div>
                         </div>
                         <div class="col-md-4 px-0">
-                            <div class="card m-2 morpheus_den rounded"
+                            <div class="card m-2 glass_water rounded"
                                  style="width: 18rem; box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px; border: 0; backdrop-filter: blur(10);">
 
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col p-0 m-0">
-                                            <img src="{{asset('app-assets/img/bg-img/vijendra.png')}}"
-                                                 class="card-img mb-0 pb-0" alt=""
-                                                 style=" filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));">
+                                            <img src="{{asset('app-assets/img/bg-img/vijendra.webp')}}"
+                                                 class="card-img mb-0 pb-0" alt="Vijendra Singh Sir, Tneos Eduloutions Ltd."
+                                                 style=" filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));" alt="Vijendra Sir, Tneos Eduloutions Ltd.">
                                         </div>
                                         <div class="col">
-                                            <h5 class="card-title p-1"
-                                                style="font-weight: 220; color: #fefefe!important;">
+                                            <h5 class="card-title p-1" style="font-weight: 220; color: #000000!important;">
                                                 Mr. Vijendra Singh</h5>
                                             <h6 class="card-subtitle"
-                                                style="font-weight: 300; color: rgba(255,255,255,0.6)!important;">
+                                                style="font-weight: 300; color: rgba(0,0,0,0.6)!important;">
                                                 Mathematics</h6>
-                                            <p class="card-text text-white">Dedication to bring out the extraordinary in
-                                                an ordinary aspirant.</p>
+                                            <p class="card-text text-dark text-capitalize">Bring out the extraordinary in an ordinary aspirant.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1264,7 +1264,7 @@
                              <div class="card-body">
                                  <div class="row">
                                      <div class="col m-0 p-0">
-                                         <img src="{{asset('app-assets/img/bg-img/GAURAV.png')}}" class="card-img mb-0 pb-0" alt="" style=" filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));">
+                                         <img src="{{asset('app-assets/img/bg-img/GAURAV.png')}}" class="card-img mb-0 pb-0" alt="Gaurav Dixit Sir, Tneos Eduloutions Ltd." style=" filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));">
                                      </div>
                                      <div class="col">
                                          <h5 class="card-title p-1" style="font-weight: 220; color: #fefefe!important;">MR. Gaurav Dixit</h5>
@@ -1281,7 +1281,7 @@
                              <div class="card-body">
                                  <div class="row">
                                      <div class="col m-0 p-0">
-                                         <img src="{{asset('app-assets/img/bg-img/RISHAB.png')}}" class="card-img mb-0 pb-0" alt="" style=" filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));">
+                                         <img src="{{asset('app-assets/img/bg-img/RISHAB.webp')}}" class="card-img mb-0 pb-0" alt="" style=" filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));">
                                      </div>
                                      <div class="col">
                                          <h5 class="card-title p-1" style="font-weight: 220; color: #fefefe!important;">Mr. Rishabh Gupta</h5>
@@ -1298,7 +1298,7 @@
                              <div class="card-body">
                                  <div class="row">
                                      <div class="col m-0 p-0">
-                                         <img src="{{asset('app-assets/img/bg-img/ABHISHEK.png')}}" class="card-img mb-0 pb-0" alt="" style=" filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));">
+                                         <img src="{{asset('app-assets/img/bg-img/ABHISHEK.webp')}}" class="card-img mb-0 pb-0" alt="" style=" filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));">
                                      </div>
                                      <div class="col">
                                          <h5 class="card-title p-1" style="font-weight: 220; color: #fefefe!important;">Nobody Singh</h5>
@@ -1324,7 +1324,7 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col m-0 p-0">
-                                        <img src="{{asset('app-assets/img/bg-img/ABHISHEK.png')}}" class="card-img mb-0 pb-0" alt="" style=" filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));">
+                                        <img src="{{asset('app-assets/img/bg-img/ABHISHEK.webp')}}" class="card-img mb-0 pb-0" alt="" style=" filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));">
                                     </div>
                                     <div class="col">
                                         <h5 class="card-title" style="font-weight: 220; color: #fefefe!important;">Nobody Singh</h5>
@@ -1341,7 +1341,7 @@
                         <div class="card-body">
                                 <div class="row">
                                     <div class="col m-0 p-0">
-                                        <img src="{{asset('app-assets/img/bg-img/ABHISHEK.png')}}" class="card-img mb-0 pb-0" alt="" style=" filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));">
+                                        <img src="{{asset('app-assets/img/bg-img/ABHISHEK.webp')}}" class="card-img mb-0 pb-0" alt="" style=" filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));">
                                     </div>
                                     <div class="col">
                                         <h5 class="card-title" style="font-weight: 220; color: #fefefe!important;">Nobody Singh</h5>
@@ -1358,7 +1358,7 @@
                         <div class="card-body">
                                 <div class="row">
                                     <div class="col m-0 p-0">
-                                        <img src="{{asset('app-assets/img/bg-img/ABHISHEK.png')}}" class="card-img mb-0 pb-0" alt="" style=" filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));">
+                                        <img src="{{asset('app-assets/img/bg-img/ABHISHEK.webp')}}" class="card-img mb-0 pb-0" alt="" style=" filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));">
                                     </div>
                                     <div class="col">
                                         <h5 class="card-title" style="font-weight: 220; color: #fefefe!important;">Nobody Singh</h5>
@@ -1380,7 +1380,7 @@
                             <div class="display-4" style="font-size: 2rem;">Building Upon the Foundation</div>
                         </div>
                         <div class="col-md-4 px-0">
-                            <div class="card m-2 orange_juice rounded"
+                            <div class="card m-2 strong_stick rounded"
                                  style="width: 18rem; box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px; border: 0; backdrop-filter: blur(10);">
                                 <div class="card-body">
                                     <div class="row">
@@ -1396,21 +1396,20 @@
                                             <h6 class="card-subtitle"
                                                 style="font-weight: 300; color: rgba(255,255,255,0.6)!important;">
                                                 Mathematics</h6>
-                                            <p class="card-text text-white">Help you understanding in the simplest
-                                                manner.</p>
+                                            <p class="card-text text-white">Help you understanding in the simplest manner.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4 px-0">
-                            <div class="card m-2 arielles_smile rounded"
+                            <div class="card m-2 love_kiss rounded"
                                  style="width: 18rem; box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px; border: 0; backdrop-filter: blur(10);">
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col p-0 m-0">
-                                            <img src="{{asset('app-assets/img/bg-img/ANINDHITHA.png')}}"
-                                                 class="card-img mb-0 pb-0" alt=""
+                                            <img src="{{asset('app-assets/img/bg-img/ANINDHITHA.webp')}}"
+                                                 class="card-img mb-0 pb-0" alt="Anindhitha Mam, Tneos Eduloutions Ltd."
                                                  style=" filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2)); backdrop-filter: blur(10);">
                                         </div>
                                         <div class="col">
@@ -1428,24 +1427,23 @@
                             </div>
                         </div>
                         <div class="col-md-4 px-0">
-                            <div class="card m-2 sugar_lollipop rounded"
+                            <div class="card m-2 raccoon_back rounded"
                                  style="width: 18rem; box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px; border: 0; backdrop-filter: blur(10);">
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col m-0 p-0">
-                                            <img src="{{asset('app-assets/img/bg-img/NEERAJ.png')}}"
-                                                 class="card-img mb-0 pb-0" alt=""
+                                            <img src="{{asset('app-assets/img/bg-img/NEERAJ.webp')}}"
+                                                 class="card-img mb-0 pb-0" alt="Neeraj Nailwal Sir, Tneos Eduloutions Ltd."
                                                  style=" filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));">
                                         </div>
                                         <div class="col">
                                             <h5 class="card-title p-1"
                                                 style="font-weight: 220; color: #fefefe!important;">Mr. Neeraj
-                                                Singh</h5>
+                                                Nailwal</h5>
                                             <h6 class="card-subtitle"
                                                 style="font-weight: 300; color: rgba(255,255,255,0.6)!important;">
                                                 Science</h6>
-                                            <p class="card-text text-white">Teaching methodology that enhances
-                                                knowledge.</p>
+                                            <p class="card-text text-white">Teaching methodology that enhances knowledge.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1462,7 +1460,7 @@
                             <div class="card-body">
                                     <div class="row">
                                         <div class="col m-0 p-0">
-                                            <img src="{{asset('app-assets/img/bg-img/ABHISHEK.png')}}" class="card-img mb-0 pb-0" alt="" style=" filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));">
+                                            <img src="{{asset('app-assets/img/bg-img/ABHISHEK.webp')}}" class="card-img mb-0 pb-0" alt="" style=" filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));">
                                         </div>
                                         <div class="col">
                                             <h5 class="card-title" style="font-weight: 220; color: #fefefe!important;">Nobody Singh</h5>
@@ -1480,7 +1478,7 @@
                             <div class="card-body">
                                     <div class="row">
                                         <div class="col m-0 p-0">
-                                            <img src="{{asset('app-assets/img/bg-img/ABHISHEK.png')}}" class="card-img mb-0 pb-0" alt="" style=" filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));">
+                                            <img src="{{asset('app-assets/img/bg-img/ABHISHEK.webp')}}" class="card-img mb-0 pb-0" alt="" style=" filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));">
                                         </div>
                                         <div class="col">
                                             <h5 class="card-title" style="font-weight: 220; color: #fefefe!important;">Nobody Singh</h5>
@@ -1498,7 +1496,7 @@
                             <div class="card-body">
                                     <div class="row">
                                         <div class="col m-0 p-0">
-                                            <img src="{{asset('app-assets/img/bg-img/ABHISHEK.png')}}" class="card-img mb-0 pb-0" alt="" style=" filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));">
+                                            <img src="{{asset('app-assets/img/bg-img/ABHISHEK.webp')}}" class="card-img mb-0 pb-0" alt="" style=" filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));">
                                         </div>
                                         <div class="col">
                                             <h5 class="card-title" style="font-weight: 220; color: #fefefe!important;">Nobody Singh</h5>
@@ -1524,7 +1522,7 @@
                          <div class="card-body">
                                  <div class="row">
                                      <div class="col m-0 p-0">
-                                         <img src="{{asset('app-assets/img/bg-img/ABHISHEK.png')}}" class="card-img mb-0 pb-0" alt="" style=" filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));">
+                                         <img src="{{asset('app-assets/img/bg-img/ABHISHEK.webp')}}" class="card-img mb-0 pb-0" alt="" style=" filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));">
                                      </div>
                                      <div class="col">
                                          <h5 class="card-title" style="font-weight: 220; color: #fefefe!important;">Nobody Singh</h5>
@@ -1542,7 +1540,7 @@
                          <div class="card-body">
                                  <div class="row">
                                      <div class="col m-0 p-0">
-                                         <img src="{{asset('app-assets/img/bg-img/ABHISHEK.png')}}" class="card-img mb-0 pb-0" alt="" style=" filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));">
+                                         <img src="{{asset('app-assets/img/bg-img/ABHISHEK.webp')}}" class="card-img mb-0 pb-0" alt="" style=" filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));">
                                      </div>
                                      <div class="col">
                                          <h5 class="card-title" style="font-weight: 220; color: #fefefe!important;">Nobody Singh</h5>
@@ -1560,7 +1558,7 @@
                          <div class="card-body">
                                  <div class="row">
                                      <div class="col m-0 p-0">
-                                         <img src="{{asset('app-assets/img/bg-img/ABHISHEK.png')}}" class="card-img mb-0 pb-0" alt="" style=" filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));">
+                                         <img src="{{asset('app-assets/img/bg-img/ABHISHEK.webp')}}" class="card-img mb-0 pb-0" alt="" style=" filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));">
                                      </div>
                                      <div class="col">
                                          <h5 class="card-title" style="font-weight: 220; color: #fefefe!important;">Nobody Singh</h5>
@@ -1582,62 +1580,59 @@
                             <div class="display-4" style="font-size: 2rem;">Getting Ready for the Brighter Future</div>
                         </div>
                         <div class="col-md-4 px-0">
-                            <div class="card m-2 morpheus_den rounded"
+                            <div class="card m-2 glass_water rounded"
                                  style="width: 18rem; box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px; border: 0; backdrop-filter: blur(10);">
 
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col p-0 m-0">
-                                            <img src="{{asset('app-assets/img/bg-img/vijendra.png')}}"
+                                            <img src="{{asset('app-assets/img/bg-img/vijendra.webp')}}"
                                                  class="card-img mb-0 pb-0" alt=""
                                                  style=" filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));">
                                         </div>
                                         <div class="col">
-                                            <h5 class="card-title p-1"
-                                                style="font-weight: 220; color: #fefefe!important;">
+                                            <h5 class="card-title p-1" style="font-weight: 220; color: #000000!important;">
                                                 Mr. Vijendra Singh</h5>
                                             <h6 class="card-subtitle"
-                                                style="font-weight: 300; color: rgba(255,255,255,0.6)!important;">
+                                                style="font-weight: 300; color: rgba(0, 0, 0, 0.6)!important;">
                                                 Mathematics</h6>
-                                            <p class="card-text text-white">We will learn through curiosity, joy,
-                                                affection, and thought.</p>
+                                            <p class="card-text text-dark">We will learn through curiosity, joy, affection, and thought.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4 px-0">
-                            <div class="card m-2 plum_plate rounded"
+                            <div class="card m-2 ripe_malinka rounded"
                                  style="width: 18rem; box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px; border: 0; backdrop-filter: blur(10);">
 
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col p-0 m-0">
-                                            <img src="{{asset('app-assets/img/bg-img/ABHISHEK.png')}}"
-                                                 class="card-img mb-0 pb-0" alt=""
+                                            <img src="{{asset('app-assets/img/bg-img/ABHISHEK.webp')}}"
+                                                 class="card-img mb-0 pb-0" alt="Abhishek Sir, Tneos Eduloutions Ltd."
                                                  style=" filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));">
                                         </div>
                                         <div class="col">
                                             <h5 class="card-title" style="font-weight: 220; color: #fefefe!important;">
-                                                Mr. Abhishek Singh</h5>
+                                                Mr. Abhishek Kumar</h5>
                                             <h6 class="card-subtitle"
                                                 style="font-weight: 300; color: rgba(255,255,255,0.6)!important;">
                                                 Mathematics</h6>
-                                            <p class="card-text text-white">Basic Knowledge and ability of making a
-                                                difference.</p>
+                                            <p class="card-text text-white">Basic Knowledge and ability of making a difference.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4 px-0">
-                            <div class="card m-2 grown_early rounded"
+                            <div class="card m-2 gentle_care rounded"
                                  style="width: 18rem; box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px; border: 0; backdrop-filter: blur(10);">
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col p-0 m-0">
-                                            <img src="{{asset('app-assets/img/bg-img/RISHAB.png')}}"
-                                                 class="card-img mb-0 pb-0" alt=""
+                                            <img src="{{asset('app-assets/img/bg-img/RISHAB.webp')}}"
+                                                 class="card-img mb-0 pb-0" alt="Rishabh Sir, Tneos Eduloutions Ltd."
                                                  style=" filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2));">
                                         </div>
                                         <div class="col">
@@ -1646,8 +1641,7 @@
                                             <h6 class="card-subtitle"
                                                 style="font-weight: 300; color: rgba(255,255,255,0.6)!important;">
                                                 Mathematics</h6>
-                                            <p class="card-text text-white">My mission to assist students to remove
-                                                their doubts.</p>
+                                            <p class="card-text text-white">My mission to assist students to remove their doubts.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1667,7 +1661,7 @@
                               <div class="card-body">
                                       <div class="row">
                                           <div class="col m-0 p-0">
-                                              <img src="{{asset('app-assets/img/bg-img/ABHISHEK.png')}}" class="card-img"
+                                              <img src="{{asset('app-assets/img/bg-img/ABHISHEK.webp')}}" class="card-img"
                                                    alt="" style="">
                                           </div>
                                           <div class="col">
@@ -1685,7 +1679,7 @@
                               <div class="card-body">
                                       <div class="row">
                                           <div class="col m-0 p-0">
-                                              <img src="{{asset('app-assets/img/bg-img/ABHISHEK.png')}}" class="card-img"
+                                              <img src="{{asset('app-assets/img/bg-img/ABHISHEK.webp')}}" class="card-img"
                                                    alt="" style="">
                                           </div>
                                           <div class="col">
@@ -1704,7 +1698,7 @@
                               <div class="card-body">
                                       <div class="row">
                                           <div class="col m-0 p-0">
-                                              <img src="{{asset('app-assets/img/bg-img/ABHISHEK.png')}}" class="card-img"
+                                              <img src="{{asset('app-assets/img/bg-img/ABHISHEK.webp')}}" class="card-img"
                                                    alt="" style="">
                                           </div>
                                           <div class="col">
@@ -1955,7 +1949,7 @@
                              </div>
                              <div class="testimonial-content py-4">
                                  <h5>Great teachers</h5>
-                                 <p>Everyone here works together to achieve one common goalâ€¦what is best for our children. As a family, we are proud to be part of the Tneos Eduloutions.</p>
+                                 <p class="text-capitalize">Everyone here works together to achieve one common goalâ€¦what is best for our children. As a family, we are proud to be part of the Tneos Eduloutions.</p>
                                  <h6><span>Asha Sharma,</span> Parent</h6>
                              </div>
                          </div>
@@ -1971,7 +1965,7 @@
                              </div>
                              <div class="testimonial-content py-4">
                                  <h5>Easy and user friendly courses</h5>
-                                 <p>Tneos video has helped me to understand Science better than ever.</p>
+                                 <p class="text-capitalize">Tneos video has helped me to understand Science better than ever.</p>
                                  <h6><span>Aanand,</span> Student</h6>
                              </div>
                          </div>
@@ -1987,7 +1981,7 @@
                              </div>
                              <div class="testimonial-content py-4">
                                  <h5>One good academy</h5>
-                                 <p>â€œThe teachers get to know your children as individuals and push them to levels they can and should achieve.</p>
+                                 <p class="text-capitalize">â€œThe teachers get to know your children as individuals and push them to levels they can and should achieve.</p>
                                  <h6><span>Neeru Gupta,</span> Parent</h6>
                              </div>
                          </div>
@@ -2150,39 +2144,38 @@
 
                                 <div class="active">
                                     <div class="img"><img
-                                            src="{{asset('app-assets/img/bg-img/01.png')}}"
-                                            alt=""></div>
+                                            src="{{asset('app-assets/img/bg-img/01.webp')}}"
+                                            alt="Ritesh Negi, class 6th, Tneos Eduloutions Ltd."></div>
                                     <h2>Ritesh Negi, class 6th</h2>
-                                    <p>Tneos guided me, inspired me, supported me. </p>
+                                    <p class="text-capitalize">Tneos guided me, inspired me, supported me. </p>
                                 </div>
 
                                 <div>
-                                    <div class="img"><img src="{{asset('app-assets/img/bg-img/02.png')}}"
-                                                          alt=""></div>
+                                    <div class="img"><img src="{{asset('app-assets/img/bg-img/02.webp')}}"
+                                                          alt="Sneha Singh, class 10th, Tneos Eduloutions Ltd."></div>
                                     <h2>Sneha Singh, class 10th</h2>
-                                    <p>Teachers are the great inventor and leaders who are always motivated and inspired
+                                    <p class="text-capitalize">Teachers are the great inventor and leaders who are always motivated and inspired
                                         me to do great things, Thank you Tneos!</p>
                                 </div>
 
                                 <div>
-                                    <div class="img"><img src="{{asset('app-assets/img/bg-img/03.png')}}"
-                                                          alt=""></div>
+                                    <div class="img"><img src="{{asset('app-assets/img/bg-img/03.webp')}}"
+                                                          alt="Sweta Singh, class 6th, Tneos Eduloutions Ltd."></div>
                                     <h2>Sweta Singh, class 6th</h2>
-                                    <p>Being one is the highest privilege having one of the best Teachers.</p>
+                                    <p class="text-capitalize">Being one is the highest privilege having one of the best Teachers.</p>
                                 </div>
 
                                 <div>
-                                    <div class="img"><img src="{{asset('app-assets/img/bg-img/04.png')}}"
-                                                          alt=""></div>
+                                    <div class="img"><img src="{{asset('app-assets/img/bg-img/04.webp')}}"
+                                                          alt="Rishabh Negi, class 8th, Tneos Eduloutions Ltd."></div>
                                     <h2>Rishabh Negi, class 8th</h2>
-                                    <p>Thank you, for continually inspiring me to do the best in my studies.</p>
+                                    <p class="text-capitalize">Thank you, for continually inspiring me to do the best in my studies.</p>
                                 </div>
 
                                 <div>
-                                    <div class="img"><img src="{{asset('app-assets/img/bg-img/05.png')}}" alt=""></div>
+                                    <div class="img"><img src="{{asset('app-assets/img/bg-img/05.webp')}}" alt="Chanda Kumari, class 7th, Tneos Eduloutions"></div>
                                     <h2>Chanda Kumari, class 7th</h2>
-                                    <p>Tneos helped me during my examination, the study material helped me prepare
-                                        everything.</p>
+                                    <p class="text-capitalize">Tneos helped me during my examination, the study material helped me prepare everything.</p>
                                 </div>
 
                             </div>
@@ -2226,7 +2219,7 @@
                                             <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
                                                 <a href="#">
                                                     <img src="{{asset("app-assets/img/clients-img/boards/01.png")}}"
-                                                         class="img-fluid mx-auto d-block brand-images" alt="image-1">
+                                                         class="img-fluid mx-auto d-block brand-images" alt="Bihar Board Education at Tneos Eduloutions Ltd.">
                                                 </a>
                                                 <div class="brands-intro">
                                                     <p>Bihar State Board</p>
@@ -2235,7 +2228,7 @@
                                             <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                                                 <a href="#">
                                                     <img src="{{asset("app-assets/img/clients-img/boards/02.png")}}"
-                                                         class="img-fluid mx-auto d-block brand-images" alt="image-2">
+                                                         class="img-fluid mx-auto d-block brand-images" alt="Board Education at Tneos Eduloutions Ltd.">
                                                 </a>
                                                 <div class="brands-intro">
                                                     <p>CBSE Board</p>
@@ -2244,7 +2237,7 @@
                                             <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                                                 <a href="#">
                                                     <img src="{{asset("app-assets/img/clients-img/boards/03.png")}}"
-                                                         class="img-fluid mx-auto d-block brand-images" alt="image-3">
+                                                         class="img-fluid mx-auto d-block brand-images" alt="CBSE Board Education at Tneos Eduloutions Ltd.">
                                                 </a>
                                                 <div class="brands-intro">
                                                     <p>Harayana State Board</p>
@@ -2253,7 +2246,7 @@
                                             <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                                                 <a href="#">
                                                     <img src="{{asset("app-assets/img/clients-img/boards/04.png")}}"
-                                                         class="img-fluid mx-auto d-block brand-images" alt="image-8">
+                                                         class="img-fluid mx-auto d-block brand-images" alt="Harayana Board Education at Tneos Eduloutions Ltd.">
                                                 </a>
                                                 <div class="brands-intro">
                                                     <p>International Baccalaureate Board</p>
@@ -2262,7 +2255,7 @@
                                             <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                                                 <a href="#">
                                                     <img src="{{asset("app-assets/img/clients-img/boards/05.png")}}"
-                                                         class="img-fluid mx-auto d-block brand-images" alt="image-4">
+                                                         class="img-fluid mx-auto d-block brand-images" alt="IB Board Education at Tneos Eduloutions Ltd.">
                                                 </a>
                                                 <div class="brands-intro">
                                                     <p>Jharkhand State Board</p>
@@ -2271,7 +2264,7 @@
                                             <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                                                 <a href="#">
                                                     <img src="{{asset("app-assets/img/clients-img/boards/06.png")}}"
-                                                         class="img-fluid mx-auto d-block brand-images" alt="image-5">
+                                                         class="img-fluid mx-auto d-block brand-images" alt="J&K Board Education at Tneos Eduloutions Ltd.">
                                                 </a>
                                                 <div class="brands-intro">
                                                     <p>Jammu & Kashmir State Board</p>
@@ -2280,7 +2273,7 @@
                                             <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                                                 <a href="#">
                                                     <img src="{{asset("app-assets/img/clients-img/boards/07.png")}}"
-                                                         class="img-fluid mx-auto d-block brand-images" alt="image-6">
+                                                         class="img-fluid mx-auto d-block brand-images" alt="Madya Pradesh Board Education at Tneos Eduloutions Ltd.">
                                                 </a>
                                                 <div class="brands-intro">
                                                     <p>Madhya Pradesh Board</p>
@@ -2289,7 +2282,7 @@
                                             <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                                                 <a href="#">
                                                     <img src="{{asset("app-assets/img/clients-img/boards/08.png")}}"
-                                                         class="img-fluid mx-auto d-block brand-images" alt="image-7">
+                                                         class="img-fluid mx-auto d-block brand-images" alt="Odisha State Board Education at Tneos Eduloutions Ltd.">
                                                 </a>
                                                 <div class="brands-intro">
                                                     <p>Odisha State Board</p>
@@ -2298,7 +2291,7 @@
                                             <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                                                 <a href="#">
                                                     <img src="{{asset("app-assets/img/clients-img/boards/09.png")}}"
-                                                         class="img-fluid mx-auto d-block brand-images" alt="image-7">
+                                                         class="img-fluid mx-auto d-block brand-images" alt="Uttar pradesh Board Education at Tneos Eduloutions Ltd.">
                                                 </a>
                                                 <div class="brands-intro">
                                                     <p>Uttar Pradesh State Board</p>
@@ -2341,13 +2334,11 @@
                 <div class="col-12">
                     <div class="cta-content d-flex align-items-center justify-content-between flex-wrap"
                          style="max-height: 29px;">
-                        <h3 class="footer-600-pos" style="position: relative; top: -100px;">Enroll in our online
-                            classes, Get in touch!</h3>
-                        <a style="position: relative; top: -100px;" href="/packages"
-                           class="btn academy-btn footer-600-pos">See
+                        <h3 class="footer-600-pos" style="position: relative; top: -100px;">Enroll in our online classes, Get in touch!</h3>
+                        <a style="position: relative; top: -100px;" href="/packages" class="btn academy-btn footer-600-pos">See
                             More</a>
                         <img class="d-none d-xs-none d-sm-none d-md-block"
-                             src="{{asset('app-assets/img/bg-img/IMG_2057-min.png')}}" alt="Neeraj Sir Tneos"
+                             src="{{asset('app-assets/img/bg-img/IMG_2057-min.webp')}}" alt="Neeraj Sir Tneos"
                              style="width: 200px; position: relative; top: -200px;">
                     </div>
                 </div>
