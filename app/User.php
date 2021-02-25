@@ -46,6 +46,6 @@ class User extends \TCG\Voyager\Models\User //implements MustVerifyEmail
 
     public function  profile()
     {
-        return $this->hasOne('App\Profile::class');
+        return $this->hasOne('App\Profile', 'user_id');
     }
 }

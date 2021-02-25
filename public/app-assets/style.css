@@ -2065,7 +2065,7 @@ div {
 .life-card {
     /* background-color: #81C3D7;
     */
-    height: 240px;
+    min-height: 240px;
     overflow: hidden;
     /*border-radius: 1.6rem;
     */

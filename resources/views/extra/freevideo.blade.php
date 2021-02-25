@@ -1,7 +1,9 @@
 @extends('layouts.app')
 @section('page_title','Free Live Classes, Class 6th to 12th')
+@section('page_keywords',"" )
+@section('page_description',"" )
+@section('og_image', "")
 @section('content')
-
     <div class="container" >
 {{--        style="background-image: url({{asset("app-assets/img/core-img/pattern.png")}});"--}}
          <section>

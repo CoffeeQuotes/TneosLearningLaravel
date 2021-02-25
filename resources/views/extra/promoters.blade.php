@@ -177,7 +177,7 @@
                  style="background: linear-gradient(to left top, rgba(255,255,255,0.8), rgba(255,255,255,0.2)); border-radius: 2rem; z-index: 2; backdrop-filter: blur(2rem);">
                 <div class="row py-md-2 py-sm-0 px-4">
                     <div class="col-md-6 py-md-5 py-sm-1 px-4">
-                        <h2 class="my-5 text-capitalize" style="font-weight: lighter; text-align: left;">The Team behind
+                        <h2 class="my-5 text-capitalize" style="font-weight: lighter; text-align: left;">Team behind
                             Tneos</h2>
                         <p class="font-weight-lighter font-serif">Tneos Eduloutions Limited, a Online Edu-Tech Co.
                             promoted by Technology & Financial Wizards of the Industry.</p>
@@ -217,9 +217,7 @@
                                             <h5 class="card-title pb-0 mb-0 card-heading-promote">Mr. Mukesh
                                                 Kumar</h5>
                                             <span class="card-designation mt-0 card-designation-promote">Founder & Managing Director</span>
-                                            <p class="card-text text-left card-text-promote">Mr. Mukesh a
-                                                successful entrepreneur, angel investor and a business transformation coach.
-                                                He has over 18 years of extensive experience.</p>
+                                            <p class="card-text text-left card-text-promote">Mr. Mukesh a successful entrepreneur, angel investor and a business transformation coach.</p>
                                             <a class='text-primary' data-toggle="modal" data-target="#staticBackdrop"
                                                href='#'>
                                                 Read more
@@ -273,10 +271,7 @@
                                             <h5 class="card-title pb-0 mb-0 card-heading-promote">Mr. Arun
                                                 Agarrwal</h5>
                                             <span class="card-designation mt-0 card-designation-promote ">Co-Founder & CEO</span>
-                                            <p class="card-text text-left card-text-promote" >Mr. Arun brings in
-                                                experience and expertise from an incubating eco-system having been part of a
-                                                series of
-                                                start-ups in capacity of founder promoter and on board.</p>
+                                            <p class="card-text text-left card-text-promote" >Mr. Arun brings in experience from an incubating eco-system having been part of start-ups.</p>
                                             <a class='text-primary' data-toggle="modal" data-target="#staticBackdrop2"
                                                href='#'>
                                                 Read more
@@ -299,10 +294,7 @@
                                             <h5 class="card-title pb-0 mb-0 card-heading-promote">Mrs. Neeru
                                                 Gupta</h5>
                                             <span class="card-designation mt-0 card-designation-promote">Director Technical Strategy</span>
-                                            <p class="card-text text-left card-text-promote" >Mrs. Neeru is a Post
-                                                Graduate (M.Sc.) from Dehradun University in Physics and a DOEACC-A Level
-                                                &amp; PGDCST
-                                                (PGDCA) in Computer Programming.</p>
+                                            <p class="card-text text-left card-text-promote" >Mrs. Neeru is a Post Graduate in Physics & a A Level & PGDCST in Programming.</p>
                                             <a class='text-primary' data-toggle="modal" data-target="#staticBackdrop3"
                                                href='#'>
                                                 Read more

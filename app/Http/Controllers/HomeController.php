@@ -34,10 +34,14 @@ class HomeController extends Controller
 //      /* Date 08/10/2020 10:42 am */
         $profile_status = Profile::where('user_id', Auth::id())->exists();
         $user_purchased = Subscription::where('user_id',"=" ,Auth::id())->where('payment_done', true);
- $user_subs = Subscription::where('user_id',"=" ,Auth::id())->where('payment_done', true)->get();
+        $user_subs = Subscription::where('user_id',"=" ,Auth::id())->where('payment_done', true)->get();
         if(!$user_subs) {
             return view('/packages');
         }
+        if(!$profile_status) {
+            return view('profile.create-profile');
+        }
         return view('home', compact('categories','user_subscribed', 'live_status', 'profile_status', 'user_purchased', 'user_subs'));
     }
+
 }

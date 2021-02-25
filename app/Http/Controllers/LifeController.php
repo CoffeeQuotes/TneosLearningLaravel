@@ -25,13 +25,13 @@ class LifeController extends Controller
 
     public function indexByCategory($cat_slug) {
         $live_status = Life::where('category_id', $cat_slug)->first();
-        $cat_live = Life::where('category_id', $cat_slug)->get();
-
         if($live_status === null) {
             return redirect('/course_error');
         }
+        $course = Category::where('slug', $cat_slug)->firstOrFail();
 
-        return view('lives.livebycategroy', compact('cat_live'));
+        $cat_live = Life::where('category_id', $cat_slug)->get();
+        return view('lives.livebycategroy', compact('cat_live','course'));
     }
 
     public function show($slug) {

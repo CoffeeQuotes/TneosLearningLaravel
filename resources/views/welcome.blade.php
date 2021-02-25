@@ -2338,7 +2338,7 @@ background: radial-gradient(to bottom right, #FDE6CC, #2A1908);">
                         <a style="position: relative; top: -100px;" href="/packages" class="btn academy-btn footer-600-pos">See
                             More</a>
                         <img class="d-none d-xs-none d-sm-none d-md-block"
-                             src="{{asset('app-assets/img/bg-img/IMG_2057-min.webp')}}" alt="Neeraj Sir Tneos"
+                             src="{{asset('app-assets/img/bg-img/giri.webp')}}" alt="Neeraj Sir Tneos"
                              style="width: 200px; position: relative; top: -200px;">
                     </div>
                 </div>
@@ -2651,6 +2651,29 @@ background: radial-gradient(to bottom right, #FDE6CC, #2A1908);">
                     }
                 });
             });
+        </script>
+        <script type=”application/ld+json”>
+
+        {
+
+        “@context”: “http://schema.org”,
+
+        “@type”: “WebSite”,
+
+        “url”: “https://tneos.com/”,
+
+        “potentialAction”: {
+
+        “@type”: “SearchAction”,
+
+        “target”: “https://tneos.com/search?q={search_term_string}”,
+
+        “query-input”: “required name=search_term_string”
+
+        }
+
+        }
+
         </script>
     @endpush
 @endsection

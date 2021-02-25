@@ -206,9 +206,16 @@ Route::get('/our-network-world', function () {
 Route::get('/about',function () {
     return view("extra.about-us");
 });
+// 13. About
+//_______________________________________________________________________________________________________________//
 Route::get('/vision', function () {
     return view('extra.vision');
 });
+// 14. Child Safety
+Route::get('child-safety', function() {
+    return view('extra.child-safety');
+});
+//_______________________________________________________________________________________________________________//
 // Payment Gateway Routes
 //_______________________________________________________________________________________________________________//
 // 1. Packages
@@ -290,3 +297,4 @@ Route::get('class-on-demand', function () {
 /*Route::get("/hello", function () {
    abort(500);
 });*/
+

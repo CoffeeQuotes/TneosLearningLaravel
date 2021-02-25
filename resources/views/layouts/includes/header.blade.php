@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
-    <meta name="description" content="{{setting('site.description')}}">
+    <meta name="description" content="@yield('page_description', setting('site.description'))">
+    <meta name="keywords" content="@yield('page_keywords', "...")">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{Request::url()}}">
-    <meta property="og:title" content="{{ setting('site.title') }}">
-    <meta property="og:image" content="{{asset("app-assets/img/core-img/all-in-one.png")}}">
-    <meta property="og:description" content="{{setting('site.description')}}">
+    <meta property="og:title" content="@yield('page_title',setting('site.title'))">
+    <meta property="og:image" content="@yield('og_image', asset("app-assets/img/core-img/all-in-one.png"))">
+    <meta property="og:description" content="@yield('page_description', setting('site.description'))">
     <meta property="og:site_name" content="Tneos Eduloutions Ltd.">
     <meta property="og:locale" content="en_US">
     <!-- Next tags are optional but recommended -->
@@ -24,9 +25,9 @@
     <meta name="twitter:site" content"{{Request::url()}}">
     <meta name="twitter:creator" content="@TneosL">
     <meta name="twitter:url" content="{{Request::url()}}">
-    <meta name="twitter:title" content="{{ setting('site.title') }}">
-    <meta name="twitter:description" content="{{setting('site.description')}}">
-    <meta name="twitter:image" content="{{asset("app-assets/img/core-img/all-in-one.png")}}">
+    <meta name="twitter:title" content="@yield('page_title',setting('site.title'))">
+    <meta name="twitter:description" content="@yield('page_description', setting('site.description'))">
+    <meta name="twitter:image" content="@yield('og_image', asset("app-assets/img/core-img/all-in-one.png"))">
 
 
     <!-- CSRF Token -->

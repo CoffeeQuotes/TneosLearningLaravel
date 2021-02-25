@@ -25,7 +25,7 @@
                     <div class="card">
                         <div class="card-header" id="headingOne">
                             <h5 class="mb-0">
-                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <button class="border-0 bg-white text-primary" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     How can I download /watch the past sessions?
                                 </button>
                             </h5>
@@ -42,7 +42,7 @@
                     <div class="card">
                         <div class="card-header" id="headingTwo">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <button class="border-0 bg-white text-primary collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     Are the demo classes free?
                                 </button>
                             </h5>
@@ -58,7 +58,7 @@
                     <div class="card">
                         <div class="card-header" id="headingThree">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <button class="border-0 bg-white text-primary collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     How can my child clear his/her doubts instantly during the online class?                                </button>
                             </h5>
                         </div>
@@ -71,7 +71,7 @@
                     <div class="card">
                         <div class="card-header" id="headingFour">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                <button class="border-0 bg-white text-primary collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
                                     Do you give lesson notes and homework?                              </button>
                             </h5>
                         </div>
@@ -85,7 +85,7 @@
                     <div class="card">
                         <div class="card-header" id="headingFive">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                                <button class="border-0 bg-white text-primary collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
                                     Should I enroll my child for Tneos Classes, if he/she is already attending tuitions after school?                             </button>
                             </h5>
                         </div>
@@ -99,7 +99,7 @@
                     <div class="card">
                         <div class="card-header" id="headingSix">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                <button class="border-0 bg-white text-primary collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                                     What is different about Tneos Classes? How is it better than tuition?                             </button>
                             </h5>
                         </div>
@@ -113,7 +113,7 @@
                     <div class="card">
                         <div class="card-header" id="headingSeven">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                <button class="border-0 bg-white text-primary collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                                     Can my children choose the teacher who they want to learn from?                             </button>
                             </h5>
                         </div>
@@ -127,7 +127,7 @@
                     <div class="card">
                         <div class="card-header" id="headingEight">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                <button class="border-0 bg-white text-primary collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
                                     Where can I track my child's progress?                             </button>
                             </h5>
                         </div>
@@ -140,7 +140,7 @@
                     <div class="card">
                         <div class="card-header" id="headingNine">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                <button class="border-0 bg-white text-primary collapsed" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
                                     How we are better from other online education digital platform? Are tests available online?
                                 </button>
                             </h5>
