@@ -71,7 +71,7 @@ Auth::routes();
 // Home Section
 //_______________________________________________________________________________________________________//
 Route::get('/home', 'HomeController@index')->name('home');
-
+Route::get('/subscribed', 'HomeController@course')->name('subscribed_course');
 
 // Page Section
 //_________________________________________________________________________________________________________//

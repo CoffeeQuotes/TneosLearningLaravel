@@ -11,12 +11,12 @@ class Subscription extends Model
     ];
       public function category(): \Illuminate\Database\Eloquent\Relations\BelongsTo
       {
-          return $this->belongsTo('App\Category::class');
+          return $this->belongsTo('App\Category');
       }
 
       // Subscription belongs to User
       public function user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
       {
-          return $this->belongsTo('App\User::class');
+          return $this->belongsTo('App\User');
       }
 }

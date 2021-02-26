@@ -44,4 +44,9 @@ class HomeController extends Controller
         return view('home', compact('categories','user_subscribed', 'live_status', 'profile_status', 'user_purchased', 'user_subs'));
     }
 
+
+    public function course() {
+        $course_subs = Subscription::where('user_id', "=", Auth::id())->where('payment_done', true)->get();
+        return view('subscribed', compact('course_subs'));
+    }
 }

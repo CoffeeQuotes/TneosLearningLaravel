@@ -77,13 +77,13 @@
         <div class="col-12 sidebar-dashboard-secondary rounded p-2">
             {{-- Date 08/10/2020 10:40 am --}}
             <ul>
-                <li><a href="/home"
+                <li><a href="{{route('home')}}"
                        class="btn btn-sm btn-block new_life my-2 shadow border-0 text-white">Dashboard</a>
                 </li>
                 <li><a href="/profile/profile"
                        class="btn btn-sm btn-block malibu_beach my-2 shadow border-0 text-white">Profile</a>
                 </li>
-                <li><a href="/packages"
+                <li><a href="{{route('subscribed_course')}}"
                        class="btn btn-sm btn-block phoenix_start my-2 shadow border-0 text-white">Courses</a>
                 </li>
                 <li><a href="/lives"
