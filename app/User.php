@@ -41,7 +41,7 @@ class User extends \TCG\Voyager\Models\User //implements MustVerifyEmail
     // User has many Subscription
     public function subscription(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
-        return $this->hasMany('App\Subscription::class');
+        return $this->hasMany('App\Subscription:');
     }
 
     public function  profile()

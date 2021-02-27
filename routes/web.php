@@ -72,7 +72,7 @@ Auth::routes();
 //_______________________________________________________________________________________________________//
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/subscribed', 'HomeController@course')->name('subscribed_course');
-
+Route::get('/learn', 'HomeController@learn')->name('learn');
 // Page Section
 //_________________________________________________________________________________________________________//
 Route::get('page/{slug}', function($slug){

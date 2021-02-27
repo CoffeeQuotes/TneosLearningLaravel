@@ -11,7 +11,7 @@ use Illuminate\Support\Str;
 class ProfileController extends Controller
 {
     //
-    public function show() 
+    public function show()
     {
         $currUserId = Auth::id();
         $user_profile = Profile::where('user_id', $currUserId)->firstOrFail();
@@ -20,12 +20,12 @@ class ProfileController extends Controller
     }
 
 
-    public function create() 
+    public function create()
     {
         return view('profile.create-profile');
     }
 
-    public function store(Request $request) 
+    public function store(Request $request)
     {
 
       $profile = new Profile;

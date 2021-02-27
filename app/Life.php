@@ -12,6 +12,6 @@ class Life extends Model
 
     public function category(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo('App\Category::class');
+        return $this->belongsTo('App\Category');
     }
 }

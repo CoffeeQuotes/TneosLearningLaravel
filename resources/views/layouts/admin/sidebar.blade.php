@@ -17,7 +17,8 @@
         }
 
         .sidebar-dashboard-secondary {
-            background-color: #25294a;
+            background-color:  rgba(43,48,74,0.95);  /* #25294a; */
+            backdrop-filter: blur(10px) saturate(180%);
         }
         div.circle-avatar{
             /* make it responsive */
@@ -86,7 +87,7 @@
                 <li><a href="{{route('subscribed_course')}}"
                        class="btn btn-sm btn-block phoenix_start my-2 shadow border-0 text-white">Courses</a>
                 </li>
-                <li><a href="/lives"
+                <li><a href="{{route('learn')}}"
                        class="btn btn-sm btn-block october_silence my-2 shadow border-0 text-white">Learn</a>
                 </li>
             </ul>

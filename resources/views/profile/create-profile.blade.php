@@ -31,6 +31,9 @@
             /*padding: 6px 12px;*/
             cursor: pointer;
         }
+        #blah {
+            max-width: 180px;
+        }
     </style>
 @endpush
 @section('content')
@@ -52,22 +55,23 @@
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label>Firstname</label>
-                        <input type="text" class="form-control" name="firstname" >
+                        <input type="text" class="form-control" name="firstname" required>
                     </div>
                     <div class="form-group col-md-6">
                         <label>Lastname</label>
-                        <input type="text" class="form-control" name="lastname" >
+                        <input type="text" class="form-control" name="lastname" required>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="file-upload" class="custom-file-upload btn party_bliss border-0">
                         <i class="fa fa-cloud-upload"></i> Upload Profile Picture
                     </label>
-                    <input id="file-upload" type="file" class="form-control" name="image">
+                    <input id="file-upload" type="file" class="form-control" onchange="readURL(this);"  name="image" required>
+                    <small id="imageHelp" class="form-text text-muted">Image is required.</small>
                 </div>
                 <div class="form-group">
                     <label>Mobile</label>
-                    <input type="number" class="form-control" name="mobile">
+                    <input type="number" class="form-control" name="mobile" required>
                 </div>
                 <div class="form-group">
                     <label>Class</label>
@@ -75,16 +79,35 @@
                 </div>
                 <div class="form-group">
                     <label>School Name</label>
-                    <input type="text" name="school_name" class="form-control">
+                    <input type="text" name="school_name" class="form-control" required>
                 </div>
                 <button type="submit" class="btn party_bliss text-white border-0">Update Profile</button>
                     </form>
                 </div>
-                <div class="col-md-4">
-
+                <div class="col-md-4 mx-auto my-auto">
+                    <div class="">
+                        <img class="rounded-circle border border-success shadow" id="blah" src="https://i.pravatar.cc/180?img=67" alt="your image" />
+                    </div>
                 </div>
             </div>
         </div>
 
     </div>
+    @push('footer-scripts')
+        <script>
+            function readURL(input) {
+
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        $('#blah')
+                            .attr('src', e.target.result);
+                    };
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+        </script>
+    @endpush
 @endsection

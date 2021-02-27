@@ -49,4 +49,11 @@ class HomeController extends Controller
         $course_subs = Subscription::where('user_id', "=", Auth::id())->where('payment_done', true)->get();
         return view('subscribed', compact('course_subs'));
     }
+
+    public function learn() {
+      $latest_Lives = Life::latest()->take(4)->get();
+      $latest_courses = Category::latest()->take(4)->get();
+      return view('learn', compact('latest_Lives', 'latest_courses'));
+
+    }
 }
