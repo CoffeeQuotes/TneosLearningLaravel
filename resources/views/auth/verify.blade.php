@@ -1,11 +1,14 @@
 @extends('layouts.app')
-
+@push('styles')
+    <link rel="stylesheet" href="{{"https://tneos.com/app-assets/css/webgradients.css"}}" type="text/css"/>
+@endpush
 @section('content')
-<div class="container">
+<div class="container-fluid new_retrowave" style="height: 100vh!important;">
+    <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Verify Your Email Address') }}</div>
+            <div class="card shadow  p-4 text-center mt-100 border-0">
+                <div class="card-header border-0"><h6>{{ __('Verify Your Email Address') }}</h6></div>
 
                 <div class="card-body">
                     @if (session('resent'))
@@ -24,5 +27,6 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 @endsection

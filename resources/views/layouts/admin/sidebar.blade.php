@@ -79,21 +79,21 @@
             {{-- Date 08/10/2020 10:40 am --}}
             <ul>
                 <li><a href="{{route('home')}}"
-                       class="btn btn-sm btn-block new_life my-2 shadow border-0 text-white">Dashboard</a>
+                       class="btn btn-sm btn-block new_life my-2 shadow border-0 text-white"><i class="fa fa-tachometer" aria-hidden="true"></i> &nbsp; Dashboard</a>
                 </li>
                 <li><a href="/profile/profile"
-                       class="btn btn-sm btn-block malibu_beach my-2 shadow border-0 text-white">Profile</a>
+                       class="btn btn-sm btn-block malibu_beach my-2 shadow border-0 text-white"><i class="fa fa-user" aria-hidden="true"></i> &nbsp; Profile</a>
                 </li>
                 <li><a href="{{route('subscribed_course')}}"
-                       class="btn btn-sm btn-block phoenix_start my-2 shadow border-0 text-white">Courses</a>
+                       class="btn btn-sm btn-block phoenix_start my-2 shadow border-0 text-white"><i class="fa fa-graduation-cap" aria-hidden="true"></i> &nbsp; Courses</a>
                 </li>
                 <li><a href="{{route('learn')}}"
-                       class="btn btn-sm btn-block october_silence my-2 shadow border-0 text-white">Learn</a>
+                       class="btn btn-sm btn-block october_silence my-2 shadow border-0 text-white"><i class="fa fa-leanpub" aria-hidden="true"></i> &nbsp; Learn</a>
                 </li>
             </ul>
         </div>
         <div class="text-center mt-100 col-12">
-            <span class=" text-center"><a class="sugar_lollipop text-white btn border-0 btn-block" href="/packages">Browse Courses</a></span>
+            <span class=" text-center"><a class="sugar_lollipop text-white btn border-0 btn-block" href="/packages"><i class="fa fa-search" aria-hidden="true"></i> &nbsp; Browse Courses</a></span>
         </div>
     </div>
 </div>

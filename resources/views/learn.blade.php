@@ -68,14 +68,33 @@
                                     <span class="badge badge-pill plum_plate text-white   m-1 border-0 font-weight-lighter">{{$course->board}}</span>
                                     <span class="badge badge-pill plum_plate text-white   m-1 border-0 font-weight-lighter">{{$course->subject}}</span>
                                     <span class="badge badge-pill plum_plate text-white   m-1 border-0 font-weight-lighter">{{$course->class}}th class</span>
-                            </div>
+                                </div>
                         </div>
                     </div>
                         </a>
                     </div>
                 @endforeach
-
         </div>
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <h4 class="text-white text-capitalize p-4"
+                            style="font-weight: 200; color:#fefefe!important;">Latest Study Material</h4>
+                    </div>
+                </div>
+                @foreach($latest_material as $material)
+                    <div class="col-md-3">
+                        <div class="card sidebar-dashboard-secondary shadow border-0 my-2 p-2">
+                            <a href="{{$material->link}}"><h6 class="latest-heading text-uppercase p-2 m-0 card-title" style="font-weight: 100; color: #9163cb;">{{$material->title}}</h6></a>
+                            <div class="d-flex mt-0 justify-content-between">
+                                <span class="badge badge-pill plum_plate text-white m-1 border-0 font-weight-lighter">{{$material->board}}</span>
+                                <span class="badge badge-pill plum_plate text-white m-1 border-0 font-weight-lighter">{{$material->subject}}</span>
+                                <span class="badge badge-pill plum_plate text-white m-1 border-0 font-weight-lighter">{{$material->class}}th class</span>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
     </div>
     </div>
 </div>

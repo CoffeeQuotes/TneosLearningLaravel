@@ -66,11 +66,11 @@ Route::group(['prefix' => 'admin'], function () {
 
 // Auth Routes
 //____________________________________________________________________________________________________//
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 // Home Section
 //_______________________________________________________________________________________________________//
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
 Route::get('/subscribed', 'HomeController@course')->name('subscribed_course');
 Route::get('/learn', 'HomeController@learn')->name('learn');
 // Page Section
@@ -102,7 +102,7 @@ Route::get('/board/{board}', function($board) {
 Route::get('/profile/profile', 'ProfileController@show')->middleware('auth')->name('profile');
 Route::post('/profile/store', 'ProfileController@store')->middleware('auth')->name('store_profile');
 Route::get('/profile/create','ProfileController@create')->middleware('auth')->name('create_profile');
-Route::get('/profile/edit/{id}','ProfileController@edit')->middleware('auth')->name('profile.edit');
+Route::get('/profile/edit/{id}','ProfileController@edit')->middleware('auth')->name('profile.edit')->middleware('password.confirm');
 Route::post('/profile/update/{id}','ProfileController@update')->middleware('auth')->name('profile.update');
 
 // Search Section

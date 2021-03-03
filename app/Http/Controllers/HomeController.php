@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Life;
+use App\Material;
 use App\Subscription;
 use App\Profile;
 use Illuminate\Http\Request;
@@ -53,7 +54,8 @@ class HomeController extends Controller
     public function learn() {
       $latest_Lives = Life::latest()->take(4)->get();
       $latest_courses = Category::latest()->take(4)->get();
-      return view('learn', compact('latest_Lives', 'latest_courses'));
+      $latest_material = Material::latest()->take(10)->get();
+      return view('learn', compact('latest_Lives', 'latest_courses', 'latest_material'));
 
     }
 }

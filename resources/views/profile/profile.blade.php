@@ -11,7 +11,7 @@
                         <h4 class="text-white text-capitalize p-4"
                             style="font-weight: 200; color:#fefefe!important;">Profile Page</h4>
                         <div class="btn-group my-2">
-                            <a href="/profile/edit/{{$user_profile->id}}" class="btn m-4 itmeo_branding border-0 text-white">Edit Profile</a>
+                            <a href="/profile/edit/{{$user_profile->id}}" class="btn m-4 itmeo_branding border-0 text-white"><i class="fa fa-pencil-square" aria-hidden="true"></i> &nbsp;Edit Profile</a>
                         </div>
                     </div>
                     <div class="col-6 text-center">

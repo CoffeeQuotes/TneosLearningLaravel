@@ -1,11 +1,14 @@
 @extends('layouts.app')
-
+@push('styles')
+    <link rel="stylesheet" href="{{"https://tneos.com/app-assets/css/webgradients.css"}}" type="text/css"/>
+@endpush
 @section('content')
-<div class="container">
+<div class="container-fluid new_retrowave" style="height: 100vh!important;">
+    <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Reset Password') }}</div>
+            <div class="card text-center mt-100 border-0">
+                <div class="card-header"><h6>{{ __('Reset Password') }}</h6></div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('password.update') }}">
@@ -50,8 +53,8 @@
                         </div>
 
                         <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                            <div class="col-md-6 offset-md-3">
+                                <button type="submit" class="btn btn-sm border-0 text-capitalize m-4 new_retrowave text-white">
                                     {{ __('Reset Password') }}
                                 </button>
                             </div>
@@ -61,5 +64,6 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 @endsection
