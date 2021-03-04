@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Category;
+use App\Material;
 use http\Client\Curl\User;
 use Illuminate\Auth\Access\Gate;
 use Illuminate\Http\Request;
@@ -42,9 +43,11 @@ class LifeController extends Controller
 //        dd($category_id);
         $subscription = Subscription::where('user_id', Auth::id())->where('category_id',$category_id)->first()['payment_done'];
 //        dd($subscription);
+        $materials = Material::where('board', $live->board)->where('subject', $live->subject)->where('class', $live->class)->get();
         $videos = Life::where('category_id', $category_slug)->get();
+//        dd($material);
         if($subscription == 1 ) {
-             return view('lives.life', compact('live', 'videos'));
+             return view('lives.life', compact('live', 'videos', 'materials'));
          }
 
        // return "You are not authorized";
