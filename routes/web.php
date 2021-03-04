@@ -89,7 +89,7 @@ Route::get('page/{slug}', function($slug){
 
 Route::get('/lives', 'LifeController@index');
 Route::get('/category/{cat_slug}', 'LifeController@indexByCategory');
-Route::get('lives/{slug}', 'LifeController@show')->middleware('auth');
+Route::get('lives/{slug}', 'LifeController@show')->middleware('auth')->name('liveshow');
 // Live Videos by Board
 Route::get('/board/{board}', function($board) {
     $lives = \App\Life::where('board',$board)->get();

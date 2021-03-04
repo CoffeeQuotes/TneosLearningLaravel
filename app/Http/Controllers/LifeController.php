@@ -42,8 +42,9 @@ class LifeController extends Controller
 //        dd($category_id);
         $subscription = Subscription::where('user_id', Auth::id())->where('category_id',$category_id)->first()['payment_done'];
 //        dd($subscription);
+        $videos = Life::where('category_id', $category_slug)->get();
         if($subscription == 1 ) {
-             return view('lives.life', compact('live'));
+             return view('lives.life', compact('live', 'videos'));
          }
 
        // return "You are not authorized";

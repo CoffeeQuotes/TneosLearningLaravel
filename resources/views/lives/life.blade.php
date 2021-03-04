@@ -29,16 +29,18 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 mb-100">
             <div class="text-center perfect_blue mt-2 rounded border-0 p-2 justify-content-between">
                 <h6 class="font-weight-light mt-2 text-white text-uppercase" style="letter-spacing: 0.1em;"> <i class="fa fa-play-circle"></i> Now Playing</h6>
             </div>
-            <div class="card perfect_blue p-2 mt-3" style="width: 100%;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="{{Voyager::image($live->image)}}" class=" mt-2 shadow" alt="{{ $live->title }}">
+            <div class="card slick_carbon border-success mt-3" style="width: 100%;">
+                <img src="{{asset('app-assets/img/bg-img/source.gif')}}" class="card-img-top"  alt="">
+                <div class="card-img-overlay" style="background-color: rgba(0,0,0,0.2);  backdrop-filter: saturate(180%) blur(2px)">
+                <div class="row g-0 p-2">
+                    <div class="col-4">
+                        <img src="{{Voyager::image($live->image)}}" class=" m-2 shadow" alt="{{ $live->title }}">
                     </div>
-                <div class="col-md-8">
+                <div class="col-8">
                     <div class="card-body mt-2">
                         <span class="card-title text-white" style="letter-spacing: 0.1em;">{{ $live->title }}</span>
     {{--                    <span class="font-weight-bold">{!! $live->description !!}</span>--}}
@@ -50,10 +52,37 @@
                 </ul>--}}
                 </div>
             </div>
+                </div>
             </div>
-            <div class="card perfect_blue p-2 mt-3" style="width: 100%;">
+            <div class="card border-0 perfect_blue p-2 mt-3" style="width: 100%;">
                 <a href="/home" class="card-link pull-right btn btn-sm teen_party border-0 rounded shadow text-white">Dashboard</a>
             </div>
+            <div class="text-center perfect_blue mt-2 rounded border-0 p-2 justify-content-between">
+                <h6 class="font-weight-light mt-2 text-white text-uppercase" style="letter-spacing: 0.1em;"> <i class="fa fa-play-circle"></i> Other Videos</h6>
+            </div>
+            @foreach($videos as $video)
+                <a href="{{route('liveshow', $video->slug)}}">
+                <div class="card perfect_blue p-2 mt-3" style="width: 100%;">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="{{Voyager::image($video->image)}}" class=" mt-2 shadow" alt="{{ $video->title }}">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body mt-2">
+                                <span class="card-title text-white" style="letter-spacing: 0.1em;">{{ $video->title }}</span>
+                                {{--                    <span class="font-weight-bold">{!! $live->description !!}</span>--}}
+                            </div>
+                            {{-- <ul class="list-group list-group-flush">
+                                 <li class="list-group-item"><strong>Board</strong> : {{ $live->board }} </li>
+                                 <li class="list-group-item"><strong>Class</strong> : {{ $live->class }}</li>
+                                 <li class="list-group-item"><strong>Subject</strong> : {{ $live->subject }}</li>
+                             </ul>--}}
+                        </div>
+                    </div>
+                </div>
+                </a>
+            @endforeach
+
         </div>
     </div>
 
