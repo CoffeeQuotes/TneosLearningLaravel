@@ -24,8 +24,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ae755fb6-b5bd-4fa8-b13d-cfc522d6919a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LifeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LifeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/lives/life.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/lives/life.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/extra/study.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/extra/study.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -296,7 +296,10 @@
       <workItem from="1614489650828" duration="8310000" />
       <workItem from="1614660544496" duration="12184000" />
       <workItem from="1614745851120" duration="13408000" />
-      <workItem from="1614834371976" duration="13525000" />
+      <workItem from="1614834371976" duration="16813000" />
+      <workItem from="1614919462176" duration="14593000" />
+      <workItem from="1615007196208" duration="3259000" />
+      <workItem from="1615024814310" duration="4589000" />
     </task>
     <servers />
   </component>
@@ -316,6 +319,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="523" y="233" key="#Notifications" timestamp="1614858302987">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="523" y="233" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1614858302987" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1612339574832">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -336,10 +343,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="594" y="31" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1613129827200" />
-    <state x="119" y="38" width="1258" height="707" key="SettingsEditor" timestamp="1614841923880">
+    <state x="247" y="41" width="1258" height="707" key="SettingsEditor" timestamp="1615030552490">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="119" y="38" width="1258" height="707" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1614841923880" />
+    <state x="247" y="41" width="1258" height="707" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1615030552490" />
     <state x="545" y="322" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1613554590639">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -348,9 +355,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1614665614672" />
-    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1614842937827">
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1614940565731">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1614842937827" />
+    <state x="430" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1614940565731" />
   </component>
 </project>

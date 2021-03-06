@@ -240,10 +240,13 @@ Route::get('/unsuccessful', 'MainController@unsuccessful')->name('unsuccessful')
 // Study Material
 //________________________________________________________________________________________________________________//
 
-Route::get('study-materials/{board}', function($board) {
-    $materials = \App\Material::where('board', $board)->get();
-    return view('extra.study', compact('materials'));
+Route::get('study-materials/{board}', function ($board) {
+    return View::make('extra.study')->with('materials', \App\Material::where('board',$board)->orderBy('created_at', 'desc')->get());
 });
+/*Route::get('study-materials/{board}', function($board) {
+    $materials = \App\Material::where('board', $board)->orderBy('created_at', 'desc')->get();
+    return view('extra.study', compact('materials'));
+});*/
 
 
 // Error Section
